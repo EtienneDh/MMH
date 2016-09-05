@@ -12,14 +12,17 @@
 /* Colors */
 
 /*Dark BLue*/
-/*{
-  color: #0a749c;
-}*/
+
+.login-button
+{
+    background-color: #0a749c;
+}
 
 /*Blue*/
-/*{
-  color: #0092c9;
-}*/
+
+{
+  background-color: #0092c9;
+}
 
 /* Blue Grey*/
 /*{
@@ -27,9 +30,10 @@
 }*/
 
 /* Green */
-/*{
-  color: #2da555;
-}*/
+
+.logo-remplacement{
+  background-color: #2da555;
+}
 
 /* /Colors */
 
@@ -49,6 +53,69 @@
 
 
 /******************************** HEADER  **************************************/
+
+/* TEMPORAIRE */
+
+.logo-remplacement
+{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    font-size:20px;
+    height:calc(100% - 1em);
+    width:120px;	      
+    margin-right:auto;
+}
+
+
+
+
+
+/* Header above the navbar */
+
+
+.top-header-flex {
+    display:flex;
+    height:60px;
+    align-items:center;
+}
+
+/* DIV SOCIAUX + LOGIN */
+.top-header-buttons {
+    display:flex;
+    width:150px;
+    height:100%;
+    margin-top:1em ;
+    flex-direction:column;    
+}
+
+
+/* Div all socials */
+.buttons-social{
+    display:flex;
+    justify-content:space-around;
+}
+
+
+/* Login */
+.login-button
+{
+    margin:5px 1em;
+    border:0;
+    font-size:10px;
+    line-height:20px;
+    color:white;
+}
+
+
+/* Buttons social alone */
+.header-logo-social{
+    width:25px;
+    height:25px;
+    margin:0 3px;
+}
 
 /******************************* /HEADER  **************************************/
 
