@@ -16,6 +16,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 figure {
   margin: 0;
 }
@@ -23,9 +27,9 @@ figure {
 /* Colors */
 
 /*Dark BLue*/
-/*{
-  color: #0a749c;
-}*/
+.button {
+  background-color: #0a749c;
+}
 
 /*Blue*/
 /*{
@@ -33,7 +37,7 @@ figure {
 }*/
 
 /* Blue Grey*/
-.slider {
+.carousel-info {
   background-color: #ecf0f4;
 }
 
@@ -69,54 +73,46 @@ figure {
 
 /* Layout */
 
-.slider {
-  max-width: 100%;
+.slider, .carousel-info, .stat{
   flex-direction: column;
 }
 
-.slide-info {
-  width: 100%;
+.carousel-info {
+  align-items: center;
+  margin-top: 6px;
+  box-shadow: 3px 4px 0 #bdbdbd;
 }
 
-.text {
-  min-width: 40%;
-  max-width: 40%;
-  margin-left: .8em;
+.slide-text {
+  margin: 0 3%;
 }
 
 .slide-stats {
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-content: flex-start;
 }
 
-.stat {
-  flex-direction: column;
-  margin-right: .3em;
-
-
-}
 
 /* /Layout */
 
 /* Slider Typo */
-.slider h2 {
+.slider h2 {              /* Slide Title */
   text-align: center;
-  margin: .5em .5em;
+  margin: .8em .8em;
 }
 
-.text p {
+.slide-text p {
   margin-top: 0;
-  font-size: .6em;
+  font-size: .9em;
 }
 
-.slide-stats span {
+.slide-stats span {         /* Stat Numbers */
   font-weight: bold;
-  font-size: .6em;
+  font-size: .8em;
 }
 
-.slide-stats p {
-  font-size: .5em;
+.slide-stats p {          /* Stat text */
+  font-size: .65em;
+  margin-top: .18em;
 }
 /* /Slider Typo */
 
@@ -132,6 +128,39 @@ figure {
 }
 
 /* /Slider pictures*/
+
+/* Button Contribute */
+.button {
+  border: 2px solid #0a749c;
+  border-radius: 5px;
+  padding: 7px 35px;
+  margin: 1em 0;
+  color: #fff;
+  font-size: .9em;
+  font-weight: bold;
+  box-shadow: 3px 4px 0 #bdbdbd;
+
+  /* Transition */
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 800ms;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
+
+  /* For Safari */
+  -webkit-transition-property: color, background-color, box-shadow;
+  -webkit-transition-duration: 800ms;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 100ms;
+}
+
+.button:hover {
+  color: #0a749c;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+
+/* /Button Contribute */
 
 /******************************* /SLIDER  **************************************/
 
