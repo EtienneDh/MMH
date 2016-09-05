@@ -1,45 +1,150 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>My Money Help</title>
-        <meta name="keywords" content="MyMoneyHelp crowdfunding financement participatif social ">
-        <meta name="description" content="Plateforme de financement participatif MyMoneyHelp">
-        <meta name="author" content="Etienne Dhennin, Thomas Gossart, Jean Boutonne, Yanis Maoucha, Abdifatah Ibrahim Omar">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Money Help</title>
+    <meta name="keywords" content="MyMoneyHelp crowdfunding financement participatif social ">
+    <meta name="description" content="Plateforme de financement participatif MyMoneyHelp">
+    <meta name="author" content="Etienne Dhennin, Thomas Gossart, Jean Boutonne, Yanis Maoucha, Abdifatah Ibrahim Omar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!-- Custom Css -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- /Custom Css -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /Custom Css -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+    <!--*************************** HEADER *******************************-->
+
+    <!--*************************** /HEADER ******************************-->
+
+
+    <!--*************************** BODY *********************************-->
+
+    <!-- Slider -->
+
+    <section class="slider flex">
+        <div class="carousel">
+            <ul>
+                <li><img src="img/slider-1.png" alt="" class="slide-picture" /></li>
+                <li><img src="img/slider-2.png" alt="" class="slide-picture active" /></li>
+                <li><img src="img/slider-3.png" alt="" class="slide-picture" /></li>
+            </ul>
+
+        </div>
+
+        <div class="carousel-info">
+
+            <!-- Slide 1 -->
+            <div class="slide slide-1">
+                <!-- Title -->
+                <h2>Slide 1 title</h2>
+                <!-- /Title -->
+
+                <!-- Div Info -->
+                <div class="slide-info flex">
+                    <!-- Texte -->
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                    <!-- /Texte -->
+
+                    <!-- Stats -->
+                    <div class="slide-stats flex">
+
+                      <div class="stat flex">
+                        <span>161%</span>
+                        <p>Financé</p>
+                      </div>
+
+                      <div class="stat flex">
+                        <span>3370 €</span>
+                        <p>contribués</p>
+                      </div>
+
+                      <div class="stat flex">
+                        <span>2000 €</span>
+                        <p>objectif</p>
+                      </div>
+
+                      <div class="stat flex">
+                        <span>66</span>
+                        <p>Supporteurs</p>
+                      </div>
+
+                      <div class="stat flex">
+                        <span>J-30</span>
+                      </div>
+
+                    </div>
+                    <!-- /Stats -->
+                </div>
+
+            </div>
+            <!-- End Slide 1 -->
+        </div>
+        <!-- End Carousel Info -->
+
+    </section>
+
+
+
+
+
+    <!-- /Slider -->
+
+    <!--*************************** /BODY ********************************-->
+
+    <!--*************************** FOOTER *******************************-->
+
+    <!--*************************** /FOOTER ******************************-->
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
 </html>

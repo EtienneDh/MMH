@@ -7,6 +7,17 @@
   box-sizing: border-box;
   font-size: 1em;
   color: #373737;
+  /*border: 1px solid black;*/
+}
+
+ul {
+  list-style: none;
+  margin: 0 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 /* Colors */
@@ -22,9 +33,9 @@
 }*/
 
 /* Blue Grey*/
-/*{
-  color: #ecf0f4;
-}*/
+.slider {
+  background-color: #ecf0f4;
+}
 
 /* Green */
 /*{
@@ -55,6 +66,72 @@
 
 
 /******************************** SLIDER  **************************************/
+
+/* Layout */
+
+.slider {
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.slide-info {
+  width: 100%;
+}
+
+.text {
+  min-width: 40%;
+  max-width: 40%;
+  margin-left: .8em;
+}
+
+.slide-stats {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.stat {
+  flex-direction: column;
+  margin-right: .3em;
+
+
+}
+
+/* /Layout */
+
+/* Slider Typo */
+.slider h2 {
+  text-align: center;
+  margin: .5em .5em;
+}
+
+.text p {
+  margin-top: 0;
+  font-size: .6em;
+}
+
+.slide-stats span {
+  font-weight: bold;
+  font-size: .6em;
+}
+
+.slide-stats p {
+  font-size: .5em;
+}
+/* /Slider Typo */
+
+/*Slider pictures*/
+
+.slide-picture {
+  display: none;
+  max-width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+/* /Slider pictures*/
 
 /******************************* /SLIDER  **************************************/
 
