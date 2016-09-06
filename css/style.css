@@ -254,7 +254,7 @@
 .text-title-paiement{
   margin-top: 0;
   font-size: 15px;
-  color: #2da555;
+  color: #ecf0f4;
 }
 
 
@@ -264,11 +264,19 @@
 }
 
 .container-paiement{
-  width: 100%;
-  background-color: green;
+
+
   height: 100px;
   margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.paiement-validation{
+  background-color: #2da555;
+  color: white;
+  text-align: center;
 }
 /*                              END PAIEMENT                                   */
 
