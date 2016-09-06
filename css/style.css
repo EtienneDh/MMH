@@ -13,25 +13,29 @@
 
 /*Dark BLue*/
 
-.login-button
+.login-button,
+.logo-remplacement
 {
     background-color: #0a749c;
 }
 
 /*Blue*/
 
-{
-  background-color: #0092c9;
-}
+/* { */
+
+/*   background-color: #0092c9; */
+/* } */
 
 /* Blue Grey*/
-/*{
-  color: #ecf0f4;
-}*/
+
+.title{
+  background-color: #ecf0f4;
+}
 
 /* Green */
+.language
+{
 
-.logo-remplacement{
   background-color: #2da555;
 }
 
@@ -73,7 +77,7 @@
 
 
 
-/* Header above the navbar */
+/* Header above the main-navbar */
 
 
 .top-header-flex {
@@ -85,7 +89,7 @@
 /* DIV SOCIAUX + LOGIN */
 .top-header-buttons {
     display:flex;
-    width:150px;
+    min-width:150px;
     height:100%;
     margin-top:1em ;
     flex-direction:column;    
@@ -116,6 +120,198 @@
     height:25px;
     margin:0 3px;
 }
+
+
+/* Menu */
+
+/* Mobile Menu Icon */
+
+.menu-mobile-icon{
+    width:30px;
+    height:25px;
+    margin:15px;
+}
+
+/* Menu List */
+
+.acceuil
+{
+    display:none;
+}
+.menu-list{
+    display:none;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.visible-navbar
+{
+    border-bottom: 2px solid #0092c9;
+}
+/* Menu list item */
+.menu-list li, .under-menu-link{
+    width:100%;
+    font-size:20px;
+    line-height:50px;
+    padding:0 20px;
+}
+
+.mmh, .under-menu-link{
+    padding:0 20px;
+}
+.menu-list li{
+    border-bottom: 2px solid #0092c9;
+    
+}
+
+/* under menu link */
+
+.under-menu
+{
+    padding:0 !important;
+}
+.under-menu-link{
+    display:none;
+    background-color:white;
+}
+
+.under-menu a{
+    padding-left:25px;
+    display:block;
+    width:100%;
+}
+
+.menu-list a{
+    text-decoration:none;
+}
+
+@media (min-width: 700px) {
+    /******************************** HEADER  **************************************/
+    /* Top header */
+
+    .top-header-flex{
+	height:100px;
+    }
+    .top-header-buttons {
+	min-width:350px;
+	align-items:center;
+	justify-content:flex-end;
+	margin:0 15px;
+    }
+
+    .buttons-social{
+	order:3;
+    }
+    
+    .login-button{
+	order:2;
+	height:30px;
+	font-size:15px;
+    }
+
+    .header-logo-social{
+	width:30px;
+	height:30px;
+	margin:0 8px;
+    }
+
+    /* Navbar */
+    .visible-navbar{ 		/*Hide bar with menu icon*/
+	display:none;	
+    }
+
+    .acceuil
+    {
+	display:block;
+	position:relative;
+    }
+    
+    .menu-list{ 		/*Make the nav item in line*/
+	display:flex;
+	justify-content:left;	
+    }
+
+    .menu-list li{
+	font-size:16px;
+	width:fit-content;
+    }
+
+
+    /* Under menu */
+    .under-menu 		/*Make the mhh dropdown menu in column*/
+    {
+	height:150px;
+	position:relative;
+    }
+
+    .under-menu-link{
+	display:none;
+    }
+    
+    .under-menu:hover .under-menu-link{
+	width:200px;
+	height:150px;
+	display:flex;
+	flex-direction:column;
+	font-size:16px;
+	position:absolute;
+	top:50px;
+	left:15px;
+	padding:0;
+	border: 3px solid #0092c9;	
+    }
+
+    .under-menu-link a:last-child{
+	border-bottom:0;
+    }
+
+    .under-menu-link a{
+	padding:0;
+	display:block;
+	border-bottom: 3px solid #0092c9;
+	padding:0 10px;
+    }
+    
+    .title{                   	/*Set the background color back to white*/
+	background-color:white;
+	height:50px;
+    }
+
+    .top-header-buttons {  	/* Make the top header login and social buttons inline*/
+	flex-direction:row;
+	width:200px;
+    }
+
+    .menu-list li		/*get rid of the border bottom of all list element and assign it to .title*/
+    {
+	border-bottom: 0;
+    }
+
+    .main-navbar{
+	border-bottom: 3px solid #0092c9 !important;
+    }
+
+    .triangle{			/*triangle that point the page*/
+	width:15px;
+	position:absolute;
+	top:38px;
+	left:calc(50% - 7.5px);
+    }
+    
+    .language{
+	color:white;
+	margin-left:auto;
+	margin-right:15px;
+	width:fit-content;
+	height:30px;
+	align-self:center;
+	line-height:30px !important;
+	padding:0 10px!important;
+    }
+    /******************************** /HEADER  **************************************/    
+}
+
 
 /******************************* /HEADER  **************************************/
 
@@ -165,3 +361,29 @@
 /*                              RESPONSIVE                                     */
 /*******************************************************************************/
 /*******************************************************************************/
+
+
+
+
+/* ##################################################################### */
+/* ############################   TABLETS   ############################ */
+/* ##################################################################### */
+/* Small devices (tablets, 641px and up) */
+
+
+/* ##################################################################### */
+/* ############################   DESKTOPS   ########################### */
+/* ##################################################################### */
+/* Medium devices (desktops, 1025px and up) */
+@media (min-width: 1025px) {
+
+}
+
+/* ##################################################################### */
+/* ########################   LARGE DESKTOPS   ######################### */
+/* ##################################################################### */
+/* Large devices (large desktops, 1441px and up) */
+@media (min-width: 1441px) {
+
+}
+
