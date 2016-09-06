@@ -16,7 +16,7 @@
 .login-button,
 .logo-remplacement
 {
-    background-color: #0a749c;
+  background-color: #0a749c;
 }
 
 /*Blue*/
@@ -62,15 +62,15 @@
 
 .logo-remplacement
 {
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
-    font-size:20px;
-    height:calc(100% - 1em);
-    width:120px;	      
-    margin-right:auto;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  font-size:20px;
+  height:calc(100% - 1em);
+  width:120px;
+  margin-right:auto;
 }
 
 
@@ -81,44 +81,44 @@
 
 
 .top-header-flex {
-    display:flex;
-    height:60px;
-    align-items:center;
+  display:flex;
+  height:60px;
+  align-items:center;
 }
 
 /* DIV SOCIAUX + LOGIN */
 .top-header-buttons {
-    display:flex;
-    min-width:150px;
-    height:100%;
-    margin-top:1em ;
-    flex-direction:column;    
+  display:flex;
+  min-width:150px;
+  height:100%;
+  margin-top:1em ;
+  flex-direction:column;
 }
 
 
 /* Div all socials */
 .buttons-social{
-    display:flex;
-    justify-content:space-around;
+  display:flex;
+  justify-content:space-around;
 }
 
 
 /* Login */
 .login-button
 {
-    margin:5px 1em;
-    border:0;
-    font-size:10px;
-    line-height:20px;
-    color:white;
+  margin:5px 1em;
+  border:0;
+  font-size:10px;
+  line-height:20px;
+  color:white;
 }
 
 
 /* Buttons social alone */
 .header-logo-social{
-    width:25px;
-    height:25px;
-    margin:0 3px;
+  width:25px;
+  height:25px;
+  margin:0 3px;
 }
 
 
@@ -127,189 +127,189 @@
 /* Mobile Menu Icon */
 
 .menu-mobile-icon{
-    width:30px;
-    height:25px;
-    margin:15px;
+  width:30px;
+  height:25px;
+  margin:15px;
 }
 
 /* Menu List */
 
 .acceuil
 {
-    display:none;
+  display:none;
 }
 .menu-list{
-    display:none;
-    list-style:none;
-    padding:0;
-    margin:0;
+  display:none;
+  list-style:none;
+  padding:0;
+  margin:0;
 }
 
 .visible-navbar
 {
-    border-bottom: 2px solid #0092c9;
+  border-bottom: 2px solid #0092c9;
 }
 /* Menu list item */
 .menu-list li, .under-menu-link{
-    width:100%;
-    font-size:20px;
-    line-height:50px;
-    padding:0 20px;
+  width:100%;
+  font-size:20px;
+  line-height:50px;
+  padding:0 20px;
 }
 
 .mmh, .under-menu-link{
-    padding:0 20px;
+  padding:0 20px;
 }
 .menu-list li{
-    border-bottom: 2px solid #0092c9;
-    
+  border-bottom: 2px solid #0092c9;
+
 }
 
 /* under menu link */
 
 .under-menu
 {
-    padding:0 !important;
+  padding:0 !important;
 }
 .under-menu-link{
-    display:none;
-    background-color:white;
+  display:none;
+  background-color:white;
 }
 
 .under-menu a{
-    padding-left:25px;
-    display:block;
-    width:100%;
+  padding-left:25px;
+  display:block;
+  width:100%;
 }
 
 .menu-list a{
-    text-decoration:none;
+  text-decoration:none;
 }
 
 @media (min-width: 700px) {
-    /******************************** HEADER  **************************************/
-    /* Top header */
+  /******************************** HEADER  **************************************/
+  /* Top header */
 
-    .top-header-flex{
-	height:100px;
-    }
-    .top-header-buttons {
-	min-width:350px;
-	align-items:center;
-	justify-content:flex-end;
-	margin:0 15px;
-    }
+  .top-header-flex{
+    height:100px;
+  }
+  .top-header-buttons {
+    min-width:350px;
+    align-items:center;
+    justify-content:flex-end;
+    margin:0 15px;
+  }
 
-    .buttons-social{
-	order:3;
-    }
-    
-    .login-button{
-	order:2;
-	height:30px;
-	font-size:15px;
-    }
+  .buttons-social{
+    order:3;
+  }
 
-    .header-logo-social{
-	width:30px;
-	height:30px;
-	margin:0 8px;
-    }
+  .login-button{
+    order:2;
+    height:30px;
+    font-size:15px;
+  }
 
-    /* Navbar */
-    .visible-navbar{ 		/*Hide bar with menu icon*/
-	display:none;	
-    }
+  .header-logo-social{
+    width:30px;
+    height:30px;
+    margin:0 8px;
+  }
 
-    .acceuil
-    {
-	display:block;
-	position:relative;
-    }
-    
-    .menu-list{ 		/*Make the nav item in line*/
-	display:flex;
-	justify-content:left;	
-    }
+  /* Navbar */
+  .visible-navbar{ 		/*Hide bar with menu icon*/
+    display:none;
+  }
 
-    .menu-list li{
-	font-size:16px;
-	width:fit-content;
-    }
+  .acceuil
+  {
+    display:block;
+    position:relative;
+  }
+
+  .menu-list{ 		/*Make the nav item in line*/
+    display:flex;
+    justify-content:left;
+  }
+
+  .menu-list li{
+    font-size:16px;
+    width:fit-content;
+  }
 
 
-    /* Under menu */
-    .under-menu 		/*Make the mhh dropdown menu in column*/
-    {
-	height:150px;
-	position:relative;
-    }
+  /* Under menu */
+  .under-menu 		/*Make the mhh dropdown menu in column*/
+  {
+    height:150px;
+    position:relative;
+  }
 
-    .under-menu-link{
-	display:none;
-    }
-    
-    .under-menu:hover .under-menu-link{
-	width:200px;
-	height:150px;
-	display:flex;
-	flex-direction:column;
-	font-size:16px;
-	position:absolute;
-	top:50px;
-	left:15px;
-	padding:0;
-	border: 3px solid #0092c9;	
-    }
+  .under-menu-link{
+    display:none;
+  }
 
-    .under-menu-link a:last-child{
-	border-bottom:0;
-    }
+  .under-menu:hover .under-menu-link{
+    width:200px;
+    height:150px;
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    position:absolute;
+    top:50px;
+    left:15px;
+    padding:0;
+    border: 3px solid #0092c9;
+  }
 
-    .under-menu-link a{
-	padding:0;
-	display:block;
-	border-bottom: 3px solid #0092c9;
-	padding:0 10px;
-    }
-    
-    .title{                   	/*Set the background color back to white*/
-	background-color:white;
-	height:50px;
-    }
+  .under-menu-link a:last-child{
+    border-bottom:0;
+  }
 
-    .top-header-buttons {  	/* Make the top header login and social buttons inline*/
-	flex-direction:row;
-	width:200px;
-    }
+  .under-menu-link a{
+    padding:0;
+    display:block;
+    border-bottom: 3px solid #0092c9;
+    padding:0 10px;
+  }
 
-    .menu-list li		/*get rid of the border bottom of all list element and assign it to .title*/
-    {
-	border-bottom: 0;
-    }
+  .title{                   	/*Set the background color back to white*/
+    background-color:white;
+    height:50px;
+  }
 
-    .main-navbar{
-	border-bottom: 3px solid #0092c9 !important;
-    }
+  .top-header-buttons {  	/* Make the top header login and social buttons inline*/
+    flex-direction:row;
+    width:200px;
+  }
 
-    .triangle{			/*triangle that point the page*/
-	width:15px;
-	position:absolute;
-	top:38px;
-	left:calc(50% - 7.5px);
-    }
-    
-    .language{
-	color:white;
-	margin-left:auto;
-	margin-right:15px;
-	width:fit-content;
-	height:30px;
-	align-self:center;
-	line-height:30px !important;
-	padding:0 10px!important;
-    }
-    /******************************** /HEADER  **************************************/    
+  .menu-list li		/*get rid of the border bottom of all list element and assign it to .title*/
+  {
+    border-bottom: 0;
+  }
+
+  .main-navbar{
+    border-bottom: 3px solid #0092c9 !important;
+  }
+
+  .triangle{			/*triangle that point the page*/
+    width:15px;
+    position:absolute;
+    top:38px;
+    left:calc(50% - 7.5px);
+  }
+
+  .language{
+    color:white;
+    margin-left:auto;
+    margin-right:15px;
+    width:fit-content;
+    height:30px;
+    align-self:center;
+    line-height:30px !important;
+    padding:0 10px!important;
+  }
+  /******************************** /HEADER  **************************************/
 }
 
 
@@ -342,48 +342,87 @@
 /******************************* PROJECTS **************************************/
 /*******************************************************************************/
 /*******************************************************************************/
-
-
-/*                              END PROJECTS                                   */
-
-/*******************************************************************************/
-/*******************************************************************************/
-/******************************* PAIEMENT **************************************/
-/*******************************************************************************/
-/*******************************************************************************/
-
-/*                              END PAIEMENT                                   */
-
-
-
-/*******************************************************************************/
-/*******************************************************************************/
-/*                              RESPONSIVE                                     */
-/*******************************************************************************/
-/*******************************************************************************/
-
-
-
-
-/* ##################################################################### */
-/* ############################   TABLETS   ############################ */
-/* ##################################################################### */
-/* Small devices (tablets, 641px and up) */
-
-
-/* ##################################################################### */
-/* ############################   DESKTOPS   ########################### */
-/* ##################################################################### */
-/* Medium devices (desktops, 1025px and up) */
-@media (min-width: 1025px) {
-
+figure{
+  margin: 0;
+}
+figure img{
+  width: 100%;
 }
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1441px and up) */
-@media (min-width: 1441px) {
-
+.header-text{
+  border-bottom: 10px solid #CDCDCD;
+  border-top: 10px solid #CDCDCD;
+  background-color: #ECEFF4;
 }
+.header-text h1{
+  font-size: 20px;
+  text-align: center;
+}
+.header-text h2{
+  font-size: 15px;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+.row h1{
+  font-size: 13px;
+  color: #2DA55B;
+}
+.row p{
+  font-size: 12px;
+}
+.left-bar p{
+  background-color: #0A749C;
+  color: white;
+}
+  .box img{
+    float:right;
+    margin:0 10px 10px 0;
+    max-width:60%;
+  }
 
+
+
+  /*                              END PROJECTS                                   */
+
+  /*******************************************************************************/
+  /*******************************************************************************/
+  /******************************* PAIEMENT **************************************/
+  /*******************************************************************************/
+  /*******************************************************************************/
+
+  /*                              END PAIEMENT                                   */
+
+
+
+  /*******************************************************************************/
+  /*******************************************************************************/
+  /*                              RESPONSIVE                                     */
+  /*******************************************************************************/
+  /*******************************************************************************/
+
+
+
+
+  /* ##################################################################### */
+  /* ############################   TABLETS   ############################ */
+  /* ##################################################################### */
+  /* Small devices (tablets, 641px and up) */
+
+
+  /* ##################################################################### */
+  /* ############################   DESKTOPS   ########################### */
+  /* ##################################################################### */
+  /* Medium devices (desktops, 1025px and up) */
+  @media (min-width: 1025px) {
+
+  }
+
+  /* ##################################################################### */
+  /* ########################   LARGE DESKTOPS   ######################### */
+  /* ##################################################################### */
+  /* Large devices (large desktops, 1441px and up) */
+  @media (min-width: 1441px) {
+
+  }
