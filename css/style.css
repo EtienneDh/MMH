@@ -186,9 +186,27 @@
     text-decoration:none;
 }
 
+.test
+{
+    whidth:100%;
+    background:red;
+    height:300vh;
+}
+
+.main-navbar{
+    background-color:white;
+}
+
+.fixed
+{
+    position:fixed;
+    width:100%;
+    top:0;
+}
 @media (min-width: 700px) {
     /******************************** HEADER  **************************************/
     /* Top header */
+
 
     .top-header-flex{
 	height:100px;
@@ -289,7 +307,7 @@
     }
 
     .main-navbar{
-	border-bottom: 3px solid #0092c9 !important;
+	border-bottom: 3px solid #0092c9;
     }
 
     .triangle{			/*triangle that point the page*/

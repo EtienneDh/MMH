@@ -10,4 +10,22 @@ $(".mmh").click(function(){
 });
 }
 
-$(window).resize(function(){location.reload();});
+$(window).resize(function(){location.reload();}); // reload on resize
+
+if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is under 700 px apply the click toggling to the undermenu mmh
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 60) {
+	$('.main-navbar').addClass('fixed');
+    } else {
+	$('.main-navbar').removeClass('fixed');
+    }
+});}else{
+    $(window).scroll(function () {
+	if ($(window).scrollTop() > 100) {
+	    $('.main-navbar').addClass('fixed');
+	} else {
+	    $('.main-navbar').removeClass('fixed');
+	}
+    });
+
+}
