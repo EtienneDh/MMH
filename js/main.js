@@ -12,19 +12,25 @@ $(".mmh").click(function(){
 
 $(window).resize(function(){location.reload();}); // reload on resize
 
+
 if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is under 700 px apply the click toggling to the undermenu mmh
 $(window).scroll(function () {
     if ($(window).scrollTop() > 60) {
 	$('.main-navbar').addClass('fixed');
+	$('.main-navbar').parent().next().css("margin-top","90px");
+	
     } else {
 	$('.main-navbar').removeClass('fixed');
+	$('.main-navbar').parent().next().css('margin-top',"0px");
     }
 });}else{
     $(window).scroll(function () {
 	if ($(window).scrollTop() > 100) {
 	    $('.main-navbar').addClass('fixed');
+	    $('.main-navbar').parent().next().css('margin-top',"90px");
 	} else {
 	    $('.main-navbar').removeClass('fixed');
+	    $('.main-navbar').parent().next().css('margin-top',"0px");
 	}
     });
 
