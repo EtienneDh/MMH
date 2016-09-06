@@ -235,7 +235,7 @@
 /*******************************************************************************/
 /*******************************************************************************/
 
-
+/********************Titre paiement page************************/
 .paiement-title{
   height: 70px;
   width: 100%;
@@ -247,14 +247,17 @@
   justify-content: center;
 }
 
-.wrapper-paiement{
-  max-width: 90%;
-}
+
 
 .text-title-paiement{
   margin-top: 0;
   font-size: 15px;
-  color: #ecf0f4;
+  color: #2da555;
+}
+
+/**************************Section detail/moyen paiement**********************/
+.wrapper-paiement{
+  max-width: 90%;
 }
 
 
@@ -264,7 +267,6 @@
 }
 
 .container-paiement{
-
 
   height: 100px;
   margin-top: 20px;
@@ -277,7 +279,23 @@
   background-color: #2da555;
   color: white;
   text-align: center;
+  border-bottom: 2px solid #2da555;
 }
+
+.text-project{
+  text-align: center;
+}
+
+
+.jardin{
+  height: 160px;
+  width: 230px;
+  margin: auto;
+  display: block;
+}
+
+
+
 /*                              END PAIEMENT                                   */
 
 
