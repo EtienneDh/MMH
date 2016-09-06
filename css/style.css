@@ -9,6 +9,24 @@
   color: #373737;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Colors */
 
 /*Dark BLue*/
@@ -22,9 +40,9 @@
 }*/
 
 /* Blue Grey*/
-/*{
-  color: #ecf0f4;
-}*/
+footer aside {
+  background-color: #ecf0f4;
+}
 
 /* Green */
 /*{
@@ -40,10 +58,22 @@
 }
 
 .wrapper {
-  margin: 0 1%;
+  margin: 0 2%;
 }
 
 /* /Layout */
+
+/*fonts*/
+
+footer h4, footer li {
+  font-family: 'Noticia Text', serif;
+}
+
+ p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*fonts*/
 
 /*************************** /GENERAL SETTINGS *********************************/
 
@@ -61,6 +91,68 @@
 
 
 /******************************** FOOTER  **************************************/
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer aside {
+  margin-top: 1em;
+  padding-bottom: 3px;
+}
+
+footer a {
+  width: 80px;
+  margin: .5em 0;
+}
+
+footer h4 {
+  font-size: .8em;
+}
+
+footer h4, footer p {
+  text-align: center;
+}
+
+footer ul, footer p {
+  font-size: 0.5em;
+  padding-top: 1em;
+}
+
+footer ul {
+  max-width: 30%;
+  margin-right: 5em;
+}
+
+footer li {
+  padding-left: 2px;
+}
+
+.title-list  {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  padding-left: 0;
+}
+
+footer figure {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/*Controle the size of partnairs logos*/
+
+footer section figure img {
+  width: 70%;
+}
+
+/*Controle the size of social media icons*/
+footer aside figure img {
+  width: 30%;
+}
+
+.twitter-timeline {
+  display: none;
+}
 
 /******************************* /FOOTER  **************************************/
 
