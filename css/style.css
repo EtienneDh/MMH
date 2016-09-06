@@ -84,7 +84,11 @@ figure {
 }
 
 .slide-text {
-  margin: 0 3%;
+  margin: 0 3% 1em;
+  max-height: 80px;
+  text-overflow:ellipsis;
+  /*white-space: nowrap;*/
+  overflow: hidden;
 }
 
 .slide-stats {
@@ -130,7 +134,7 @@ figure {
 /* /Slider pictures*/
 
 /* Button Contribute */
-.button {
+.slider-button {
   border: 2px solid #0a749c;
   border-radius: 5px;
   padding: 7px 35px;
@@ -153,7 +157,7 @@ figure {
   -webkit-transition-delay: 100ms;
 }
 
-.button:hover {
+.slider-button:hover {
   color: #0a749c;
   background-color: #fff;
   box-shadow: none;
@@ -161,6 +165,19 @@ figure {
 
 
 /* /Button Contribute */
+
+/* Social Icons */
+
+  .social-network-icons {
+    justify-content: space-between;
+  }
+
+  .social-icons {
+    max-height: 20px;
+    max-width: 20px;
+    margin: .8em .5em;
+  }
+/* /Social Icons */
 
 /******************************* /SLIDER  **************************************/
 
@@ -224,22 +241,111 @@ figure {
 
   .carousel {
     max-width: 50%;
-    margin: 1em 2.5%;
+    margin: 1em 3%;
   }
 
   .carousel-info {
     margin-top: 2em;
-    max-width: 40%;
+    max-width: 310px;
     background-color: #fff;
   }
 
   .slide-text {
-    margin: 0 5%;
+    margin: 0 5% 1em;
   }
 
   /* Shadow */
   .slide-picture, .carousel-info {
-    box-shadow: 5px 5px 0 #bdbdbd;
+    box-shadow: 6px 5px 0 #bdbdbd;
   }
 
+  /******************************* End Slider *********************************/
+
+}
+
+/*                      End tablets & small Desktop (768px)                   */
+
+
+/*                    Large Tablets and Medium Desktop : 800 px               */
+
+@media screen and (min-width: 800px) {
+
+  /**************************** Slider ****************************************/
+
+  .slider {
+    background: linear-gradient(#ecf0f4, #ecf0f4 96%, #fff 96%);
+  }
+
+  .carousel {
+    max-width: 53%;
+    margin: 1em 3.5%;
+  }
+
+  /**************************** /Slider ***************************************/
+}
+
+/*              End Large Tablets and Medium Desktop : 800 px                 */
+
+/* Adjustments for slider */
+
+@media screen and (min-width: 960px) {
+
+  .slider {
+    flex-direction: row;
+  }
+
+  .carousel {
+    max-width: 55%;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+
+  .slider-button {
+    margin: 0;
+  }
+
+  .carousel {
+    max-width: 58%;
+  }
+
+  .carousel-info  * {
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  .slide-text {
+    max-height: 117px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .carousel {
+    /*min-width: 65%;*/
+    max-width: 835px;
+    padding-bottom: 2em;
+  }
+
+  .carousel-info  * {
+    margin-top: .8em;
+    margin-bottom: .8em;
+    max-width: 312px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+
+  .carousel {
+    margin-left: 8.5%;
+  }
+}
+
+
+@media screen and (min-width: 1700px) {
+
+  .carousel {
+    margin-left: 12.5%;
+  }
 }
