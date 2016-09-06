@@ -18,10 +18,10 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /Custom Css -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Noticia+Text%7cOpen+Sans%7cUbuntu+Condensed" rel="stylesheet">
     <!-- Google fonts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -29,44 +29,53 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-
-    <!--*************************** HEADER *******************************-->
-
-    <!--*************************** /HEADER ******************************-->
-
-
-    <!--*************************** BODY *********************************-->
-
     <!-- Slider -->
 
-    <section class="slider flex">        
+    <section class="slider">
+        <!-- Carousel wrapper for higher res -->
+        <div class="slider-wrapper flex">
             <!-- Pictures -->
             <div class="carousel">
                 <ul>
-                    <li><img src="img/slider/crowdfunding.jpg" alt="" class="slide-picture active" /></li>
-                    <li><img src="img/slider/slider-1.png" alt="" class="slide-picture" /></li>
-                    <li><img src="img/slider/slider-3.png" alt="" class="slide-picture" /></li>
+                    <figure>
+                        <li><img src="img/slider/crowdfunding.jpg" alt="" class="slide-picture active" /></li>
+                    </figure>
+                    <figure>
+                        <li><img src="img/slider/slider-1.png" alt="" class="slide-picture" /></li>
+                    </figure>
+                    <figure>
+                        <li><img src="img/slider/slider-3.png" alt="" class="slide-picture" /></li>
+                    </figure>
                 </ul>
+                <!-- Circles -->
+                <div class="carousel-circles flex">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- /Circles -->
             </div>
             <!-- /Pictures -->
 
-            <!-- Information -->
-            <div class="carousel-info flex">
-
-                <!-- Slide 1 -->
-                <div class="slide slide-1">
-                    <!-- Title -->
-                    <h2>Un Winch pour "rider" sur l'eau. Avec l'association des winners</h2>
-                    <!-- /Title -->
-                    <!-- Slide Info -->
-                    <div class="slide-info">
+            <div class="carousel-info">
+                <!-- Info Panel Wrapper -->
+                <div class="carousel-info-wrapper flex">
+                    <!-- Slide 1 -->
+                    <div class="slide slide-1">
+                        <!-- Title -->
+                        <h2>Un Winch pour "rider" sur l'eau. Avec l'association des winners</h2>
+                        <!-- /Title -->
                         <!-- Texte -->
                         <div class="slide-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore.
                             </p>
                         </div>
                         <!-- /Texte -->
+                        <!-- Contribute ! -->
+                        <div class="contribute">
+                        <a href="#" class="button slider-button">Contribuer</a>
+                      </div>
+                        <!-- /Contribute -->
                         <!-- Stats -->
                         <div class="slide-stats flex">
 
@@ -96,44 +105,44 @@
                         </div>
                         <!-- /Stats -->
                     </div>
-                    <!-- /Slide info -->
+                    <!-- Slide 1 -->
+                    <!-- Social Icons -->
+                    <div>
+                        <ul class="social-network-icons flex">
+                            <li>
+                                <a href="#"><img src="img/logos_RS/facebook_vert.png" class="social-icons" alt="Twitter" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/google-plus_vert.png" class="social-icons" alt="Facebook" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/linkedin_vert.png" class="social-icons" alt="Google plus" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/twitter_vert.png" class="social-icons" alt="LinkedIn" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Social Icons -->
+                    <!-- /Contribute ! -->
                 </div>
-                <!-- End Slide 1 -->
-                <a href="#" class="button slider-button">Contribuer</a>
-
-                <div>
-                    <ul class="social-network-icons flex">
-                        <li>
-                            <a href="#"><img src="img/logos_RS/facebook_vert.png" class="social-icons" alt="Twitter" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/logos_RS/google-plus_vert.png" class="social-icons" alt="Facebook" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/logos_RS/linkedin_vert.png" class="social-icons" alt="Google plus" /></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/logos_RS/twitter_vert.png" class="social-icons" alt="LinkedIn" /></a>
-                        </li>
-                    </ul>
-                </div>
-
+                <!-- /Info Panel Wrapper -->
             </div>
-            <!-- /Information -->
+            <!-- Carousel Info -->
+        </div>
+        <!-- /Carousel wrapper -->
     </section>
-    <!-- /Slider -->
 
 
-    <!--*************************** /BODY ********************************-->
 
-    <!--*************************** FOOTER *******************************-->
 
-    <!-- Start of the footer  -->
+
+
+
+
 
     <footer>
-
         <section>
-
             <h4>Merci à nos partenaires qui nous font confiance</h4>
 
             <figure>
@@ -144,7 +153,6 @@
                 <img src="img/logos_partenaires/Sivao.jpg" alt="">
                 <img src="img/logos_partenaires/payplug.png" alt="">
             </figure>
-
         </section>
 
         <aside>
@@ -175,9 +183,6 @@
     </footer>
 
     <!-- End of the footer -->
-
-    <!--*************************** /FOOTER ******************************-->
-
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
