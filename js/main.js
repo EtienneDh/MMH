@@ -9,3 +9,5 @@ $(".mmh").click(function(){
     $(".under-menu-link").fadeToggle();
 });
 }
+
+$(window).resize(function(){location.reload();});
