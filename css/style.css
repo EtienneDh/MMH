@@ -279,7 +279,7 @@
   background-color: #2da555;
   color: white;
   text-align: center;
-  border-bottom: 2px solid #2da555;
+
 }
 
 .text-project{
@@ -288,13 +288,16 @@
 
 
 .jardin{
-  height: 160px;
-  width: 230px;
+  height: 190px;
+  width: 260px;
   margin: auto;
   display: block;
 }
 
-
+.moyen-paiement{
+  font-size: 15px;
+  padding-top: 20px;
+}
 
 /*                              END PAIEMENT                                   */
 
