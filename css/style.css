@@ -227,6 +227,14 @@ footer figure {
 
 }
 
+@media screen and (min-width: 450px) {
+
+  footer aside figure {
+    justify-content: flex-end;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
 
   /*Reduce the links around the images for better display*/
@@ -244,11 +252,6 @@ footer figure {
     justify-content: space-around;
     padding-left: 0;
   }
-
-  footer aside figure {
-    justify-content: flex-end;
-  }
-
 
   footer ul, footer p {
     font-size: .6em;
