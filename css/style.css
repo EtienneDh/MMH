@@ -1,4 +1,4 @@
-
+-
 /* MyMoneyHelp */
 
 /****************************GENERAL SETTINGS***********************************/
@@ -9,15 +9,30 @@
     color: #373737;
 }
 
+ul {
+  list-style: none;
+  margin: 0 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
 /* Colors */
 
 /*Dark BLue*/
 
 .login-button,
-.logo-remplacement
-{
+.logo-remplacement,
+.button
+ {
     background-color: #0a749c;
-}
+ }
 
 /*Blue*/
 
@@ -28,7 +43,9 @@
 
 /* Blue Grey*/
 
-.title{
+
+.title,
+.carousel-info {
   background-color: #ecf0f4;
 }
 
@@ -202,6 +219,7 @@
     position:fixed;
     width:100%;
     top:0;
+    z-index:15;
 }
 
 
@@ -211,6 +229,135 @@
 
 
 /******************************** SLIDER  **************************************/
+
+/* Layout */
+.slider-wrapper, .carousel-info-wrapper, .stat {
+  flex-direction: column;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-circles {         /* Circles */
+  position: absolute;
+  bottom: 5px;
+  left: calc(50% - 46.5px);
+}
+
+.carousel-circles > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #bdbdbd;
+  margin: 0 .5em;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.carousel-info-wrapper {
+  margin: 0 2.5%;
+  align-items: center;
+}
+
+.slide-text {
+  margin: 0 3% 1em;
+  height: 80px;
+  text-overflow:ellipsis;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+}
+
+.slide-stats {
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+/* /Layout */
+
+/* Slider Typo */
+
+.slider h2, .stat, .slider-button, .contribute {
+  text-align: center;
+}
+
+.slider h2 {              /* Slide Title */
+  margin: .75em auto 0;
+}
+
+.slide-stats span {         /* Stat Numbers */
+  font-weight: bold;
+  font-size: .8em;
+}
+
+.slide-stats p {          /* Stat text */
+  font-size: .65em;
+  margin-top: .18em;
+}
+
+/*Slider pictures*/
+
+.slide-picture {
+  display: none;
+  max-width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+/* /Slider pictures*/
+
+/* Button Contribute */
+
+.contribute {
+  margin: 1.8em auto;
+}
+
+.slider-button {
+  border: 2px solid #0a749c;
+  border-radius: 5px;
+  padding: 9px 60px;
+  margin: .8em 0;
+  color: #fff;
+  font-size: .9em;
+  font-weight: bold;
+  box-shadow: 3px 4px 0 #bdbdbd;
+
+
+  /* Transition */
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 800ms;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
+
+  /* For Safari */
+  -webkit-transition-property: color, background-color, box-shadow;
+  -webkit-transition-duration: 800ms;
+  -webkit-transition-timing-function: linear;
+  -webkit-transition-delay: 100ms;
+}
+
+.slider-button:hover {
+  color: #0a749c;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+/* /Button Contribute */
+
+/* Social Icons */
+
+  .social-network-icons {
+    justify-content: space-between;
+  }
+
+  .social-icons {
+    max-height: 20px;
+    max-width: 20px;
+    margin: .8em .5em;
+  }
+/* /Social Icons */
+
 
 /******************************* /SLIDER  **************************************/
 
@@ -239,26 +386,40 @@
     margin:0 10px;
 }
 
-.searchbar-cards-home{
+form{
     width:100%;
+    display:flex;
+    justify-content:center;
+}
+.searchbar-cards-home{
+    width:250px;
     height:25px;
     line-height:25px;
     font-size:18px;
+    margin:15px auto;
 }
 
 /* Cards */
 
 .home-cards{
     width:300px;
-    height:352px;
+    height:360px;
     border:solid 1px #bdbdbd;
-    margin:10px 0;
+    margin:10px 15px;
     box-shadow: 5px 5px 0 #bdbdbd ;
 }
 
+.cards-home-list{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 .card-home-title{
     text-align:center;
     color: #0a749c;
+    font-size:18px;
 }
 
 .img-remplacement{
@@ -298,6 +459,7 @@
     display:flex;
     align-items:center;
     flex-direction:column;
+    margin-bottom:1px;
 }
 
 .amount, .contribut{
@@ -307,6 +469,7 @@
 .amount{
     color:black;
 }
+
 
 /******************************* /CARDS  **************************************/
 
@@ -349,6 +512,7 @@
 /*                              RESPONSIVE                                     */
 /*******************************************************************************/
 /*******************************************************************************/
+
 
 
 
@@ -480,22 +644,128 @@
 	line-height:30px !important;
 	padding:0 10px!important;
     }
-    /******************************** /HEADER  **************************************/    
+    /******************************** /HEADER  **************************************/
+    /******************************** CARDS  **************************************/
+
+    
+    .wrapper-home-cards{
+	flex-direction:row;
+	flex-wrap:wrap;	
+    }
+    /******************************** /CARDS  **************************************/    
 }
 
-/* ##################################################################### */
-/* ############################   DESKTOPS   ########################### */
-/* ##################################################################### */
-/* Medium devices (desktops, 1025px and up) */
-@media (min-width: 1025px) {
+/*                    Tablets and small Desktop : 768 px                       */
+
+@media screen and (min-width: 768px) {
+
+  /********************************* Slider ***********************************/
+
+  /*Layout*/
+
+  .slider {
+    background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
+    background-color: #ecf0f4;
+  }
+
+  .slider-wrapper {
+    flex-direction: row;
+  }
+
+  .carousel {
+    max-width: 60%;
+    margin: 1em 1.6%;
+  }
+
+  .carousel-circles {
+    bottom: 20%;
+    left: 40%;
+  }
+
+  .carousel-info {
+    max-width: 35%;
+    margin-top: 2em;
+    background-color: #fff;
+  }
+
+  /* Shadow */
+  .slide-picture, .carousel-info {
+    box-shadow: 6px 5px 0 #bdbdbd;
+  }
+  /* Shadow */
+
+  /******************************* /Slider ************************************/
 
 }
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1441px and up) */
-@media (min-width: 1441px) {
+/*                      /Tablets and small Desktop : 768 px                   */
+
+@media screen and (min-width: 861px) {
+
+  .slider-wrapper {
+    margin: 0 2%;
+    justify-content: space-around;
+  }
+
+  .carousel {
+    margin: 1em 0 4em 0;
+
+  }
+
+  .carousel-circles  {
+    bottom: 2%;
+  }
+
+  .carousel-info-wrapper {
+    margin: 0 4%;
+  }
+
+  .carousel-info {
+    max-width: 302px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .carousel-info-wrapper {
+    margin: 0 5%;
+  }
+
+  .carousel-info {
+    max-height: 408px;
+    max-width: 325px;
+  }
+
+  .slide-text {
+    height: 150px;
+  }
+
+  .contribute {
+    margin-top: 2em;
+  }
+
+  .slide-stats {
+    margin-top: 3em;
+  }
+
+  .social-network-icons {
+    margin-top: .6em;
+  }
+}
+
+@media screen and (min-width: 1155px) {
+
+  .slider-wrapper {
+    margin: 0 5%;
+  }
 
 }
 
+@media screen and (min-width: 1280px) {    /* Set the final size */
+
+  .slider-wrapper {
+    width: 1152px;
+    margin: 0 auto;
+  }
+
+}

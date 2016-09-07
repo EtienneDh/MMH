@@ -17,7 +17,7 @@ if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is unde
 $(window).scroll(function () {
     if ($(window).scrollTop() > 60) {
 	$('.main-navbar').addClass('fixed');
-	$('.main-navbar').parent().next().css("margin-top","90px");
+	$('.main-navbar').parent().next().css("margin-top","57px");
 	
     } else {
 	$('.main-navbar').removeClass('fixed');
@@ -27,7 +27,7 @@ $(window).scroll(function () {
     $(window).scroll(function () {
 	if ($(window).scrollTop() > 100) {
 	    $('.main-navbar').addClass('fixed');
-	    $('.main-navbar').parent().next().css('margin-top',"90px");
+	    $('.main-navbar').parent().next().css('margin-top',"50px");
 	} else {
 	    $('.main-navbar').removeClass('fixed');
 	    $('.main-navbar').parent().next().css('margin-top',"0px");
