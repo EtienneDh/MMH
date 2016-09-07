@@ -348,3 +348,12 @@ figure {
   }
 
 }
+
+@media screen and (min-width: 1280px) {    /* Set the final size */
+
+  .slider-wrapper {
+    width: 1152px;
+    margin: 0 auto;
+  }
+
+}
