@@ -91,6 +91,8 @@ footer h4, footer li {
 
 
 /******************************** FOOTER  **************************************/
+
+/*Ensure the footer to be always at the bottom*/
 footer {
   position: absolute;
   bottom: 0;
@@ -204,8 +206,23 @@ footer aside figure img {
 
 @media screen and (min-width: 360px) {
 
+/*Center the images on bigger smartphones*/
   footer figure {
     padding-left: 3em;
+  }
+
+footer figure {
+  align-items: center;
+}
+  /*Controle the size of partnairs logos*/
+
+  footer section figure img {
+    width: 90%;
+  }
+
+  /*Controle the size of social media icons*/
+  footer aside figure img {
+    width: 35%;
   }
 
 }
@@ -232,6 +249,7 @@ footer aside figure img {
     justify-content: flex-end;
   }
 
+
   footer ul, footer p {
     font-size: .6em;
   }
@@ -250,4 +268,48 @@ footer aside figure img {
     display: block;
   }
 
+}
+
+@media screen and (min-width: 980px) {
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+footer h4 {
+  font-size: 1em;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+footer ul {
+  width: 15%;
+  font-size: 0.8em
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/*Controle the size of partnairs logos*/
+footer section figure img {
+  width: 150%;
+}
+
+/*Controle the size of social media icons*/
+footer aside figure img {
+  width: 60%;
+}
+
+.twitter-timeline {
+  display: block;
+}
+}
+
+@media screen and (min-width: 1500px) {
+.wrapper {
+  width: 80%;
+}
 }
