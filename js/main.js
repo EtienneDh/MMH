@@ -47,10 +47,21 @@ if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is unde
 
 $(document).ready(function() {
 
-            // Store every slides into a variable
-            var slide1 = $('.slide1');
-            var slide2 = $('.slide2');
-            var slide3 = $('.slide3');
+            // Store every slides into an object
+            var slide1 = {
+              image: $('.slide1'),
+              text: $('.slide1-txt')
+            };
+
+            var slide2 = {
+              image: $('.slide2'),
+              text: $('.slide2-txt')
+            };
+
+            var slide3 = {
+              image: $('.slide3'),
+              text: $('.slide3-txt')
+            };
 
             var slideArray = [slide1, slide2, slide3];
 
@@ -66,19 +77,24 @@ $(document).ready(function() {
                 // The function use setTimeout to add a delay before calling itself
                 setTimeout(function() {
                     // Display slideArray[picture] if not already active
-                    if (slideArray[index].hasClass('active') === false) {
-                        // Hide every other pictures
+                    if (slideArray[index].image.hasClass('active') === false) {
+                        // Hide every other pictures & infos
                         for (var j = 0; j < slideArray.length; j++) {
-                            if (j != index && slideArray[j].hasClass('active')) {
-                                slideArray[j].fadeOut(0);
-                                slideArray[j].removeClass('active');
-                                // alert("slide " + j + " disparait");
+                            if (j != index && slideArray[j].image.hasClass('active')) {
+                                // Hide pictures
+                                slideArray[j].image.fadeOut(0);
+                                slideArray[j].image.removeClass('active');
+                                // Hide infos
+                                slideArray[j].text.fadeOut(0);
+                                slideArray[j].text.removeClass('active');
                             }
                         }
                         // Display the picture
-                        // alert("slide " + index + " apparait");
-                        slideArray[index].fadeIn(1000);
-                        slideArray[index].addClass('active');
+                        slideArray[index].image.fadeIn(1000);
+                        slideArray[index].image.addClass('active');
+                        // Display the infos
+                        slideArray[index].text.fadeIn(1000);
+                        slideArray[index].text.addClass('active');
                     }
                     // Indent index
                     index++;
