@@ -597,6 +597,11 @@ footer aside figure img {
 /*No twitter on smartphones*/
 
 
+.twitter-container{
+    display:none;
+}
+
+
 /******************************* /FOOTER  **************************************/
 
 
@@ -895,7 +900,7 @@ footer aside figure img {
 	width: 50%;
     }
 
-    .twitter-timeline {
+    .twitter-container{
 	display: block;
     }
     /******************************* /Footer ************************************/
