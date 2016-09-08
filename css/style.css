@@ -100,7 +100,7 @@ ul {
 
 /*fonts*/
 
-footer h4, footer li {
+footer h4, footer li, .title-list {
   font-family: 'Noticia Text', serif;
 }
 
