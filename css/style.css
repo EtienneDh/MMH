@@ -229,6 +229,7 @@ figure {
 }
 .carousel-circles {
     /* Circles */
+    cursor: pointer;
     position: absolute;
     bottom: 5px;
     left: calc(50% - 46.5px);
@@ -240,6 +241,10 @@ figure {
     border: 2px solid #bdbdbd;
     margin: 0 .5em;
     box-shadow: 2px 2px 0 #000;
+}
+
+.circle1 {
+  background-color: #bdbdbd;
 }
 .carousel-info-wrapper {
     margin: 0 2.5%;

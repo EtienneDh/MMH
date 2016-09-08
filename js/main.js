@@ -50,17 +50,20 @@ $(document).ready(function() {
             // Store every slides into an object
             var slide1 = {
               image: $('.slide1'),
-              text: $('.slide1-txt')
+              text: $('.slide1-txt'),
+              circle: $('.circle1')
             };
 
             var slide2 = {
               image: $('.slide2'),
-              text: $('.slide2-txt')
+              text: $('.slide2-txt'),
+              circle: $('.circle2')
             };
 
             var slide3 = {
               image: $('.slide3'),
-              text: $('.slide3-txt')
+              text: $('.slide3-txt'),
+              circle: $('.circle3')
             };
 
             var slideArray = [slide1, slide2, slide3];
@@ -87,6 +90,8 @@ $(document).ready(function() {
                                 // Hide infos
                                 slideArray[j].text.fadeOut(0);
                                 slideArray[j].text.removeClass('active');
+                                // Remove circle background color
+                                slideArray[j].circle.css('background-color', 'transparent'); 
                             }
                         }
                         // Display the picture
@@ -95,11 +100,13 @@ $(document).ready(function() {
                         // Display the infos
                         slideArray[index].text.fadeIn(1000);
                         slideArray[index].text.addClass('active');
+                        // Fill the circle background-color
+                        slideArray[index].circle.css('background-color', '#bdbdbd');
                     }
                     // Indent index
                     index++;
                     autoSlide();
-                }, 5000);
+                }, 10000);
             })();
 
 });
