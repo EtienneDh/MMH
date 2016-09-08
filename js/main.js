@@ -10,7 +10,7 @@ $(".mmh").click(function(){
 });
 }
 
-$(window).resize(function(){location.reload();}); // reload on resize
+// $(window).resize(function(){location.reload();}); // reload on resize
 
 
 if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is under 700 px apply the click toggling to the undermenu mmh
