@@ -914,6 +914,9 @@ footer aside figure img {
 
     .twitter-container{
 	display: block;
+  width: 300px;
+  height: 200px;
+  margin: 1em 0;
     }
     /******************************* /Footer ************************************/
 }
@@ -994,10 +997,6 @@ footer aside figure img {
 	width: 60%;
     }
 
-    .twitter-timeline {
-	display: block;
-    }
-
     /* -------------------------/Footer------------------------- */
 }
 
@@ -1013,10 +1012,19 @@ footer aside figure img {
 	font-size: 1em;
     }
 
+    .twitter-container{
+  width: 400px;
+    }
+
 }
 
 @media screen and (min-width: 1500px) {
     .wrapper {
 	width: 80%;
+    }
+
+    .twitter-container{
+  width: 500px;
+  height: 300px;
     }
 }
