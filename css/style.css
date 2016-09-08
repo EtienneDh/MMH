@@ -32,6 +32,24 @@ figure {
     margin: 0;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* Colors */
 
 
@@ -55,7 +73,7 @@ figure {
 
 /* Blue Grey*/
 
-.title, .carousel-info {
+.title, .carousel-info, footer aside {
     background-color: #ecf0f4;
 }
 
@@ -74,11 +92,23 @@ figure {
     display: flex;
 }
 .wrapper {
-    margin: 0 1%;
+  margin: 0 2%;
 }
 
 /* /Layout */
 
+
+/*fonts*/
+
+footer h4, footer li {
+  font-family: 'Noticia Text', serif;
+}
+
+ p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*fonts*/
 
 /*************************** /GENERAL SETTINGS *********************************/
 
@@ -494,6 +524,81 @@ form {
 /******************************** FOOTER  **************************************/
 
 
+/*Ensure the footer to be always at the bottom*/
+footer {
+    margin-top:50px;
+    width: 100%;
+}
+
+footer aside {
+  margin-top: 1em;
+  padding-bottom: 3px;
+  width:100%;
+}
+
+footer h4 {
+  font-size: .8em;
+}
+
+footer h4, footer p {
+  text-align: center;
+}
+
+footer ul, footer p {
+  font-size: 0.5em;
+  padding-top: 1em;
+}
+
+footer ul {
+  max-width: 30%;
+  margin-right: 5em;
+}
+
+footer li {
+  padding-left: 2px;
+}
+
+/*Special class for the menu title*/
+.title-list  {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  padding-left: 0;
+}
+
+/*Iniline display for the images(logos/social medias)*/
+footer figure {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 2em;
+}
+
+/*Reduce the links around the images for better display*/
+footer section a {
+  width: 80px;
+  margin: .5em 0;
+}
+
+footer aside a {
+  width: 50px;
+  margin: .5em 0;
+}
+
+/*Controle the size of partnairs logos*/
+
+footer section figure img {
+  width: 70%;
+}
+
+/*Controle the size of social media icons*/
+footer aside figure img {
+  width: 30%;
+}
+
+/*No twitter on smartphones*/
+.twitter-timeline {
+  display: none;
+}
+
 /******************************* /FOOTER  **************************************/
 
 
@@ -552,6 +657,7 @@ form {
 
 
 /*******************************************************************************/
+
 
 
 /* ##################################################################### */
@@ -684,47 +790,109 @@ form {
     /******************************** /CARDS  **************************************/
 }
 
+@media screen and (min-width: 360px) {
+
+    /*Center the images on bigger smartphones*/
+    footer figure {
+	padding-left: 3em;
+	align-items: center;
+    }
+    /*Controle the size of partnairs logos*/
+
+    footer section figure img {
+	width: 90%;
+    }
+
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+	width: 35%;
+    }
+
+}
+
+@media screen and (min-width: 450px) {
+
+    footer aside figure {
+	justify-content: flex-end;
+    }
+
+}
+
 /*                    Tablets and small Desktop : 768 px                       */
 
 @media screen and (min-width: 768px) {
-  /********************************* Slider ***********************************/
+    /********************************* Slider ***********************************/
 
-  /*Layout*/
+    /*Layout*/
 
-  .slider {
-    background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
-    background-color: #ecf0f4;
-  }
+    .slider {
+	background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
+	background-color: #ecf0f4;
+    }
 
-  .slider-wrapper {
-    flex-direction: row;
-  }
+    .slider-wrapper {
+	flex-direction: row;
+    }
 
-  .carousel {
-    max-width: 60%;
-    margin: 1em 1.6%;
-  }
+    .carousel {
+	max-width: 60%;
+	margin: 1em 1.6%;
+    }
 
-  .carousel-circles {
-    bottom: 20%;
-    left: 40%;
-  }
+    .carousel-circles {
+	bottom: 20%;
+	left: 40%;
+    }
 
-  .carousel-info {
-    max-width: 35%;
-    margin-top: 2em;
-    background-color: #fff;
-  }
+    .carousel-info {
+	max-width: 35%;
+	margin-top: 2em;
+	background-color: #fff;
+    }
 
-  /* Shadow */
-  .slide-picture, .carousel-info {
-      /* box-shadow: 6px 5px 0 #bdbdbd; */
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  /* Shadow */
+    /* Shadow */
+    .slide-picture, .carousel-info {
+	/* box-shadow: 6px 5px 0 #bdbdbd; */
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    /* Shadow */
 
-  /******************************* /Slider ************************************/
+    /******************************* /Slider ************************************/
+    /********************************* Footer ***********************************/
+    /* reduce the links around the images for better display */
+    footer section a {
+	width: 80px;
+	margin: .5em 0;
+    }
 
+    footer aside a {
+	width: 50px;
+	margin: .5em 0;
+    }
+
+    footer figure {
+	justify-content: space-around;
+	padding-left: 0;
+    }
+
+    footer ul, footer p {
+	font-size: .6em;
+    }
+
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+	width: 100%;
+    }
+
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+	width: 50%;
+    }
+
+    .twitter-timeline {
+	display: block;
+    }
+    /******************************* /Footer ************************************/
 }
 
 /*                      /Tablets and small Desktop : 768 px                   */
@@ -747,6 +915,7 @@ form {
         max-width: 302px;
     }
 }
+
 @media screen and (min-width: 1100px) {
     .carousel-info-wrapper {
         margin: 0 5%;
@@ -768,15 +937,63 @@ form {
         margin-top: .6em;
     }
 }
+
 @media screen and (min-width: 1155px) {
     .slider-wrapper {
         margin: 0 5%;
     }
 }
+
 @media screen and (min-width: 1280px) {
     /* Set the final size */
     .slider-wrapper {
         width: 1152px;
         margin: 0 auto;
+
+    }
+    /* --------------------------Footer------------------------- */
+    footer ul {
+	width: 15%;
+	font-size: 0.8em
+    }
+
+    footer p {
+	font-size: 0.9em;
+    }
+
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+	width: 150%;
+    }
+
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+	width: 60%;
+    }
+
+    .twitter-timeline {
+	display: block;
+    }
+    
+    /* -------------------------/Footer------------------------- */
+}
+
+
+@media screen and (min-width: 980px) {
+
+    .wrapper {
+	width: 90%;
+	margin: auto;
+    }
+
+    footer h4 {
+	font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    .wrapper {
+	width: 80%;
     }
 }
