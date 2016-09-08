@@ -917,7 +917,10 @@ footer aside figure img {
   width: 300px;
   height: 200px;
   margin: 1em 0;
-  overflow: hidden;
+    }
+
+    .twitter-timeline {
+      max-height: 200px;
     }
     /******************************* /Footer ************************************/
 }
