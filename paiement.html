@@ -56,7 +56,7 @@
           <h1 class="text-title-paiement">Soutenir le film "Mémoire de terre, mémoire d'usine"</h1>
         </div>
       <div class="wrapper-paiement">
-        <div class="checkbox">  <!-- checkbox -->
+        <div class="checkbox">  <!-- checkbox choix montant -->
           <h2 class="title-checkbox"> Montant de votre contribution :</h2>
 
         <label>
@@ -85,6 +85,8 @@
        </div>
 
        <div class="container-paiement">     <!-- Detail du paiement -->
+
+        <div class="resume-paiement">
          <div class="project-resume">
          <h2 class="paiement-validation">Projet</h2>
          <img class="jardin" src="img/jardin_travail01-706x530.jpg" alt="jardin-travail">
@@ -101,6 +103,8 @@
            <p class="text-project"> Un grand merci sur facebook et votre nom sur le générique du film !</p>
 
          </div>
+       </div>
+       <div class="valid-paiement">
          <div class="checkbox">  <!-- Moyen de paiement -->
            <h2 class="moyen-paiement">Moyen de paiement : </h2>
            <label>
@@ -111,16 +115,16 @@
          </div>
 
 
-         <form action="index.html" method="post">
+         <form class="form-style" action="paiement.html" method="post">
 
           <h2 class="moyen-paiement">Informations personnelles(ces informations resteront confidentielles) :</h2>
 
-<p> Nom </p>
-           <input type="text" id="Nom" name="user_surname"><br><br>
-<p> Prénom </p>
-          <input type="text" id="Prénom" name="user_name"><br><br>
-<p>Adresse mail de facturation</p>
-          <input type="email" id="mail" name="user_email"><br><br>
+
+           <input type="text" id="Nom" name="user_surname" placeholder="Nom"><br><br>
+
+          <input type="text" id="Prénom" name="user_name" placeholder="Prénom"><br><br>
+
+          <input type="email" id="mail" name="user_email" placeholder="Adresse mail de facturation"><br><br>
 
 
          </form>
@@ -129,11 +133,13 @@
          <div class="contribute">
           <a href="#" class="button slider-button">Contribuer</a>
          </div>
-       </div>
+         <form>
+
+       </div>  <!-- end valid-paiement -->
+       </div>    <!-- end detail du paiement-->
 
 
-
-     </div>
+     </div> <!-------- End  Wrapper------->
 
 
 
