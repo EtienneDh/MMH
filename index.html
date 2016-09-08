@@ -1,279 +1,371 @@
 <!doctype html>
 <html class="no-js" lang="">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>My Money Help</title>
-        <meta name="keywords" content="MyMoneyHelp crowdfunding financement participatif social ">
-        <meta name="description" content="Plateforme de financement participatif MyMoneyHelp">
-        <meta name="author" content="Etienne Dhennin, Thomas Gossart, Jean Boutonne, Yanis Maoucha, Abdifatah Ibrahim Omar">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Money Help</title>
+    <meta name="keywords" content="MyMoneyHelp crowdfunding financement participatif social ">
+    <meta name="description" content="Plateforme de financement participatif MyMoneyHelp">
+    <meta name="author" content="Etienne Dhennin, Thomas Gossart, Jean Boutonne, Yanis Maoucha, Abdifatah Ibrahim Omar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!-- Custom Css -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- /Custom Css -->
-	<!-- Google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noticia+Text%7cOpen+Sans%7cUbuntu+Condensed" rel="stylesheet">
-	<!-- Google fonts -->
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-	<header> <!-- Start Of Header -->
-	    <section class="top-header-flex"> <!--Start of Top Header:: Section Above The NavBar -->
-		<div class="logo-remplacement">LOGO</div>
-		<div class="top-header-buttons">
-		    <div class="buttons-social">
-			<img src="img/icon/facebook_vert.png" class="header-logo-social" alt="logo facebook">
-			<img src="img/icon/twitter_vert.png" class="header-logo-social" alt="logo twitter">
-			<img src="img/icon/linkedin_vert.png" class="header-logo-social" alt="logo linkedin">
-		    </div>
-		    <button class="login-button">S'inscrire/Se connecter</button> <!-- Login button -->
-		</div>
-	    </section> <!-- End Of Top Header -->
- 	    <nav class="main-navbar">  <!-- Start of Navbar -->
-		<div class="visible-navbar"> <!-- Part of the navbar alway visible on mobile -->
-		    <img src="img/icon/menu_bleu.png" class="menu-mobile-icon">
-		</div>
-		<ul class="menu-list"><!-- List of nav items -->
-		    <li class="title acceuil"><a href="#">Acceuil</a><img src="img/triangle_menu.png" class="triangle"></li>
-		    <li class="title under-menu"> <!-- List item with title + under menu -->
-			<div class="mmh">Mymoneyhelp</div>		    
-			<div class="under-menu-link">
-			    <a href="#">Qui sommes-nous ?</a>
-			    <a href="#">Nous soutenir</a>
-			    <a href="#">Contact</a>
-			</div>
-		    </li> <!-- end of mmh tab -->
-		    <li class="title"><a href="#">Découvrir les projets</a></li>
-		    <li class="title"><a href="#">Déposer un projet</a></li>		    
-		    <li class="language">EN</li>
-		</ul> <!-- End of list -->
-	    </nav>		  <!-- End Of Navbar -->
-	</header>	
-	<!--[if lt IE 8]>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- /Custom Css -->
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text%7cOpen+Sans%7cUbuntu+Condensed" rel="stylesheet">
+    <!-- Google fonts -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+
+<body>
+
+    <!--****************************** HEADER ***********************************-->
+
+    <header>
+        <!-- Start Of Header -->
+        <section class="top-header-flex">
+            <!--Start of Top Header:: Section Above The NavBar -->
+            <div class="logo-remplacement">LOGO</div>
+            <div class="top-header-buttons">
+                <div class="buttons-social">
+                    <img src="img/icon/facebook_vert.png" class="header-logo-social" alt="logo facebook">
+                    <img src="img/icon/twitter_vert.png" class="header-logo-social" alt="logo twitter">
+                    <img src="img/icon/linkedin_vert.png" class="header-logo-social" alt="logo linkedin">
+                </div>
+                <button class="login-button">S'inscrire/Se connecter</button>
+                <!-- Login button -->
+            </div>
+        </section>
+        <!-- End Of Top Header -->
+        <nav class="main-navbar">
+            <!-- Start of Navbar -->
+            <div class="visible-navbar">
+                <!-- Part of the navbar alway visible on mobile -->
+                <img src="img/icon/menu_bleu.png" class="menu-mobile-icon">
+            </div>
+            <ul class="menu-list">
+                <!-- List of nav items -->
+                <li class="title acceuil"><a href="#">Acceuil</a><img src="img/triangle_menu.png" class="triangle"></li>
+                <li class="title under-menu">
+                    <!-- List item with title + under menu -->
+                    <div class="mmh">Mymoneyhelp</div>
+                    <div class="under-menu-link">
+                        <a href="#">Qui sommes-nous ?</a>
+                        <a href="#">Nous soutenir</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </li>
+                <!-- end of mmh tab -->
+                <li class="title"><a href="#">Découvrir les projets</a></li>
+                <li class="title"><a href="#">Déposer un projet</a></li>
+                <li class="language">EN</li>
+            </ul>
+            <!-- End of list -->
+        </nav>
+        <!-- End Of Navbar -->
+    </header>
+
+    <!--***************************** /HEADER ***********************************-->
+
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
-	<!-- Slider -->
+    <!-- Slider -->
 
-	<section class="slider">
-            <!-- Carousel wrapper for higher res -->
-            <div class="slider-wrapper flex">
-		<!-- Pictures -->
-		<div class="carousel">
-                    <ul>
-			<figure>
-                            <li><img src="img/slider/crowdfunding.jpg" alt="" class="slide-picture active" /></li>
-			</figure>
-			<figure>
-                            <li><img src="img/slider/slider-1.png" alt="" class="slide-picture" /></li>
-			</figure>
-			<figure>
-                            <li><img src="img/slider/slider-3.png" alt="" class="slide-picture" /></li>
-			</figure>
-                    </ul>
-                    <!-- Circles -->
-                    <div class="carousel-circles flex">
-			<div></div>
-			<div></div>
-			<div></div>
-                    </div>
-                    <!-- /Circles -->
-		</div>
-		<!-- /Pictures -->
+    <!--***************************** SLIDER *********************************-->
 
-		<div class="carousel-info">
-                    <!-- Info Panel Wrapper -->
-                    <div class="carousel-info-wrapper flex">
-			<!-- Slide 1 -->
-			<div class="slide slide-1">
-                            <!-- Title -->
-                            <h2>Un Winch pour "rider" sur l'eau. Avec l'association des winners</h2>
-                            <!-- /Title -->
-                            <!-- Texte -->
-                            <div class="slide-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore.
-				</p>
-                            </div>
-                            <!-- /Texte -->
-                            <!-- Contribute ! -->
-                            <div class="contribute">
-				<a href="#" class="button slider-button">Contribuer</a>
-			    </div>
-                            <!-- /Contribute -->
-                            <!-- Stats -->
-                            <div class="slide-stats flex">
+    <section class="slider">
+        <!-- Carousel wrapper for higher res -->
+        <div class="slider-wrapper flex">
+            <!-- Pictures -->
+            <div class="carousel">
+                <ul>
 
-				<div class="stat flex">
-                                    <span>161%</span>
-                                    <p>Financé</p>
-				</div>
+                    <li>
+                        <figure><img src="img/slider/crowdfunding.jpg" alt="" class="slide-picture slide1 active" /></figure>
+                    </li>
 
-				<div class="stat flex">
-                                    <span>3370 €</span>
-                                    <p>contribués</p>
-				</div>
 
-				<div class="stat flex">
-                                    <span>2000 €</span>
-                                    <p>objectif</p>
-				</div>
+                    <li>
+                        <figure><img src="img/slider/slider-4.png" alt="" class="slide-picture slide2" /></figure>
+                    </li>
 
-				<div class="stat flex">
-                                    <span>66</span>
-                                    <p>Supporteurs</p>
-				</div>
 
-				<div class="stat flex">
-                                    <span>J-30</span>
-				</div>
-                            </div>
-                            <!-- /Stats -->
-			</div>
-			<!-- Slide 1 -->
-			<!-- Social Icons -->
-			<div>
-                            <ul class="social-network-icons flex">
-				<li>
-                                    <a href="#"><img src="img/logos_RS/facebook_vert.png" class="social-icons" alt="Twitter" /></a>
-				</li>
-				<li>
-                                    <a href="#"><img src="img/logos_RS/google-plus_vert.png" class="social-icons" alt="Facebook" /></a>
-				</li>
-				<li>
-                                    <a href="#"><img src="img/logos_RS/linkedin_vert.png" class="social-icons" alt="Google plus" /></a>
-				</li>
-				<li>
-                                    <a href="#"><img src="img/logos_RS/twitter_vert.png" class="social-icons" alt="LinkedIn" /></a>
-				</li>
-                            </ul>
-			</div>
-			<!-- /Social Icons -->
-			<!-- /Contribute ! -->
-                    </div>
-                    <!-- /Info Panel Wrapper -->
-		</div>
-		<!-- Carousel Info -->
+                    <li>
+                        <figure><img src="img/slider/slider-2.png" alt="" class="slide-picture slide3" /></figure>
+                    </li>
+
+                </ul>
+                <!-- Circles -->
+                <div class="carousel-circles flex">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <!-- /Circles -->
             </div>
-            <!-- /Carousel wrapper -->
-	</section>
+            <!-- /Pictures -->
+
+            <div class="carousel-info">
+                <!-- Info Panel Wrapper -->
+                <div class="carousel-info-wrapper flex">
+                    <!-- Slide 1 -->
+                    <div class="slide slide-1 active">
+                        <!-- Title -->
+                        <h2>Un Winch pour "rider" sur l'eau. Avec l'association des winners</h2>
+                        <!-- /Title -->
+                        <!-- Texte -->
+                        <div class="slide-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                        <!-- /Texte -->
+                        <!-- Contribute ! -->
+                        <div class="contribute">
+                            <a href="#" class="button slider-button">Contribuer</a>
+                        </div>
+                        <!-- /Contribute -->
+                        <!-- Stats -->
+                        <div class="slide-stats flex">
+
+                            <div class="stat flex">
+                                <span>161%</span>
+                                <p>Financé</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>3370 €</span>
+                                <p>contribués</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>2000 €</span>
+                                <p>objectif</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>66</span>
+                                <p>Supporteurs</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>J-30</span>
+                            </div>
+                        </div>
+                        <!-- /Stats -->
+                    </div>
+                    <!-- /Slide 1 -->
+
+                    <!-- Slide 2 -->
+                    <div class="slide slide-2">
+                        <!-- Title -->
+                        <h2>Du Fric pour me payer une Porsche</h2>
+                        <!-- /Title -->
+                        <!-- Texte -->
+                        <div class="slide-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                        <!-- /Texte -->
+                        <!-- Contribute ! -->
+                        <div class="contribute">
+                            <a href="#" class="button slider-button">Contribuer</a>
+                        </div>
+                        <!-- /Contribute -->
+                        <!-- Stats -->
+                        <div class="slide-stats flex">
+
+                            <div class="stat flex">
+                                <span>20%</span>
+                                <p>Financé</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>8500 €</span>
+                                <p>contribués</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>175000 €</span>
+                                <p>objectif</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>17</span>
+                                <p>Supporteurs</p>
+                            </div>
+
+                            <div class="stat flex">
+                                <span>J-50</span>
+                            </div>
+                        </div>
+                        <!-- /Stats -->
+                    </div>
+                    <!-- /Slide 2 -->
+
+                    <!-- Social Icons -->
+                    <div>
+                        <ul class="social-network-icons flex">
+                            <li>
+                                <a href="#"><img src="img/logos_RS/facebook_vert.png" class="social-icons" alt="Twitter" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/google-plus_vert.png" class="social-icons" alt="Facebook" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/linkedin_vert.png" class="social-icons" alt="Google plus" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/logos_RS/twitter_vert.png" class="social-icons" alt="LinkedIn" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Social Icons -->
+                    <!-- /Contribute ! -->
+                </div>
+                <!-- /Info Panel Wrapper -->
+            </div>
+            <!-- Carousel Info -->
+        </div>
+        <!-- /Carousel wrapper -->
+    </section>
+
+    <!--***************************** /SLIDER **********************************-->
+
+    <!--************************** MAIN CONTENT ********************************-->
+
+    <section class="cards-home-section">
+        <nav class="cards-home-navbar">
+            <a class="popular">Populaire</a>
+            <a class="paid">Presque financé</a>
+            <a class="category">Catégories</a>
+        </nav>
+        <hr>
+        <div class="wrapper-home-cards">
+            <form>
+                <input type="text" placeholder="Chercher Un Projet" class="searchbar-cards-home">
+            </form>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cards">
+                <h2 class="card-home-title">Inolin : un matériau écologique</h2>
+                <div class="img-remplacement"></div>
+                <h2 class="finish-banner">Terminée</h2>
+                <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
+                <div class="home-card-stats">
+                    <div class="card-home-loadbar">161%</div>
+                    <div class="card-home-amount">
+                        <p class="amount">3370€</p>
+                        <p class="contribut">contribués</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--************************* /MAIN CONTENT ********************************-->
+
+    <!--**************************** FOOTER ************************************-->
 
 
+    <!--**************************** /FOOTER ***********************************-->
 
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-
-	<section class="cards-home-section">
-	    <nav class="cards-home-navbar">
-		<a class="popular">Populaire</a>
-		<a class="paid">Presque financé</a>
-		<a class="category">Catégories</a>
-	    </nav>
-	    <hr>
-	    <div class="wrapper-home-cards">
-		<form>
-		    <input type="text" placeholder="Chercher Un Projet" class="searchbar-cards-home">
-		</form>		
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-		<div class="home-cards">
-		    <h2 class="card-home-title">Inolin : un matériau écologique</h2>
-		    <div class="img-remplacement"></div>
-		    <h2 class="finish-banner">Terminée</h2>
-		    <p class="home-card-description">Devant le succès nous avons décidé de prolonger la campagne</p>
-		    <div class="home-card-stats">
-			<div class="card-home-loadbar">161%</div>
-			<div class="card-home-amount">
-			    <p class="amount">3370€</p>
-			    <p class="contribut">contribués</p>
-			</div>
-		    </div>		    
-		</div>
-	    </div>
-	</section>
-	
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
-
-            <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-            <script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='https://www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-            </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
 
 </html>

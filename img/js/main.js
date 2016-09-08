@@ -58,32 +58,31 @@ $(document).ready(function() {
             var index = 0;
             var max = 3;
 
+            alert("test");
             (function autoSlide() {
                 // As it is an infinite recursive function, we set index back to 0 each time index = 3
                 if (index >= max) {
                     index = 0;
                 }
-                // The function use setTimeout to add a delay before calling itself
+
                 setTimeout(function() {
                     // Display slideArray[picture] if not already active
-                    if (slideArray[index].hasClass('active') === false) {
+                    if (slideArray[i].hasClass('active') === false) {
                         // Hide every other pictures
                         for (var j = 0; j < slideArray.length; j++) {
-                            if (j != index && slideArray[j].hasClass('active')) {
-                                slideArray[j].fadeOut(0);
+                            if (j != index) {
                                 slideArray[j].removeClass('active');
-                                // alert("slide " + j + " disparait");
                             }
                         }
                         // Display the picture
-                        // alert("slide " + index + " apparait");
-                        slideArray[index].fadeIn(1000);
                         slideArray[index].addClass('active');
                     }
                     // Indent index
                     index++;
                     autoSlide();
-                }, 5000);
+                }, 2000);
             })();
 
-});
+            // autoSlide();
+
+        }
