@@ -595,8 +595,9 @@ footer aside figure img {
 }
 
 /*No twitter on smartphones*/
-.twitter-timeline {
-  display: none;
+
+.twitter-container{
+    display:none;
 }
 
 /******************************* /FOOTER  **************************************/
@@ -681,6 +682,7 @@ footer aside figure img {
 
 
 /* ##################################################################### */
+
 
 @media (min-width: 700px) {
     /******************************** HEADER  **************************************/
@@ -804,6 +806,13 @@ footer aside figure img {
     /******************************** /CARDS  **************************************/
 }
 
+@media screen and (min-width: 380px) and (max-width: 550px) {
+
+    footer section a {
+	margin: .5em 1.5em;
+    }
+
+}
 @media screen and (min-width: 360px) {
 
     /*Center the images on bigger smartphones*/
@@ -903,7 +912,7 @@ footer aside figure img {
 	width: 50%;
     }
 
-    .twitter-timeline {
+    .twitter-container{
 	display: block;
     }
     /******************************* /Footer ************************************/
