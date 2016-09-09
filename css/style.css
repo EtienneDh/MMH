@@ -228,8 +228,9 @@ figure {
     position: relative;
 
 }
+
+/* Circles */
 .carousel-circles {
-    /* Circles */
     cursor: pointer;
     position: absolute;
     bottom: 5px;
@@ -247,6 +248,28 @@ figure {
 .circle1 {
   background-color: #bdbdbd;
 }
+
+/* Arrows*/
+
+.arrows {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: calc(50% - 10px);
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 5px;
+}
+
+.arrow-right {
+  right: 5px;
+}
+
 .carousel-info-wrapper {
     margin: 0 2.5%;
     align-items: center;
@@ -259,7 +282,6 @@ figure {
     margin: 0 3% 1em;
     height: 80px;
     text-overflow: ellipsis;
-    /*white-space: nowrap;*/
     overflow: hidden;
 }
 .slide-stats {
@@ -664,6 +686,8 @@ form {
 
 /*                      /Tablets and small Desktop : 768 px                   */
 
+/* Slider Responsive Design for higher Res */
+
 @media screen and (min-width: 861px) {
     .slider-wrapper {
         margin: 0 2%;
@@ -680,6 +704,10 @@ form {
     }
     .carousel-info {
         max-width: 302px;
+    }
+
+    .slide-text {
+        height: 105px;
     }
 }
 @media screen and (min-width: 1100px) {
@@ -719,3 +747,4 @@ form {
       margin-top: 2.6em;
     }
 }
+/* /Slider Responsive Design for higher Res */

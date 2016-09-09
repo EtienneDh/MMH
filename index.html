@@ -105,11 +105,21 @@
                     </li>
 
                 </ul>
+                <!-- Arrows -->
+                <div class="arrow-left">
+                  <img src="img/left-arrow.png" class= "arrows" onclick="changeImage('previous')"  alt="flèche gauche" />
+                </div>
+
+                <div class="arrow-right">
+                  <img src="img/right-arrow.png" class= "arrows" onclick="changeImage('next')" alt="flèche droite" />
+                </div>
+                <!-- /Arrows -->
+
                 <!-- Circles -->
                 <div class="carousel-circles flex">
-                    <div class="circle1" onclick="test('0')"></div>
-                    <div class="circle2" onclick="test('1')"></div>
-                    <div class="circle3" onclick="test('2')"></div>
+                    <div class="circle1" onclick="pickASlide('0')"></div>
+                    <div class="circle2" onclick="pickASlide('1')"></div>
+                    <div class="circle3" onclick="pickASlide('2')"></div>
                 </div>
                 <!-- /Circles -->
             </div>

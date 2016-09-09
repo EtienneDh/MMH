@@ -78,25 +78,26 @@ function autoSlide() {
     if (index >= max) {
         index = 0;
     }
-    // The function use setTimeout to add a delay before calling itself
-    setTimeout(function() {
-        // Display slideArray[picture] if not already active
-        if (slideArray[index].image.hasClass('active') === false) {
-            // Hide every other pictures & infos
-            for (var j = 0; j < slideArray.length; j++) {
-                if (j != index && slideArray[j].image.hasClass('active')) {
-                    hideSlide(j);
+    // Auto play function
+    var slider = function() {
+            // Display slideArray[picture] if not already active
+            if (slideArray[index].image.hasClass('active') === false) {
+                // Hide every other pictures & infos
+                for (var j = 0; j < slideArray.length; j++) {
+                    if (j != index && slideArray[j].image.hasClass('active')) {
+                        hideSlide(j);
+                    }
                 }
+                // Display the slide
+                displaySlide(index);
             }
-            // Display the slide
-            displaySlide(index);
+            // Indent index
+            index++;
+            autoSlide();
         }
-        // Indent index
-        console.log(delay);
-        index++;
-        autoSlide();
-    }, delay);
-};
+        // We store setTimeout() into a var so we can clear interval and stop auto play
+    timer = setTimeout(slider, delay);
+}
 
 autoSlide();
 
@@ -129,31 +130,41 @@ function currentIndex(index) {
     return current;
 }
 
-function delaySlider(temp) {
-    delay = temp;
+function changeImage(direction) {
+    // Stop autoSlide
+    clearTimeout(timer);
+    var currentSlide = currentIndex(index);;
+    alert(currentSlide);
+    // Hide Slide
+    for (var j = 0; j < slideArray.length; j++) {
+        hideSlide(j);
+    }
+    // show requested slide
+    if (direction === 'previous') {
+      alert(currentSlide - 1);
+      (currentSlide - 1) === -1 ? displaySlide(2) : displaySlide((currentSlide - 1));
+    } else {
+      alert(currentSlide + 1);
+        (currentSlide + 1) === 3 ? displaySlide(0) : displaySlide((currentSlide + 1));
+    }
+}
+
+function pickASlide(arg) {
+    // Stop autoSlide
+    clearTimeout(timer);
+    // Get current displayed slider
+    var currentSlide = currentIndex(index);
+    // Hide displayed slider
+    for (var j = 0; j < slideArray.length; j++) {
+        if (j != arg) {
+            hideSlide(j);
+        }
+    }
+    // Show requested slide
+    displaySlide(arg);
+    // Run autoSlide after x secs
     setTimeout(function() {
         delay = 5000;
-    }, temp);
+        autoSlide();
+    }, 15000);
 }
-
-/*
-
-function test(arg) {
-    // Set delay to 1 min to give user enough time to read
-
-    var current = currentIndex(index);
-
-    if (arg == (current + 1)) {
-        hideSlide(current);
-    } else {
-        for (var j = 0; j < slideArray.length; j++) {
-            if (j != index ) {
-                hideSlide(j);
-            }
-        }
-        displaySlide(arg);
-    }
-    delaySlider(30000);
-}
-
-*/
