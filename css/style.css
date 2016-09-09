@@ -1,4 +1,4 @@
--
+
 /* MyMoneyHelp */
 
 
@@ -226,6 +226,7 @@ figure {
 }
 .carousel {
     position: relative;
+
 }
 .carousel-circles {
     /* Circles */
@@ -295,8 +296,8 @@ figure {
 .slide-picture {
     display: none;
     max-width: 100%;
-    height:auto;
-    overflow: auto;
+    max-height: 100% !important;
+
 }
 .active {
     display: block;
