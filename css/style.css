@@ -262,7 +262,7 @@
 
 
 .checkbox{
-  margin-left: 20px;
+  margin-left: 20px; /*** Checkbox choix somme **/
 
 }
 
@@ -270,7 +270,7 @@
   font-size: 15px;
 }
 
-.container-paiement{
+.container-paiement{         /*******Detail du paiement ***/
 
   height: 100px;
   margin-top: 20px;
@@ -302,7 +302,7 @@
   display: block;
 }
 
-.moyen-paiement{
+.moyen-paiement{         /***** Moyen du paiement ***/
   font-size: 15px;
   padding-top: 20px;
 }
@@ -314,7 +314,6 @@
     max-width: 500px;
     padding: 10px 20px;
     background: #f4f7f8;
-
     padding: 20px;
     background: #f4f7f8;
     border-radius: 8px;
@@ -325,26 +324,27 @@
 
 /************************contribute button************************/
 .contribute {
-    margin: 1.8em 0 1.8em 5em;
+    margin: 0 0 0 30px;
+
 
 
 }
 
 .contribute-button {
-  font-family: Arial,sans-serif;
-   font-size: 1.5em;
-   width: 500px;
-   height: 100px;
-   padding-top: 7px; /*permet le centrage vertical*/
-   text-align: center;
-   color: #fff;
-   background: #0a749c;
-   text-decoration: none;
-   background: linear-gradient( #0a749c, #0a749c);
-
+  border: 2px solid #0a749c;
+    border-radius: 5px;
+    padding: 9px 60px;
+    margin: .8em 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Noticia Text Bold', arial;
+    font-size: .9em;
+    font-weight: bold;
+    box-shadow: 3px 4px 0 #bdbdbd;
    text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
-   box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
-                 0 -1px 0 rgba( 255, 255, 255, 0.4);
+   box-shadow: 0 0 5px #0a749c,
+                 0 -1px 0 #0a749c;
+                 background-color: #0a749c;
 }
 .contribute-button:hover{
      color: #0a749c;
@@ -502,11 +502,11 @@
       margin-left: 20px;
     }
 
-    .checkbox{
+    .checkbox{                   /******choix somme paiement ******/
       padding-left: 20px;
     }
 
-    .resume-paiement{
+    .resume-paiement{       /******* paiement detail ************/
       height: 100px;
       margin-top: 20px;
       display: flex;
@@ -529,16 +529,16 @@
       color: #2da555;
     }
 
-.checkbox2{
+.checkbox2{                          /************ choix moyen de paiement *************/
   border-top: 5px solid #2da555;
 }
 
-.form-style{
+.form-style{                  /****** formulaire *****/
   margin-top: 10px;
 }
 
-.contribute {
-    margin: 5em 0 1.8em 300px;
+.contribute {                 /******* contribute button *******/
+    margin: 70px auto;
 
 }
 
@@ -560,16 +560,26 @@
     color: #2da555;
 }
 
-.resume-paiement{
+.resume-paiement{   /****************** detail paiement ******************/
   margin: 0 auto;
-  
+
+
 
 }
 
 .valid-paiement{
-  margin-right: 200px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.contribute {             /******* contribute button *************/
+    margin: 100px auto;
 
 }
+
 
 }
 
