@@ -133,7 +133,7 @@ function currentIndex(index) {
 function changeImage(direction) {
     // Stop autoSlide
     clearTimeout(timer);
-    var currentSlide = currentIndex(index);;
+    var currentSlide = currentIndex(index);
     alert(currentSlide);
     // Hide Slide
     for (var j = 0; j < slideArray.length; j++) {
