@@ -921,7 +921,6 @@ footer aside figure img {
     }
 
     .twitter-timeline {
-  max-height: 300px;
   overflow: scroll;
     }
     /******************************* /Footer ************************************/
