@@ -71,7 +71,7 @@ var slideArray = [slide1, slide2, slide3];
 index = 0;
 var max = 3;
 // Delay between each slides
-delay = 3000;
+delay = 5000;
 
 function autoSlide() {
     // As it is an infinite recursive function, we set index back to 0 each time index = 3
@@ -85,33 +85,43 @@ function autoSlide() {
             // Hide every other pictures & infos
             for (var j = 0; j < slideArray.length; j++) {
                 if (j != index && slideArray[j].image.hasClass('active')) {
-                    // Hide pictures
-                    slideArray[j].image.fadeOut(0);
-                    slideArray[j].image.removeClass('active');
-                    // Hide infos
-                    slideArray[j].text.fadeOut(0);
-                    slideArray[j].text.removeClass('active');
-                    // Remove circle background color
-                    slideArray[j].circle.css('background-color', 'transparent');
+                    hideSlide(j);
                 }
             }
-            // Display the picture
-            slideArray[index].image.fadeIn(1000);
-            slideArray[index].image.addClass('active');
-            // Display the infos
-            slideArray[index].text.fadeIn(1000);
-            slideArray[index].text.addClass('active');
-            // Fill the circle background-color
-            slideArray[index].circle.css('background-color', '#bdbdbd');
+            // Display the slide
+            displaySlide(index);
         }
         // Indent index
+        console.log(delay);
         index++;
         autoSlide();
     }, delay);
 };
 
-autoSlide(); // Hide infos
+autoSlide();
 
+function hideSlide(slide) {
+    // Hide pictures
+    slideArray[slide].image.fadeOut(0);
+    slideArray[slide].image.removeClass('active');
+    // Hide infos
+    slideArray[slide].text.fadeOut(0);
+    slideArray[slide].text.removeClass('active');
+    // Remove circle background color
+    slideArray[slide].circle.css('background-color', 'transparent');
+}
+
+
+function displaySlide(slide) {
+    // Display the picture
+    slideArray[slide].image.fadeIn(1000);
+    slideArray[slide].image.addClass('active');
+    // Display the infos
+    slideArray[slide].text.fadeIn(1000);
+    slideArray[slide].text.addClass('active');
+    // Fill the circle background-color
+    slideArray[slide].circle.css('background-color', '#bdbdbd');
+}
 
 function currentIndex(index) {
     var current;
@@ -119,54 +129,27 @@ function currentIndex(index) {
     return current;
 }
 
-// function delaySlider(delay) {
-//   setTimeout(function() {
-//       delay = 3000;
-//   }, delay);
-// }
-
-
+function delaySlider(temp) {
+    delay = temp;
+    setTimeout(function() {
+        delay = 5000;
+    }, temp);
+}
 
 function test(arg) {
     // Set delay to 1 min to give user enough time to read
-    delay = 30000;
-    alert(arg);
-    // Hide displayed slider
+
     var current = currentIndex(index);
+
     if (arg == (current + 1)) {
-        // Hide pictures
-        slideArray[current].image.hide();
-        slideArray[current].image.removeClass('active');
-        // Hide infos
-        slideArray[current].text.hide();
-        slideArray[current].text.removeClass('active');
-        // Remove circle background color
-        slideArray[current].circle.css('background-color', 'transparent');
-        delay = 30000;
+        hideSlide(current);
     } else {
-      for (var j = 0; j < slideArray.length; j++) {
-          if (j != arg && slideArray[j].image.hasClass('active')) {
-              // Hide pictures
-              slideArray[j].image.hide();
-              slideArray[j].image.removeClass('active');
-              // Hide infos
-              slideArray[j].text.hide();
-              slideArray[j].text.removeClass('active');
-              // Remove circle background color
-              slideArray[j].circle.css('background-color', 'transparent');
-          }
-      }
-      slideArray[arg].image.fadeIn(1000);
-      slideArray[arg].image.addClass('active');
-      // Display the infos
-      slideArray[arg].text.fadeIn(1000);
-      slideArray[arg].text.addClass('active');
-      // Fill the circle background-color
-      slideArray[arg].circle.css('background-color', '#bdbdbd');
-
-      delay = 30000;
+        for (var j = 0; j < slideArray.length; j++) {
+            if (j != index ) {
+                hideSlide(j);
+            }
+        }
+        displaySlide(arg);
     }
-
-
-
+    delaySlider(30000);
 }
