@@ -136,6 +136,8 @@ function delaySlider(temp) {
     }, temp);
 }
 
+/*
+
 function test(arg) {
     // Set delay to 1 min to give user enough time to read
 
@@ -153,3 +155,5 @@ function test(arg) {
     }
     delaySlider(30000);
 }
+
+*/
