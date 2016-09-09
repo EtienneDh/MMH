@@ -875,20 +875,27 @@ footer aside figure img {
 
     /******************************* /Slider ************************************/
     /********************************* Footer ***********************************/
-    /* reduce the links around the images for better display */
+    /* reduce the links around the partners for better display */
     footer section a {
 	width: 80px;
 	margin: .5em 0;
     }
 
+/* reduce the links around the social media icons for better display */
     footer aside a {
 	width: 50px;
 	margin: .5em 0;
     }
 
+ /*display of both partners and social icons img*/
     footer figure {
 	justify-content: space-around;
 	padding-left: 0;
+    }
+
+/*Display of the div containing the submenu and the twitter widget*/
+    footer aside div:nth-child(1) {
+      justify-content: space-between;
     }
 
     footer h4 {
