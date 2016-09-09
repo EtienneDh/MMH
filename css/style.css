@@ -537,7 +537,7 @@ footer aside {
 }
 
 footer h4 {
-  font-size: .8em;
+  font-size: 1em;
 }
 
 footer h4, footer p {
@@ -545,13 +545,13 @@ footer h4, footer p {
 }
 
 footer ul, footer p {
-  font-size: 0.5em;
+  font-size: 0.6em;
   padding-top: 1em;
 }
 
 footer ul {
-  max-width: 30%;
-  margin-right: 5em;
+  max-width: 40%;
+  margin-right: 2em;
 }
 
 footer li {
@@ -574,8 +574,8 @@ footer figure {
 
 /*Reduce the links around the images for better display*/
 footer section a {
-  width: 80px;
-  margin: .5em 0;
+  width: 100px;
+  margin: .5em .5em;
 }
 
 footer aside a {
@@ -586,12 +586,12 @@ footer aside a {
 /*Controle the size of partnairs logos*/
 
 footer section figure img {
-  width: 70%;
+  width: 100px;
 }
 
 /*Controle the size of social media icons*/
 footer aside figure img {
-  width: 30%;
+  width: 40%;
 }
 
 /*No twitter on smartphones*/
@@ -815,6 +815,10 @@ footer aside figure img {
 }
 @media screen and (min-width: 360px) {
 
+  footer section a {
+    margin: .5em .7em;
+  }
+
     /*Center the images on bigger smartphones*/
     footer figure {
 	padding-left: 3em;
@@ -826,20 +830,9 @@ footer aside figure img {
 	width: 90%;
     }
 
-    /*Controle the size of social media icons*/
-    footer aside figure img {
-	width: 35%;
-    }
 
 }
 
-@media screen and (min-width: 450px) {
-
-    footer aside figure {
-	justify-content: flex-end;
-    }
-
-}
 
 /*                    Tablets and small Desktop : 768 px                       */
 
@@ -898,8 +891,12 @@ footer aside figure img {
 	padding-left: 0;
     }
 
+    footer h4 {
+      font-size: 1.2em;
+    }
+
     footer ul, footer p {
-	font-size: .6em;
+	font-size: .7em;
     }
 
     /*Controle the size of partnairs logos*/
@@ -1014,7 +1011,7 @@ footer aside figure img {
     }
 
     footer h4 {
-	font-size: 1em;
+	font-size: 1.4em;
     }
 
     .twitter-container{
