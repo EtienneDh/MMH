@@ -257,13 +257,17 @@
 
 /**************************Section detail/moyen paiement**********************/
 .wrapper-paiement{
-  max-width: 90%;
+  width: 90%;
 }
 
 
 .checkbox{
   margin-left: 20px;
-  font-size: 12px;
+
+}
+
+.title-checkbox{
+  font-size: 15px;
 }
 
 .container-paiement{
@@ -273,6 +277,8 @@
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+
+
 }
 
 .paiement-validation{
@@ -284,6 +290,8 @@
 
 .text-project{
   text-align: center;
+  margin-left: 10px;
+
 }
 
 
@@ -306,7 +314,7 @@
     max-width: 500px;
     padding: 10px 20px;
     background: #f4f7f8;
-    margin: 10px auto;
+
     padding: 20px;
     background: #f4f7f8;
     border-radius: 8px;
@@ -317,38 +325,38 @@
 
 /************************contribute button************************/
 .contribute {
-    margin: 1.8em auto;
+    margin: 1.8em 0 1.8em 5em;
+
+
 }
 
-.slider-button {
-    border: 2px solid #0a749c;
-    border-radius: 5px;
-    padding: 9px 60px;
-    margin: .8em 0;
-    color: #fff;
-    font-family: 'Noticia Text';
-    font-size: .9em;
-    font-weight: bold;
-    box-shadow: 3px 4px 0 #bdbdbd;
-    /* Transition */
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 800ms;
-    transition-timing-function: linear;
-    transition-delay: 100ms;
-    /* For Safari */
-    -webkit-transition-property: color, background-color, box-shadow;
-    -webkit-transition-duration: 800ms;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 100ms;
+.contribute-button {
+  font-family: Arial,sans-serif;
+   font-size: 1.5em;
+   width: 500px;
+   height: 100px;
+   padding-top: 7px; /*permet le centrage vertical*/
+   text-align: center;
+   color: #fff;
+   background: #0a749c;
+   text-decoration: none;
+   background: linear-gradient( #0a749c, #0a749c);
+
+   text-shadow: 0px 1px 0px rgba( 255, 255, 255, 0.2);
+   box-shadow: 0 0 5px rgba( 0, 0, 0, 0.5),
+                 0 -1px 0 rgba( 255, 255, 255, 0.4);
 }
-.slider-button:hover {
-    color: #0a749c;
-    background-color: #fff;
-    box-shadow: none;
+.contribute-button:hover{
+     color: #0a749c;
+     background: #fff;
+
 }
 
-.slider-button:visited {
-  color: #fff;
+.contribute-button:active{
+     color: #fff;
+     background: #0a749c;
+     box-shadow: 1px 1px 10px black inset,
+                 0 1px 0 rgba( 255, 255, 255, 0.4);
 }
 /*                              END PAIEMENT                                   */
 
@@ -488,6 +496,15 @@
 	line-height:30px !important;
 	padding:0 10px!important;
     }
+/********** paiement page *************/
+
+    .wrapper-paiement{
+      margin-left: 20px;
+    }
+
+    .checkbox{
+      padding-left: 20px;
+    }
 
     .resume-paiement{
       height: 100px;
@@ -495,6 +512,8 @@
       display: flex;
       flex-direction: row;
       margin-left: 20px;
+      margin-bottom: 18px;
+
     }
 
     .valid-paiement{
@@ -510,6 +529,19 @@
       color: #2da555;
     }
 
+.checkbox2{
+  border-top: 5px solid #2da555;
+}
+
+.form-style{
+  margin-top: 10px;
+}
+
+.contribute {
+    margin: 5em 0 1.8em 300px;
+
+}
+
   }
 
 /* ##################################################################### */
@@ -517,6 +549,27 @@
 /* ##################################################################### */
 /* Medium devices (desktops, 1025px and up) */
 @media (min-width: 1025px) {
+
+  .wrapper-paiement{
+    width: 100%;
+  }
+
+  .text-title-paiement{
+    margin-top: 0;
+    font-size: 25px;
+    color: #2da555;
+}
+
+.resume-paiement{
+  margin: 0 auto;
+  
+
+}
+
+.valid-paiement{
+  margin-right: 200px;
+
+}
 
 }
 
