@@ -42,6 +42,7 @@ if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is unde
 
 /********************************* Slider **************************************/
 
+/* Variables */
 
 // Store every slides into an object
 var slide1 = {
@@ -70,6 +71,73 @@ var max = 3;
 // Delay between each slides
 delay = 6000;
 
+/* /Variables */
+
+/* Display Functions */
+
+function hideSlide(slide) {
+    // Hide pictures
+    slideArray[slide].image.fadeOut(0);
+    slideArray[slide].image.removeClass('active');
+    // Hide infos
+    slideArray[slide].text.fadeOut(0);
+    slideArray[slide].text.removeClass('active');
+    // Remove circle background color
+    slideArray[slide].circle.css('background-color', 'transparent');
+}
+
+function displaySlide(slide) {
+    // Display the picture
+    slideArray[slide].image.fadeIn(1000);
+    slideArray[slide].image.addClass('active');
+    // Display the infos
+    slideArray[slide].text.fadeIn(1000);
+    slideArray[slide].text.addClass('active');
+    // Fill the circle background-color
+    slideArray[slide].circle.css('background-color', '#bdbdbd');
+}
+
+/* /Display Functions */
+
+/* Control Functions */
+
+function changeImage(direction) {
+    // Stop autoSlide
+    clearTimeout(timer);
+    // Get Active Slide
+    for(var i = 0; i < slideArray.length; i++) {
+      if(slideArray[i].image.hasClass('active')) {
+        var activeSlide = i;
+      }
+    }
+    hideSlide(activeSlide);
+    // Show requested Slide
+    if(direction === "next") {
+      activeSlide === 2 ? displaySlide(0) : displaySlide(activeSlide + 1);
+    } else {
+      activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
+    }
+    // Run autoSlide
+    autoSlide();
+}
+
+
+function pickASlide(arg) {
+    // Stop autoSlide
+    clearTimeout(timer);
+    // Hide Slide
+    for (var j = 0; j < slideArray.length; j++) {
+        hideSlide(j);
+    }
+    displaySlide(arg);
+    // Run autoSlide from new index;
+    autoSlide();
+}
+
+/* /Control Functions*/
+
+/* Main function: AutoSlide */
+
 function autoSlide() {
     // As it is an infinite recursive function, we set index back to 0 each time index = 3
     if (index >= max) {
@@ -96,66 +164,6 @@ function autoSlide() {
     timer = setTimeout(slider, delay);
 }
 
+/* /Main function: AutoSlide */
+
 autoSlide();
-
-/* Display Functions */
-
-function hideSlide(slide) {
-    // Hide pictures
-    slideArray[slide].image.fadeOut(0);
-    slideArray[slide].image.removeClass('active');
-    // Hide infos
-    slideArray[slide].text.fadeOut(0);
-    slideArray[slide].text.removeClass('active');
-    // Remove circle background color
-    slideArray[slide].circle.css('background-color', 'transparent');
-}
-
-
-function displaySlide(slide) {
-    // Display the picture
-    slideArray[slide].image.fadeIn(1000);
-    slideArray[slide].image.addClass('active');
-    // Display the infos
-    slideArray[slide].text.fadeIn(1000);
-    slideArray[slide].text.addClass('active');
-    // Fill the circle background-color
-    slideArray[slide].circle.css('background-color', '#bdbdbd');
-}
-
-/* /Display Functions */ 
-
-/* Control Functions */
-
-function changeImage(direction) {
-    // Stop autoSlide
-    clearTimeout(timer);
-    // Get Active Slide
-    for(var i = 0; i < slideArray.length; i++) {
-      if(slideArray[i].image.hasClass('active')) {
-        var activeSlide = i;
-      }
-    }
-    hideSlide(activeSlide);
-    // Show requested Slide
-    if(direction === "next") {
-      activeSlide === 2 ? displaySlide(0) : displaySlide(activeSlide + 1);
-    } else {
-      activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
-    }
-    // Run autSlide
-    autoSlide();
-}
-
-
-function pickASlide(arg) {
-    // Stop autoSlide
-    clearTimeout(timer);
-    // Hide Slide
-    for (var j = 0; j < slideArray.length; j++) {
-        hideSlide(j);
-    }
-    displaySlide(arg);
-    // Run autoSlide from new index;
-    autoSlide();
-}
