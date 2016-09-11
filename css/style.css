@@ -955,6 +955,10 @@ form {
       padding-top: 0.3em;
       background-color: white;
     }
+    .static-content-aside h3 {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+    }
 
     .static-content-aside article img {
       width: 100%;
@@ -996,7 +1000,7 @@ form {
     }
 }
 @media screen and (min-width: 980px) {
-    .wrapper {
+    .wrapper, .wrapper-static-content {
         width: 90%;
         margin: auto;
     }
@@ -1006,6 +1010,7 @@ form {
     .twitter-container {
         width: 400px;
     }
+
 }
 @media screen and (min-width: 1100px) {
     .carousel-info-wrapper {
@@ -1057,9 +1062,19 @@ form {
     }
 
     /* -------------------------/Footer------------------------- */
+
+    /* -------Static page content (association, legal informations)--------- */
+
+/*Bigger social media icons on big tablets and desktop*/
+    .static-social-medias li img {
+      width: 25px;
+      margin: 0 1em;
+    }
+
+    /* ------/Static page content (association, legal informations)--------- */
 }
 @media screen and (min-width: 1500px) {
-    .wrapper {
+    .wrapper, .wrapper-static-content {
         width: 80%;
     }
     .twitter-container {
