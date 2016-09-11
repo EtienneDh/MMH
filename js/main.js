@@ -98,6 +98,8 @@ function autoSlide() {
 
 autoSlide();
 
+/* Display Functions */
+
 function hideSlide(slide) {
     // Hide pictures
     slideArray[slide].image.fadeOut(0);
@@ -121,44 +123,38 @@ function displaySlide(slide) {
     slideArray[slide].circle.css('background-color', '#bdbdbd');
 }
 
-function currentIndex(index) {
-    var current;
-    index === 0 ? current = 2 : current = index - 1;
-    return current;
-}
+/* /Display Functions */ 
 
-/*
+/* Control Functions */
+
 function changeImage(direction) {
     // Stop autoSlide
-    var currentSlide = currentIndex(index);
     clearTimeout(timer);
-    // Hide Slide
-    for (var j = 0; j < slideArray.length; j++) {
-        hideSlide(j);
+    // Get Active Slide
+    for(var i = 0; i < slideArray.length; i++) {
+      if(slideArray[i].image.hasClass('active')) {
+        var activeSlide = i;
+      }
     }
-    // show requested slide
-    if (direction === 'next') {
-      index === 3 ? displaySlide(0) : displaySlide(index);
+    hideSlide(activeSlide);
+    // Show requested Slide
+    if(direction === "next") {
+      activeSlide === 2 ? displaySlide(0) : displaySlide(activeSlide + 1);
     } else {
-      currentSlide === 0 ? displaySlide(2) : displaySlide((currentSlide - 1));
+      activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
     }
-    // Run autoSlide after x secs
-    setTimeout(function() {
-        delay = 6000;
-        autoSlide();
-    }, 2000);
+    // Run autSlide
+    autoSlide();
 }
-*/
+
 
 function pickASlide(arg) {
-  alert("ok");
     // Stop autoSlide
     clearTimeout(timer);
     // Hide Slide
     for (var j = 0; j < slideArray.length; j++) {
         hideSlide(j);
     }
-    // index = arg;
     displaySlide(arg);
     // Run autoSlide from new index;
     autoSlide();
