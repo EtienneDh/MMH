@@ -68,7 +68,7 @@ var slideArray = [slide1, slide2, slide3];
 index = 0;
 var max = 3;
 // Delay between each slides
-delay = 5000;
+delay = 6000;
 
 function autoSlide() {
     // As it is an infinite recursive function, we set index back to 0 each time index = 3
@@ -127,41 +127,39 @@ function currentIndex(index) {
     return current;
 }
 
+/*
 function changeImage(direction) {
     // Stop autoSlide
-    clearTimeout(timer);
     var currentSlide = currentIndex(index);
-    alert(currentSlide);
+    clearTimeout(timer);
     // Hide Slide
     for (var j = 0; j < slideArray.length; j++) {
         hideSlide(j);
     }
     // show requested slide
-    if (direction === 'previous') {
-      alert(currentSlide - 1);
-      (currentSlide - 1) === -1 ? displaySlide(2) : displaySlide((currentSlide - 1));
+    if (direction === 'next') {
+      index === 3 ? displaySlide(0) : displaySlide(index);
     } else {
-      alert(currentSlide + 1);
-        (currentSlide + 1) === 3 ? displaySlide(0) : displaySlide((currentSlide + 1));
+      currentSlide === 0 ? displaySlide(2) : displaySlide((currentSlide - 1));
     }
-}
-
-function pickASlide(arg) {
-    // Stop autoSlide
-    clearTimeout(timer);
-    // Get current displayed slider
-    var currentSlide = currentIndex(index);
-    // Hide displayed slider
-    for (var j = 0; j < slideArray.length; j++) {
-        if (j != arg) {
-            hideSlide(j);
-        }
-    }
-    // Show requested slide
-    displaySlide(arg);
     // Run autoSlide after x secs
     setTimeout(function() {
-        delay = 5000;
+        delay = 6000;
         autoSlide();
-    }, 15000);
+    }, 2000);
+}
+*/
+
+function pickASlide(arg) {
+  alert("ok");
+    // Stop autoSlide
+    clearTimeout(timer);
+    // Hide Slide
+    for (var j = 0; j < slideArray.length; j++) {
+        hideSlide(j);
+    }
+    // index = arg;
+    displaySlide(arg);
+    // Run autoSlide from new index;
+    autoSlide();
 }

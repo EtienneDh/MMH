@@ -366,9 +366,8 @@ p {
 .contribute {
     margin: 1.8em auto;
 }
-.slider-button:visited {
-    color: white;
-}
+
+
 .slider-button {
     border: 2px solid #0a749c;
     border-radius: 5px;
@@ -393,10 +392,15 @@ p {
 .slider-button:hover {
     color: #0a749c;
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+    box-shadow: none;
 }
 .slider-button:visited {
     color: #fff;
+}
+
+.slider-button:visited:hover {
+  color: #0a749c;
 }
 
 /* /Button Contribute */
@@ -961,7 +965,7 @@ form {
     footer aside figure img {
         width: 60%;
     }
-    
+
     /* -------------------------/Footer------------------------- */
 }
 @media screen and (min-width: 1500px) {
