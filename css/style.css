@@ -9,9 +9,7 @@
     color: #373737;
     font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu Condensed';
-}
+
 ul {
     list-style: none;
     margin: 0 0;
@@ -64,7 +62,7 @@ ul {
 
 /* Blue Grey*/
 
-.title, .carousel-info, footer aside {
+.title, .carousel-info, footer aside, .static-content-aside, .static-page-title {
     background-color: #ecf0f4;
 }
 
@@ -90,6 +88,10 @@ ul {
 
 
 /*fonts*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Condensed';
+}
 
 footer h4, footer li, .title-list {
     font-family: 'Noticia Text', serif;
@@ -628,6 +630,36 @@ form {
 
 /*                              END PAIEMENT                                   */
 
+/********* STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
+
+.static-page-title {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: .5em 0;
+}
+
+.static-page-title h1 {
+  margin: 0;
+}
+
+.wrapper-static-content {
+  width: 95%;
+  margin: auto;
+}
+
+.static-content-section h2 {
+  font-size: 1.1em;
+}
+
+.static-content-section p {
+  font-size: .9em;
+}
+
+.static-content-aside {
+  display: none;
+}
+/*                        END STATIC PAGE CONTENT                             */
 
 /******************************************************************************/
 
@@ -873,6 +905,57 @@ form {
         overflow: scroll;
     }
     /******************************* /Footer ************************************/
+
+    /********* STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
+
+    .static-page-title {
+      padding: 1em 0;
+      margin-bottom: 2em;
+    }
+
+    .static-content-section {
+      width: 70%;
+      margin-right: 1em;
+    }
+
+/*Make sure that the first h2 is aligned with the aside div*/
+    .static-content-section h2:nth-child(1){
+      margin-top: 0;
+    }
+
+    .static-content-aside {
+      display: block;
+      height: 100%;
+      width: 30%;
+      padding: 1em;
+    }
+
+    .static-social-medias {
+      justify-content: center;
+      margin-bottom: 1em;
+    }
+    .static-social-medias li img {
+      width: 20px;
+      margin: 0 0.5em;
+    }
+    .static-content-aside article {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2em;
+      padding-top: 0.3em;
+      background-color: white;
+    }
+
+    .static-content-aside article img {
+      width: 100%;
+    }
+
+    .static-content-aside, .static-content-aside article {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+    }
+
+    /********* /STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
 }
 
 /*                      /Tablets and small Desktop : 768 px                   */
@@ -961,7 +1044,7 @@ form {
     footer aside figure img {
         width: 60%;
     }
-    
+
     /* -------------------------/Footer------------------------- */
 }
 @media screen and (min-width: 1500px) {
