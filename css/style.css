@@ -343,19 +343,21 @@
 /*******************************************************************************/
 /*******************************************************************************/
 figure{
-  margin: 0;
+  margin:0;
 }
 figure img{
   width: 100%;
 }
-
+.container{
+  background-color: #ECF0F4;
+}
 .header-text{
   border-bottom: 10px solid #CDCDCD;
   border-top: 10px solid #CDCDCD;
   background-color: #ECEFF4;
 }
 .header-text h1{
-  font-size: 20px;
+  font-size: 1.5vw;
   text-align: center;
 }
 .header-text h2{
@@ -365,22 +367,52 @@ figure img{
   display: flex;
   justify-content: space-around;
 }
-.row h1{
+.row h2{
   font-size: 13px;
-  color: #2DA55B;
+  margin: 0 10%;
+  line-height: 1.7em;
 }
-.row p{
-  font-size: 12px;
+.left-bar{
+  width: 40%;
 }
 .left-bar p{
+  text-align: center;
+  height: 20%;
+  font-size: 12px;
   background-color: #0A749C;
   color: white;
+}
+
+/*social network icons*/
+.social-networks{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0 5%;
+}
+
+.social-icons{
+  max-width: 20px;
+  max-height: 20px;
+}
+/*            project button               */
+.project-button{
+  width: 95%;
+  height: 70px;
+  background-color: #0A749C;
+  color: white;
+  font-size: 20px;
+  box-shadow: 7px 7px grey;
+}
+.first-wrap{
+  display: none;
 }
 .box img{
   float:right;
   margin:0 10px 10px 0;
   max-width:60%;
 }
+
 .proposer{
   background-color: #ECEFF4;
 }
@@ -390,7 +422,9 @@ figure img{
   max-width:60%;
   border-radius: 50%;;
 }
+
 .contributors{
+  margin-top: 30%;
   padding-left: 10%;
 }
 .contributors p{
@@ -416,47 +450,157 @@ figure img{
   color: white;
   font-size: 25px;
 }
-
-
-/*                              END PROJECTS                                   */
-
-/*******************************************************************************/
-/*******************************************************************************/
-/******************************* PAIEMENT **************************************/
-/*******************************************************************************/
-/*******************************************************************************/
-
-/*                              END PAIEMENT                                   */
-
-
-
-/*******************************************************************************/
-/*******************************************************************************/
-/*                              RESPONSIVE                                     */
-/*******************************************************************************/
-/*******************************************************************************/
-
-
-
-
 /* ##################################################################### */
-/* ############################   TABLETS   ############################ */
+/* ################   betweenextra small to tablets   ################## */
 /* ##################################################################### */
-/* Small devices (tablets, 641px and up) */
+/* Medium devices ( 400px and up) */
+@media (min-width: 400px) {
+
+
+
+
+
+}
+/* ##################################################################### */
+/* ############################   TABLETS   ########################### */
+/* ##################################################################### */
+/* Medium devices (tablets, 641px and up) */
+@media (min-width: 700px) {
+  figure{
+    margin:0 8% 0;
+  }
+  .container {
+    display: flex;
+    /*align-items: center;*/
+    /*padding-left: 5%;*/
+  }
+  .project-image {
+    box-shadow: 6px 5px 0 #bdbdbd;
+    margin: 1em ;
+    /*align-self: center;*/
+  }
+
+  .header-text {
+    max-width: 25%;
+    height: 400px;
+    margin:3.7em 0 0 ;
+    box-shadow: 6px 5px 0 #bdbdbd;
+    background-color: #fff;
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  .project-button{
+    height: 70px;
+    margin:1% 0 0 2.5%;
+  }
+  .social-icons{
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .box img{
+    float:left;
+  }
+  .wrap{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin:0 0;
+  }
+  .first-wrap,.second-wrap{
+    display: unset;
+    width: 55%;
+    height: 50%;
+    margin:0 5% 5%;
+
+  }
+  .proposer{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    box-shadow: 5px 5px lightgrey;
+  }
+  .first-wrap-p img{
+    float: right;
+  }
+
+  .first-wrap h3{
+    border-bottom: 2px solid #2DA555;
+    width:fit-content;
+    width: -moz-fit-content;
+  }
+  .second-wrap h3{
+    border-bottom: 2px solid #2DA555;
+    width:fit-content;
+    width: -moz-fit-content;
+  }
+  .contributors {
+
+    text-align: left;
+  }
+
+
+}
+
 
 
 /* ##################################################################### */
 /* ############################   DESKTOPS   ########################### */
 /* ##################################################################### */
 /* Medium devices (desktops, 1025px and up) */
-@media (min-width: 1025px) {
+@media (min-width: 1025px) {}
 
-}
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1441px and up) */
-@media (min-width: 1441px) {
+  /* ##################################################################### */
+  /* ############################   LARGE DESKTOPS   ##################### */
+  /* ##################################################################### */
+  /* Medium devices (large desktops, 1441px and up) */
+  @media (min-width: 1441px) {
 
-}
+
+
+  }
+  /*                              END PROJECTS                                   */
+
+  /*******************************************************************************/
+  /*******************************************************************************/
+  /******************************* PAIEMENT **************************************/
+  /*******************************************************************************/
+  /*******************************************************************************/
+
+  /*                              END PAIEMENT                                   */
+
+
+
+  /*******************************************************************************/
+  /*******************************************************************************/
+  /*                              RESPONSIVE                                     */
+  /*******************************************************************************/
+  /*******************************************************************************/
+
+
+
+
+  /* ##################################################################### */
+  /* ############################   TABLETS   ############################ */
+  /* ##################################################################### */
+  /* Small devices (tablets, 641px and up) */
+
+
+  /* ##################################################################### */
+  /* ############################   DESKTOPS   ########################### */
+  /* ##################################################################### */
+  /* Medium devices (desktops, 1025px and up) */
+  @media (min-width: 1025px) {
+
+  }
+
+  /* ##################################################################### */
+  /* ########################   LARGE DESKTOPS   ######################### */
+  /* ##################################################################### */
+  /* Large devices (large desktops, 1441px and up) */
+  @media (min-width: 1441px) {
+
+  }
