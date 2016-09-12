@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Ubuntu Condensed';
 }
 
-footer h4, footer li, .title-list {
+footer h4, footer li, .title-list, .static-headline span, .static-headline a {
     font-family: 'Noticia Text', serif;
 }
 p {
@@ -661,6 +661,44 @@ form {
   font-size: .9em;
 }
 
+.static-content-section ol {
+  padding-left: 20px;
+}
+
+.static-content-section figure {
+  margin: 2em 0;
+}
+
+.static-image {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
+.static-headline {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.static-headline span {
+  font-weight: bold;
+}
+
+.static-don {
+  font-style: italic;
+}
+
+/*Display of the social media icons*/
+.static-social-medias {
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.static-social-medias li img {
+  width: 20px;
+  margin: 0 0.5em;
+}
+
 /*No aside with articles on smartphones*/
 .static-content-aside {
   display: none;
@@ -937,16 +975,6 @@ form {
       padding: 1em;
     }
 
-/*Display of the social media icons*/
-    .static-social-medias {
-      justify-content: center;
-      margin-bottom: 1em;
-    }
-    .static-social-medias li img {
-      width: 20px;
-      margin: 0 0.5em;
-    }
-
 /*Display of the articles on the left*/
     .static-content-aside article {
       width: 100%;
@@ -1076,6 +1104,15 @@ form {
       margin: 0 1em;
     }
 
+    .static-image {
+      width: 90%;
+    }
+
+    .static-headline span, .static-headline a {
+      font-size: 1.1em;
+    }
+
+
     /* ------/Static page content (association, legal informations)--------- */
 }
 @media screen and (min-width: 1500px) {
@@ -1088,6 +1125,10 @@ form {
     }
     .carousel-info {
         margin-top: 2.6em;
+    }
+
+    .static-image {
+      width: 80%;
     }
 }
 
