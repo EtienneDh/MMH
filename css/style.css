@@ -258,16 +258,25 @@
 /**************************Section detail/moyen paiement**********************/
 .wrapper-paiement{
   width: 90%;
+  margin: auto;
+
 }
 
 
 .checkbox{
   margin-left: 20px; /*** Checkbox choix somme **/
+  margin-bottom: 20px;
 
 }
 
 .title-checkbox{
   font-size: 15px;
+}
+
+.euro{
+  margin-left: 30px;
+  margin-bottom: 15px;
+
 }
 
 .container-paiement{         /*******Detail du paiement ***/
@@ -286,12 +295,20 @@
   color: white;
   text-align: center;
 
+
+
 }
 
 .text-project{
   text-align: center;
-  margin-left: 10px;
+  font-weight: bold;
 
+}
+
+.text-project3{
+  text-align: center;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
 
@@ -312,29 +329,30 @@
 
 .form-style{
     max-width: 500px;
-    padding: 10px 20px;
-    background: #f4f7f8;
-    padding: 20px;
-    background: #f4f7f8;
+
+    border-color: #f4f7f8;
     border-radius: 8px;
     font-size: 17px;
     color: black;
 }
 
+.form-color{
+  background: #f4f7f8;
+}
 
 /************************contribute button************************/
 .contribute {
-    margin: 0 0 0 30px;
-
 
 
 }
 
 .contribute-button {
+  margin: auto;
+  display: block;
   border: 2px solid #0a749c;
     border-radius: 5px;
-    padding: 9px 60px;
-    margin: .8em 0;
+    padding: 10px 60px;
+  width: 250px;
     color: #fff;
     text-decoration: none;
     font-family: 'Noticia Text Bold', arial;
@@ -507,17 +525,18 @@
     }
 
     .resume-paiement{       /******* paiement detail ************/
-      height: 100px;
-      margin-top: 20px;
+
+
       display: flex;
       flex-direction: row;
       margin-left: 20px;
-      margin-bottom: 18px;
+      border-bottom: 10px solid #2da555;
+      max-width: 1000px;
 
     }
 
     .valid-paiement{
-      margin-top: 300px;
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
       margin-left: 20px;
@@ -530,7 +549,7 @@
     }
 
 .checkbox2{                          /************ choix moyen de paiement *************/
-  border-top: 5px solid #2da555;
+
 }
 
 .form-style{                  /****** formulaire *****/
@@ -551,7 +570,16 @@
 @media (min-width: 1025px) {
 
   .wrapper-paiement{
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .jardin{
+    height: 160px;
+    width: 220px;
+    margin: auto;
+    float: left;
+    margin-bottom: 10px;
   }
 
   .text-title-paiement{
@@ -560,25 +588,26 @@
     color: #2da555;
 }
 
-.resume-paiement{   /****************** detail paiement ******************/
-  margin: 0 auto;
+  .resume-paiement{
+    width: 100%;
 
 
+  }
 
-}
+
 
 .valid-paiement{
-  margin-top: 300px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
-  margin-right: 50px;
+
 }
 
 .contribute {             /******* contribute button *************/
-    margin: 100px auto;
-
-}
+    margin: auto;
+    margin-bottom: 20px;
+   }
 
 
 }
