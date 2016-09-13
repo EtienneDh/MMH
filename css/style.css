@@ -709,6 +709,17 @@ section .static-social-medias {
 .static-content-aside {
   display: none;
 }
+
+/*Blog content*/
+
+#blog-title {
+  font-size: 1.5em;
+}
+
+.blog-image {
+  max-width: 500px;
+  max-height: 400px;
+}
 /*                        END STATIC PAGE CONTENT                             */
 
 /******************************************************************************/
