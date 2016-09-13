@@ -158,14 +158,20 @@
             <!-- /Carousel wrapper -->
 	</section>
 	<section class="cards-home-section">
-	    <nav class="cards-home-navbar">
-		<a class="popular">Populaire</a>
-		<a class="paid">Presque financé</a>
-		<a class="category">Catégories</a>
-	    </nav>
-	    <hr>
+	    <div class="wrapper-nav">
+		<nav class="cards-home-navbar">
+		    <a class="popular">Populaire</a>
+		    <a class="paid">Presque financé</a>
+		    <a class="category">Catégories</a>
+		    <form class="card-nav-form-d">
+			<input type="text" placeholder="Chercher Un Projet" class="searchbar-cards-home">
+		    </form>		
+		</nav>
+
+		<hr>
+	    </div>
 	    <div class="wrapper-home-cards">
-		<form>
+		<form class="card-nav-form-m">
 		    <input type="text" placeholder="Chercher Un Projet" class="searchbar-cards-home">
 		</form>		
 		<div class="home-cards">
@@ -370,5 +376,11 @@
 		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
             </script>
     </body>
-
+    <div>
+	<p></p>
+	<div>
+	    
+	</div>
+	<p></p>
+    </div>
 </html>
