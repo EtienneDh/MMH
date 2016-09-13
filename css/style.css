@@ -679,11 +679,10 @@ form {
 
 .static-headline {
   text-align: center;
-  margin: 1em 0;
-}
+  margin: 2em auto;
+  border: 2px solid black;
+  width: 40%;
 
-.static-headline span {
-  font-weight: bold;
 }
 
 .static-don {
@@ -699,6 +698,11 @@ form {
 .static-social-medias li img {
   width: 20px;
   margin: 0 0.5em;
+}
+
+/*Special top margin for the social media icons in the section*/
+section .static-social-medias {
+  margin-top: 2em;
 }
 
 /*No aside with articles on smartphones*/
@@ -961,7 +965,7 @@ form {
 
     .static-content-section {
       width: 70%;
-      margin-right: 1em;
+      margin-right: 2em;
     }
 
 /*Make sure that the first h2 is aligned with the aside div*/
