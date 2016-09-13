@@ -342,10 +342,8 @@
 /******************************* PROJECTS **************************************/
 /*******************************************************************************/
 /*******************************************************************************/
-figure{
-  margin:0;
-}
-figure img{
+
+.container figure img{
   width: 100%;
 }
 .container{
@@ -362,6 +360,7 @@ figure img{
 }
 .header-text h2{
   font-size: 15px;
+  margin:5%;
 }
 .row{
   display: flex;
@@ -373,27 +372,28 @@ figure img{
   line-height: 1.7em;
 }
 .left-bar{
-  width: 40%;
+  width: 50%;
 }
-.left-bar p{
-  text-align: center;
-  height: 20%;
-  font-size: 12px;
+.left-bar button{
+  font-size: 20px;
   background-color: #0A749C;
   color: white;
+  margin-bottom: 2%;
+  float: right;
 }
 
 /*social network icons*/
 .social-networks{
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  margin: 5% 0 5%;
+  /*justify-content:center;*/
+  margin-left: 10%;
 }
 
 .social-icons{
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 10px;
+  max-height: 10px;
+  margin: .8em .5em;
 }
 /*            project button               */
 .project-button{
@@ -422,9 +422,11 @@ figure img{
   max-width:60%;
   border-radius: 50%;;
 }
-
+.second-wrap{
+  margin: 5%;
+}
 .contributors{
-  margin-top: 30%;
+  margin-top: 10%;
   padding-left: 10%;
 }
 .contributors p{
@@ -474,7 +476,7 @@ figure img{
     /*align-items: center;*/
     /*padding-left: 5%;*/
   }
-  .project-image {
+  .container figure img {
     box-shadow: 6px 5px 0 #bdbdbd;
     margin: 1em ;
     /*align-self: center;*/
@@ -495,8 +497,8 @@ figure img{
     margin:1% 0 0 2.5%;
   }
   .social-icons{
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 25px;
+    max-height: 25px;
   }
   .box img{
     float:left;
@@ -506,7 +508,7 @@ figure img{
     display:flex;
     flex-direction: column;
     width: 100%;
-    margin:0 0;
+    /*margin:0 0;*/
   }
   .first-wrap,.second-wrap{
     display: unset;
