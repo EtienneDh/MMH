@@ -69,7 +69,7 @@ var slideArray = [slide1, slide2, slide3];
 index = 0;
 var max = 3;
 // Delay between each slides
-delay = 6000;
+delay = 7000;
 
 /* /Variables */
 
@@ -88,10 +88,10 @@ function hideSlide(slide) {
 
 function displaySlide(slide) {
     // Display the picture
-    slideArray[slide].image.fadeIn(1000);
+    slideArray[slide].image.fadeIn(1250);
     slideArray[slide].image.addClass('active');
     // Display the infos
-    slideArray[slide].text.fadeIn(1000);
+    slideArray[slide].text.fadeIn(1250);
     slideArray[slide].text.addClass('active');
     // Fill the circle background-color
     slideArray[slide].circle.css('background-color', '#bdbdbd');
@@ -105,31 +105,31 @@ function changeImage(direction) {
     // Stop autoSlide
     clearTimeout(timer);
     // Get Active Slide
-    for(var i = 0; i < slideArray.length; i++) {
-      if(slideArray[i].image.hasClass('active')) {
-        var activeSlide = i;
-      }
+    for (var i = 0; i < slideArray.length; i++) {
+        if (slideArray[i].image.hasClass('active')) {
+            var activeSlide = i;
+        }
     }
     hideSlide(activeSlide);
     // Show requested Slide
-    if(direction === "next") {
-      activeSlide === 2 ? displaySlide(0) : displaySlide(activeSlide + 1);
+    if (direction === "next") {
+        activeSlide === 2 ? displaySlide(0) : displaySlide(activeSlide + 1);
     } else {
-      activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
+        activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
     }
     // Run autoSlide
     autoSlide();
 }
 
 
-function pickASlide(arg) {
+function pickASlide(number) {
     // Stop autoSlide
     clearTimeout(timer);
     // Hide Slide
     for (var j = 0; j < slideArray.length; j++) {
         hideSlide(j);
     }
-    displaySlide(arg);
+    displaySlide(number);
     // Run autoSlide from new index;
     autoSlide();
 }

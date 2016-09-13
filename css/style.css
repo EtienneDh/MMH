@@ -298,12 +298,24 @@ p {
     position: absolute;
     top: calc(50% - 10px);
     cursor: pointer;
+    /* Transitions */
+    transition: padding 800ms;
 }
+
 .arrow-left {
     left: 5px;
 }
+
 .arrow-right {
     right: 5px;
+}
+
+.arrow-left:hover{
+  padding-left: 4px;
+}
+
+.arrow-right:hover {
+  padding-right : 4px;
 }
 .carousel-info-wrapper {
     margin: 0 2.5%;
