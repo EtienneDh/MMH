@@ -104,21 +104,6 @@ p {
 /*************************** /GENERAL SETTINGS *********************************/
 
 
-/*******************************************************************************/
-
-
-/*******************************************************************************/
-
-
-/******************************* HOMEPAGE **************************************/
-
-
-/*******************************************************************************/
-
-
-/*******************************************************************************/
-
-
 /******************************** HEADER  **************************************/
 
 
@@ -276,14 +261,20 @@ p {
     bottom: 5px;
     left: calc(50% - 46.5px);
 }
-.carousel-circles> div {
+.carousel-circles div {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     border: 2px solid #bdbdbd;
     margin: 0 .5em;
-    box-shadow: 2px 2px 0 #000;
+    box-shadow: 0 3px 3px #383838;
+    transition: box-shadow 200ms;
 }
+
+.carousel-circles div:hover {
+    box-shadow: 0 0 15px #252525;
+}
+
 .circle1 {
     background-color: #bdbdbd;
 }
@@ -299,7 +290,7 @@ p {
     top: calc(50% - 10px);
     cursor: pointer;
     /* Transitions */
-    transition: padding 800ms;
+    transition: padding 500ms;
 }
 
 .arrow-left {
