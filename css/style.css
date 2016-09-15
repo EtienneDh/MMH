@@ -428,14 +428,16 @@ A retirer pour éviter la disparition totale du texte ????
 
 /*Ensure the footer to be always at the bottom*/
 
+footer, footer aside {
+  width: 100%;
+}
+
 footer {
     margin-top: 50px;
-    width: 100%;
 }
 footer aside {
     margin-top: 1em;
     padding-bottom: 3px;
-    width: 100%;
 }
 footer h4 {
     font-size: 1em;
@@ -471,21 +473,17 @@ footer figure {
     padding-left: 2em;
 }
 
-/*Reduce the links around the images for better display*/
+/*Reduce the links around the images and the partners logos for better display*/
+footer section a, footer section figure img {
+    width: 100px;
+}
 
 footer section a {
-    width: 100px;
     margin: .5em .5em;
 }
 footer aside a {
     width: 50px;
     margin: .5em 0;
-}
-
-/*Controle the size of partnairs logos*/
-
-footer section figure img {
-    width: 100px;
 }
 
 /*Controle the size of social media icons*/
@@ -634,11 +632,17 @@ form {
 
 /********* STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
 
+.static-page-title, .static-social-medias {
+  justify-content: center;
+}
+
+.static-page-title, .static-headline {
+  text-align: center;
+}
+
 /*Display of the top band right below the header*/
 .static-page-title {
   width: 100%;
-  justify-content: center;
-  text-align: center;
   padding: .5em 0;
 }
 
@@ -647,8 +651,8 @@ form {
   margin: 0;
 }
 
-/*General wrapper for the static content*/
-.wrapper-static-content {
+/*General wrapper for the static content and images size*/
+.wrapper-static-content, .static-image {
   width: 95%;
   margin: auto;
 }
@@ -673,12 +677,9 @@ form {
 
 .static-image {
   display: block;
-  width: 95%;
-  margin: auto;
 }
 
 .static-headline {
-  text-align: center;
   margin: 2em auto;
   border: 2px solid black;
   width: 40%;
@@ -691,7 +692,6 @@ form {
 
 /*Display of the social media icons*/
 .static-social-medias {
-  justify-content: center;
   margin-bottom: 1em;
 }
 
@@ -922,15 +922,17 @@ section .static-social-medias {
     /* Shadow */
     /******************************* /Slider ************************************/
     /********************************* Footer ***********************************/
+    footer section a, footer aside a {
+        margin: .5em 0;
+    }
+
     /* reduce the links around the partners for better display */
     footer section a {
         width: 80px;
-        margin: .5em 0;
     }
     /* reduce the links around the social media icons for better display */
     footer aside a {
         width: 50px;
-        margin: .5em 0;
     }
     /*display of both partners and social icons img*/
     footer figure {
@@ -993,8 +995,12 @@ section .static-social-medias {
     }
 
 /*Display of the articles on the left*/
-    .static-content-aside article {
+
+    .static-content-aside article, .static-content-aside article img {
       width: 100%;
+}
+
+    .static-content-aside article {
       text-align: center;
       margin-bottom: 2em;
       padding-top: 0.3em;
@@ -1005,9 +1011,6 @@ section .static-social-medias {
       margin-right: 0.5em;
     }
 
-    .static-content-aside article img {
-      width: 100%;
-    }
 
 /*Shadow on the aside div and the article div*/
     .static-content-aside, .static-content-aside article {
