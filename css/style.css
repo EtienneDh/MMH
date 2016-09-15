@@ -1,55 +1,814 @@
-
 /* MyMoneyHelp */
+
 
 /****************************GENERAL SETTINGS***********************************/
 
 * {
-  box-sizing: border-box;
-  font-size: 1em;
-  color: #373737;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #373737;
+    font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu Condensed';
+}
+
+ul {
+    list-style: none;
+    margin: 0 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: #373737;
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
 
 /* Colors */
 
+
 /*Dark BLue*/
 
-.login-button,
-.logo-remplacement
-{
+.login-button, .logo-remplacement, .button {
     background-color: #0a749c;
 }
 
 /*Blue*/
 
+
 /* { */
 
+
 /*   background-color: #0092c9; */
+
+
 /* } */
+
 
 /* Blue Grey*/
 
-.title{
-  background-color: #ecf0f4;
+.cards-home-section , .carousel-info, footer aside , .title{
+    background-color: #ecf0f4;
 }
 
 /* Green */
-.language
-{
 
-  background-color: #2da555;
+.language, hr, .card-home-loadbar {
+    background-color: #2da555;
 }
 
 /* /Colors */
 
+
 /* Layout */
 
 .flex {
-  display: flex;
+    display: flex;
+}
+.wrapper {
+    margin: 0 2%;
 }
 
-.wrapper {
-  margin: 0 1%;
+/* /Layout */
+
+
+/*fonts*/
+
+
+footer h4, footer li, .title-list {
+    font-family: 'Noticia Text', serif;
 }
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*fonts*/
+
+/*************************** /GENERAL SETTINGS *********************************/
+
+
+
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+
+/******************************** HEADER  **************************************/
+
+
+/* TEMPORAIRE */
+
+.logo-remplacement {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: calc(100% - 1em);
+    width: 120px;
+    margin-right: auto;
+}
+
+/* Header above the main-navbar */
+
+.top-header-flex {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+/* DIV SOCIAUX + LOGIN */
+
+.top-header-buttons {
+    display: flex;
+    min-width: 150px;
+    height: 100%;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+/* Div all socials */
+
+.buttons-social {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Login */
+
+.login-button {
+    margin: 5px 1em;
+    border: 0;
+    font-size: 10px;
+    line-height: 20px;
+    color: white;
+}
+
+/* Buttons social alone */
+
+.header-logo-social {
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+
+}
+
+
+
+
+/* Mobile Menu Icon */
+
+.menu-mobile-icon {
+    width: 30px;
+    height: 25px;
+    margin: 15px;
+}
+
+/* Menu List */
+
+.acceuil {
+    display: none;
+}
+.menu-list {
+    background-color:white;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.visible-navbar {
+    border-bottom: 2px solid #0092c9;
+}
+
+/* Menu list item */
+
+.menu-list li, .under-menu-link {
+    width: 100%;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+.mmh, .under-menu-link {
+    padding: 0 20px;
+}
+.menu-list li {
+    border-bottom: 2px solid #0092c9;
+}
+
+
+
+
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*                              RESPONSIVE                                     */
+/*******************************************************************************/
+/*******************************************************************************/
+
+.under-menu {
+    padding: 0 !important;
+}
+
+.under-menu-link {
+    display: none;
+    background-color: white;
+}
+.under-menu a {
+    padding-left: 25px;
+    display: block;
+    width: 100%;
+}
+.menu-list a {
+    text-decoration: none;
+}
+.test {
+    whidth: 100%;
+    background: red;
+    height: 300vh;
+}
+
+.main-navbar{
+    background-color:white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 15;
+}
+
+/******************************* /HEADER  **************************************/
+
+
+/******************************** SLIDER  **************************************/
+
+
+
+/* Layout */
+
+.slider-wrapper, .carousel-info-wrapper, .stat {
+    flex-direction: column;
+}
+.carousel {
+    position: relative;
+}
+
+/* Circles */
+
+.carousel-circles {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 46.5px);
+}
+.carousel-circles div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #bdbdbd;
+    margin: 0 .5em;
+    box-shadow: 0 3px 3px #383838;
+    transition: box-shadow 200ms;
+}
+
+.carousel-circles div:hover {
+    box-shadow: 0 0 15px #252525;
+}
+
+.circle1 {
+    background-color: #bdbdbd;
+}
+
+/* Arrows*/
+
+.arrows {
+    max-width: 20px;
+    max-height: 20px;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: calc(50% - 10px);
+    cursor: pointer;
+    /* Transitions */
+    transition: padding 500ms;
+}
+
+.arrow-left {
+    left: 5px;
+}
+
+.arrow-right {
+    right: 5px;
+}
+
+.arrow-left:hover{
+  padding-left: 4px;
+}
+
+.arrow-right:hover {
+  padding-right : 4px;
+}
+.carousel-info-wrapper {
+    margin: 0 2.5%;
+    align-items: center;
+}
+.slide {
+    display: none;
+}
+.slide-text {
+    margin: 0 3% 1em;
+    height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.slide-stats {
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+/* /Layout */
+
+
+/* Slider Typo */
+
+.slider h2, .stat, .slider-button, .contribute {
+    text-align: center;
+}
+.slider h2 {
+    /* Slide Title */
+    margin: .75em auto 0;
+    font-size: 1em;
+}
+.slide-stats span {
+    /* Stat Numbers */
+    font-weight: bold;
+    font-size: .8em;
+}
+.slide-stats p {
+    /* Stat text */
+    font-size: .65em;
+    margin-top: .18em;
+}
+
+/*Slider pictures*/
+
+.slide-picture {
+    display: none;
+    max-width: 100%;
+    max-height: 100% !important;
+}
+.active {
+    display: block;
+}
+
+/* /Slider pictures*/
+
+
+/* Button Contribute */
+
+.contribute {
+    margin: 1.8em auto;
+}
+
+
+.slider-button {
+    border: 2px solid #0a749c;
+    border-radius: 5px;
+    padding: 9px 60px;
+    margin: .8em 0;
+    color: #fff;
+    font-size: .9em;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Transition */
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 800ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+    /* For Safari */
+    -webkit-transition-property: color, background-color, box-shadow;
+    -webkit-transition-duration: 800ms;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 100ms;
+    /* font-family: 'Noticia Text'; */
+}
+.slider-button:hover {
+    color: #0a749c;
+    background-color: #fff;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+    box-shadow: none;
+}
+.slider-button:visited {
+    color: #fff;
+}
+
+.slider-button:visited:hover {
+  color: #0a749c;
+}
+
+/* /Button Contribute */
+
+
+/* Social Icons */
+
+.social-network-icons {
+    justify-content: space-between;
+}
+.social-icons {
+    max-height: 20px;
+    max-width: 20px;
+    margin: .8em .5em;
+}
+
+/* /Social Icons */
+
+
+/******************************* /SLIDER  **************************************/
+
+/******************************** CARDS  **************************************/
+
+
+/* general */
+.wrapper-home-cards{
+    max-width:1300px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Navbar */
+
+.cards-home-navbar {
+    max-width:1160px;
+    margin:0 auto;
+    padding: 40px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-nav{
+    background-color:white;
+
+}
+.cards-home-navbar a {
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.card-nav-form, .cards-home-navbar
+{
+    background-color:white;
+}
+
+hr{
+    display:block;
+    max-width:1160px;
+    margin:0 auto;
+    border-top: 3px solid #2da555;
+    background-color:white;
+    padding: 20px 0 50px;
+}
+.card-nav-form-m {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-nav-form-d {
+    display:none;
+}
+.searchbar-cards-home {
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 15px auto;
+}
+
+/* Cards */
+
+.home-cards{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:300px;
+    height:390px;
+    border:solid 1px #bdbdbd;
+    margin:20px 15px 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    /* box-shadow: 5px 5px 0 #bdbdbd ; */
+}
+
+.home-cards:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.cards-home-list{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.card-home-title{
+    text-align:center;
+    color: #0a749c;
+    font-size: 18px;
+}
+.img-remplacement {
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+}
+.finish-banner {
+    color: #2da555;
+    font-size: 20px;
+    text-align: center;
+}
+.home-card-description {
+    width: 90%;
+    margin: 0 auto;
+}
+.home-card-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.card-home-loadbar {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.card-home-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1px;
+}
+.amount, .contribut {
+    margin: 0px 3px;
+}
+.amount {
+    color: black;
+}
+
+/******************************* /CARDS  **************************************/
+
+
+/******************************** FOOTER  **************************************/
+
+
+/*Ensure the footer to be always at the bottom*/
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+}
+footer aside {
+    margin-top: 1em;
+    padding-bottom: 3px;
+    width: 100%;
+}
+footer h4 {
+    font-size: 1em;
+}
+footer h4, footer p {
+    text-align: center;
+}
+footer ul, footer p {
+    font-size: 0.6em;
+    padding-top: 1em;
+}
+footer ul {
+    max-width: 40%;
+    margin-right: 2em;
+}
+footer li {
+    padding-left: 2px;
+}
+
+/*Special class for the menu title*/
+
+.title-list {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+}
+
+/*Iniline display for the images(logos/social medias)*/
+
+footer figure {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 2em;
+}
+
+/*Reduce the links around the images for better display*/
+
+footer section a {
+    width: 100px;
+    margin: .5em .5em;
+}
+footer aside a {
+    width: 50px;
+    margin: .5em 0;
+}
+
+/*Controle the size of partnairs logos*/
+
+footer section figure img {
+  width: 70%;
+}
+
+/*Controle the size of social media icons*/
+footer aside figure img {
+    width: 40%;
+}
+
+/*No twitter on smartphones*/
+.twitter-container {
+    display: none;
+}
+
+/******************************* /FOOTER  **************************************/
+
+
+/******************************* HOMEPAGE **************************************/
+
+
+/****** CARDS ******/
+
+
+/* general */
+
+.wrapper-home-cards {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+
+.cards-home-navbar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-home-navbar a {
+    font-size: 15px;
+    margin: 0 10px;
+    width:fit-content;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchbar-cards-home {
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 15px auto;
+}
+
+/* Cards */
+
+.home-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 390px;
+    border: solid 1px #bdbdbd;
+    margin: 10px 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    /* box-shadow: 5px 5px 0 #bdbdbd ; */
+}
+.home-cards:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cards-home-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-home-title {
+    text-align: center;
+    color: #0a749c;
+    font-size: 18px;
+}
+.img-remplacement {
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+}
+.finish-banner {
+    color: #2da555;
+    font-size: 20px;
+    text-align: center;
+}
+.home-card-description {
+    width: 90%;
+    margin: 0 auto;
+}
+.home-card-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.card-home-loadbar {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.card-home-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1px;
+}
+.amount, .contribut {
+    margin: 0px 3px;
+}
+.amount {
+    color: black;
+}
+
+/********** /CARDS  ********/
+
+/*                              END HOMEPAGE                                   */
+
+
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+
+
+/******************************* PROJECTS **************************************/
+
+
+
+/*                              END PROJECTS                                   */
+
+
+
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+
+
+/******************************* PAIEMENT **************************************/
+
+
+/*******************************************************************************/
 
 
 /********************Titre paiement page************************/
@@ -66,6 +825,7 @@
 
 
 
+
 .text-title-paiement{
   margin-top: 0;
   font-size: 15px;
@@ -78,18 +838,20 @@
   margin: auto;
 }
 
+/******************************* HOMEPAGE **************************************/
 
 .checkbox{
-  margin-left: 20px; /*** Checkbox choix somme **/
-  margin-bottom: 20px;
+
+  margin: 0 1.5% 20px;
 }
+
 
 .title-checkbox{
   font-size: 15px;
 }
 
 .euro{                         /********Checkbox €*********/
-  margin-left: 30px;
+  margin-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -131,8 +893,6 @@
   font-size: 15px;
   padding-top: 20px;
 }
-
-
 /****************formulaire**********************/
 
 .form-style{
@@ -141,6 +901,12 @@
     border-radius: 8px;
     font-size: 17px;
     color: black;
+    flex-direction: column;
+}
+
+
+.form-style input {
+  max-width: 250px;
 }
 
 .form-color{
@@ -180,18 +946,80 @@
      background: #0a749c;
      box-shadow: 1px 1px 10px black inset,
                  0 1px 0 rgba( 255, 255, 255, 0.4);
-}
+               }
 /*                              END PAIEMENT                                   */
 
+/******************************************************************************/
 
 
 /*******************************************************************************/
+
+
 /*******************************************************************************/
+
+
 /*                              RESPONSIVE                                     */
-/*******************************************************************************/
+
+
 /*******************************************************************************/
 
 
+/*******************************************************************************/
+
+
+
+/* ##################################################################### */
+
+
+/* ############################   TABLETS   ############################ */
+
+
+/* ##################################################################### */
+
+
+/******************************************************************************/
+
+
+/*                               RESPONSIVE                                   */
+
+
+/******************************************************************************/
+
+
+/******************************************************************************/
+
+
+/* #####################   SMARTPHONE & SMALL TABLETS   ##################### */
+
+@media screen and (min-width: 360px) {
+    footer section a {
+        margin: .5em .7em;
+    }
+    /*Center the images on bigger smartphones*/
+    footer figure {
+        padding-left: 3em;
+        align-items: center;
+    }
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 380px) and (max-width: 550px) {
+    footer section a {
+        margin: .5em 1.5em;
+    }
+}
+@media screen and (min-width: 450px) {
+    footer aside figure {
+        justify-content: flex-end;
+    }
+}
+
+/* END SMARTPHONE & SMALL TABLETS */
+
+
+/* ###########################   TABLETS   ############################ */
 
 
 /* ##################################################################### */
@@ -199,14 +1027,6 @@
 /* ##################################################################### */
 /* Small devices (tablets, 641px and up) */
 @media (min-width: 700px) {
-
-
-
-
-
-
-
-
 
 /************************************ paiement page *******************************/
 
@@ -238,6 +1058,305 @@
       font-size: 20px;
       color: #2da555;
     }
+/************************************ END paiement page *******************************/
+    .card-nav-form-m{
+	display:none;
+    }
+    .card-nav-form-d{
+	width:fit-content;
+	width: -moz-fit-content;
+	margin-left:auto;
+	display: flex;
+	justify-content: center;
+	margin-right:35px;
+
+    }
+    .top-header-flex {
+        height: 100px;
+    }
+    .top-header-buttons {
+        min-width: 350px;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 15px;
+    }
+    .buttons-social {
+        order: 3;
+    }
+    .login-button {
+        order: 2;
+        height: 30px;
+        font-size: 15px;
+    }
+    .header-logo-social {
+        width: 30px;
+        height: 30px;
+        margin: 0 8px;
+    }
+    /* Navbar */
+    .cards-home-navbar{
+	justify-content:flex-start;
+	padding-left:50px;
+    }
+    .visible-navbar {
+        /*Hide bar with menu icon*/
+        display: none;
+    }
+    .acceuil {
+        display: block;
+        position: relative;
+    }
+    .menu-list {
+        /*Make the nav item in line*/
+        display: flex;
+        justify-content: left;
+    }
+    .menu-list li {
+        font-size: 16px;
+        width: fit-content;
+        width: -moz-fit-content;
+    }
+    /* Under menu */
+    .under-menu/*Make the mhh dropdown menu in column*/
+    {
+        height: 150px;
+        position: relative;
+    }
+    .under-menu-link {
+        display: none;
+    }
+    .under-menu:hover .under-menu-link{
+	width:200px;
+	height:150px;
+	display:flex;
+	flex-direction:column;
+	font-size:16px;
+	position:absolute;
+	top:50px;
+	left:15px;
+	padding:0;
+	border: 3px solid #0092c9;
+	z-index:16;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    }
+    .under-menu-link a:last-child {
+        border-bottom: 0;
+    }
+    .under-menu-link a{
+	display:block;
+	border-bottom: 3px solid #0092c9;
+	padding:0 10px;
+	box-sizing:border-box;
+    }
+    .title {
+        /*Set the background color back to white*/
+        background-color: white;
+        height: 50px;
+    }
+    .top-header-buttons {
+        /* Make the top header login and social buttons inline*/
+        flex-direction: row;
+        width: 200px;
+    }
+    .menu-list li/*get rid of the border bottom of all list element and assign it to .title*/
+    {
+        border-bottom: 0;
+    }
+    .main-navbar {
+        border-bottom: 3px solid #0092c9;
+    }
+    .triangle {
+        /*triangle that point the page*/
+        width: 15px;
+        position: absolute;
+        top: 38px;
+        left: calc(50% - 7.5px);
+    }
+    .language {
+        color: white;
+        margin-left: auto;
+        margin-right: 15px;
+        width: fit-content;
+        height: 30px;
+        align-self: center;
+        line-height: 30px !important;
+        padding: 0 10px!important;
+    }
+    /******************************** /HEADER  **************************************/
+    /******************************** CARDS  **************************************/
+    .wrapper-home-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /******************************** /CARDS  **************************************/
+}
+
+@media screen and (min-width: 380px) and (max-width: 550px) {
+
+    footer section a {
+	margin: .5em 1.5em;
+    }
+
+}
+@media screen and (min-width: 360px) {
+
+    /*Center the images on bigger smartphones*/
+    footer figure {
+	padding-left: 3em;
+	align-items: center;
+    }
+    /*Controle the size of partnairs logos*/
+
+    footer section figure img {
+	width: 90%;
+    }
+
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+	width: 35%;
+    }
+
+}
+
+@media screen and (min-width: 450px) {
+
+    footer aside figure {
+	justify-content: flex-end;
+    }
+
+}
+
+/*                    Tablets and small Desktop : 768 px                       */
+
+@media screen and (min-width: 768px) {
+    /********************************* Slider ***********************************/
+    /*Layout*/
+    .slider {
+        background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
+        background-color: #ecf0f4;
+    }
+    .slider-wrapper {
+        flex-direction: row;
+    }
+    .carousel {
+        max-width: 60%;
+        margin: 1em 1.6%;
+    }
+    .carousel-circles {
+        bottom: 20%;
+        left: 40%;
+    }
+    .carousel-info {
+        max-width: 35%;
+        margin-top: 2em;
+        background-color: #fff;
+    }
+    /* Shadow */
+    .slide-picture, .carousel-info {
+        /* box-shadow: 6px 5px 0 #bdbdbd; */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    }
+    /* Shadow */
+    /******************************* /Slider ************************************/
+    /********************************* Footer ***********************************/
+    /* reduce the links around the partners for better display */
+    footer section a {
+        width: 80px;
+        margin: .5em 0;
+    }
+    /* reduce the links around the social media icons for better display */
+    footer aside a {
+        width: 50px;
+        margin: .5em 0;
+    }
+    /*display of both partners and social icons img*/
+    footer figure {
+        justify-content: space-around;
+        padding-left: 0;
+    }
+    /*Display of the div containing the submenu and the twitter widget*/
+    footer aside div:nth-child(1) {
+        justify-content: space-between;
+    }
+    footer h4 {
+        font-size: 1.2em;
+    }
+    footer ul, footer p {
+        font-size: .7em;
+    }
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+        width: 100%;
+    }
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+        width: 50%;
+    }
+    .twitter-container {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin: 1em 0;
+        overflow: scroll;
+    }
+    .twitter-timeline {
+        overflow: scroll;
+    }
+    /******************************* /Footer ************************************/
+}
+
+/*                      /Tablets and small Desktop : 768 px                   */
+
+/* Slider Responsive Design for higher Res */
+
+
+@media screen and (min-width: 861px) {
+    .slider-wrapper {
+        margin: 0 2%;
+        justify-content: space-around;
+    }
+    .carousel {
+        margin: 1em 0 4em 0;
+    }
+    .carousel-circles {
+        bottom: 2%;
+    }
+    .carousel-info-wrapper {
+        margin: 0 4%;
+    }
+    .carousel-info {
+        max-width: 302px;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .home-cards{
+	margin:35px;
+    }
+    .slide-text {
+        height: 105px;
+    }
+    .carousel-info-wrapper {
+        margin: 0 5%;
+    }
+    .carousel-info {
+        max-height: 408px;
+        max-width: 325px;
+    }
+    .slide-text {
+        height: 150px;
+    }
+    .contribute {
+        margin-top: 2em;
+    }
+    .slide-stats {
+        margin-top: 3em;
+    }
+    .social-network-icons {
+        margin-top: .6em;
+    }
 
 
 .form-style{                  /****** formulaire *****/
@@ -248,13 +1367,54 @@
     margin: 70px auto;
 }
 
-  }
+}
 
-/* ##################################################################### */
-/* ############################   DESKTOPS   ########################### */
-/* ##################################################################### */
-/* Medium devices (desktops, 1025px and up) */
-@media (min-width: 1025px) {
+@media screen and (min-width: 980px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    footer h4 {
+        font-size: 1.4em;
+    }
+    .twitter-container {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1100px) {
+
+}
+@media screen and (min-width: 1155px) {
+    .slider-wrapper {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* Set the final size */
+    .slider-wrapper {
+        width: 1152px;
+        margin: 0 auto;
+
+    }
+
+    /* --------------------------Footer------------------------- */
+    footer ul {
+        width: 15%;
+        font-size: 0.8em
+    }
+    footer p {
+        font-size: 0.9em;
+    }
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+        width: 150%;
+    }
+    /*Controle the size of social media icons*/
+    footer aside figure img {
+        width: 60%;
+    }
+
 
   .wrapper-paiement{
     width: 90%;
@@ -292,12 +1452,20 @@
   }
 
 
+    /* -------------------------/Footer------------------------- */
+}
+@media screen and (min-width: 1500px) {
+    .wrapper {
+        width: 80%;
+    }
+    .twitter-container {
+        width: 500px;
+        height: 300px;
+    }
+    .carousel-info {
+        margin-top: 2.6em;
+    }
 }
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1441px and up) */
-@media (min-width: 1441px) {
 
-}
+/* /Slider Responsive Design for higher Res */
