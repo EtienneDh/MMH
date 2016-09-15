@@ -619,7 +619,7 @@ form {
 /******************************* PROJECTS **************************************/
 /*******************************************************************************/
 /*******************************************************************************/
-/*product image and leftbar with social netwokr icons*/
+/*===========product image and leftbar with social netwokr icons======*/
 .container figure img{
   width: 100%;
 }
@@ -632,7 +632,9 @@ form {
   border-top: 10px solid #CDCDCD;
   background-color: #ECEFF4;
 }
-/*headline inside the leftbar*/
+/*===========product image and leftbar with social netwokr icons======*/
+
+/*====================headline inside the leftbar============*/
 .header-text h1{
   font-size: 14px;
   text-align: center;
@@ -644,7 +646,9 @@ form {
   line-height: 22px;
   margin:5%;
 }
-/*three paragraphs inside the leftbar*/
+/*===================headline inside the leftbar============*/
+
+/*===========three paragraphs inside the leftbar=============*/
 .row{
   display: flex;
   justify-content: space-around;
@@ -655,7 +659,9 @@ form {
   margin: 0 10%;
   line-height: 1.7em;
 }
-/*leftbar at the center of the page*/
+/*===========/three paragraphs inside the leftbar=============*/
+
+/*==============leftbar at the center of the page===============*/
 .left-bar{
   width: 50%;
   margin-right: -12%;
@@ -666,8 +672,9 @@ form {
   color: white;
 text-align: center;
 }
+/*==============/leftbar at the center of the page===============*/
 
-/*social network icons*/
+/*=================social network icons============*/
 .social-networks{
   list-style: none;
   display: flex;
@@ -680,7 +687,9 @@ text-align: center;
   max-height: 10px;
   /*margin: .8em .5em;*/
 }
-/*            project button               */
+/*=================/social network icons============*/
+
+/*  ==========================project button================*/
 .project-button{
   width: 70%;
   height: 70px;
@@ -690,10 +699,12 @@ text-align: center;
   font-size: 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+/*  ==========================/project button================*/
+
+/*===========image with the text at the middle of the page==========*/
 .first-wrap{
   display: none;
 }
-
 .second-wrap{
   margin: 5%;
 }
@@ -702,7 +713,9 @@ text-align: center;
   margin:0 10px 10px 0;
   max-width:60%;
 }
+/*===========/image with the text at the middle of the page==========*/
 
+/*=========================proposer info and image============*/
 .proposer{
   background-color: #ECEFF4;
 }
@@ -715,7 +728,9 @@ text-align: center;
   max-width:60%;
   border-radius: 50%;;
 }
+/*=========================/proposer info and image============*/
 
+/*=================================contributors=========================*/
 .contributors{
   margin-top: 10%;
   padding-left: 10%;
@@ -743,33 +758,28 @@ text-align: center;
   color: white;
   font-size: 25px;
 }
-/* ##################################################################### */
-/* ################   betweenextra small to tablets   ################## */
-/* ##################################################################### */
-/* Medium devices ( 400px and up) */
-@media (min-width: 400px) {
+/*================================/contributors========================*/
 
-}
 /* ##################################################################### */
 /* ############################   TABLETS   ########################### */
 /* ##################################################################### */
 /* Medium devices (tablets, 641px and up) */
 @media (min-width: 700px) {
-  .row img{
-    display: none;
-  }
-  figure{
-    margin:0 8% 0;
-  }
+  /*===========product image and leftbar with social netwokr icons======*/
   .container {
     display: flex;
-    /*align-items: center;*/
-    /*padding-left: 5%;*/
   }
   .container figure img {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     margin: 1em ;
     /*align-self: center;*/
+  }
+
+  .row img{
+    display: none;
+  }
+  figure{
+    margin:0 8% 0;
   }
 
   .header-text {
@@ -784,13 +794,18 @@ text-align: center;
 .header-text h2{
   font-size: 1.4vw;
 }
+/*===========product image and leftbar with social netwokr icons======*/
+
+/*===================project button===============*/
   .project-button{
     width: 65%;
     height: 60px;
     margin:2% 15%;
     border-radius: 10px;
   }
-/*socdial networks icon*/
+
+  /*=====================/project button==========*/
+/*=============socdial networks icon=============*/
   .social-networks{
     justify-content:center;
     /*margin-left: 10%;*/
@@ -799,9 +814,15 @@ text-align: center;
     max-width: 25px;
     max-height: 25px;
   }
-  .box img{
+  /*/==============social networks icon=========*/
+
+  /*===========image with the text at the middle of the page==========*/
+
+  .img-left img{
     float:left;
+    margin-right: 2%;
   }
+
   .wrap{
     position: relative;
     display:flex;
@@ -816,13 +837,7 @@ text-align: center;
     margin:0 5% 5%;
 
   }
-  .proposer{
-    width: 25%;
-    position: absolute;
-    top: 0;
-    right: 1%;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
+
   .first-wrap-p img{
     float: right;
   }
@@ -837,8 +852,21 @@ text-align: center;
     width:fit-content;
     width: -moz-fit-content;
   }
-  .contributors {
+  /*===========/image with the text at the middle of the page==========*/
 
+  /*=============project proposer================ */
+  .proposer{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 1%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  /*=============/project proposer================ */
+
+  /*=================================contributors=========================*/
+
+  .contributors {
     text-align: left;
   }
 
