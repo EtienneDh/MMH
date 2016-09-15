@@ -45,10 +45,6 @@ figure {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 /* Colors */
 
@@ -73,7 +69,7 @@ ul {
 
 /* Blue Grey*/
 
-.cards-home-section ,.title, .carousel-info, footer aside {
+.cards-home-section , .carousel-info, footer aside , .title{
     background-color: #ecf0f4;
 }
 
@@ -92,7 +88,7 @@ ul {
     display: flex;
 }
 .wrapper {
-  margin: 0 2%;
+    margin: 0 2%;
 }
 
 /* /Layout */
@@ -100,12 +96,12 @@ ul {
 
 /*fonts*/
 
-footer h4, footer li {
-  font-family: 'Noticia Text', serif;
-}
 
- p {
-  font-family: 'Open Sans', sans-serif;
+footer h4, footer li, .title-list {
+    font-family: 'Noticia Text', serif;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*fonts*/
@@ -204,6 +200,7 @@ footer h4, footer li {
     display: none;
 }
 .menu-list {
+    background-color:white;
     display: none;
     list-style: none;
     padding: 0;
@@ -251,10 +248,9 @@ footer h4, footer li {
     height: 300vh;
 }
 
-
 .main-navbar{
     background-color:white;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .fixed {
     position: fixed;
@@ -269,6 +265,7 @@ footer h4, footer li {
 /******************************** SLIDER  **************************************/
 
 
+
 /* Layout */
 
 .slider-wrapper, .carousel-info-wrapper, .stat {
@@ -277,8 +274,11 @@ footer h4, footer li {
 .carousel {
     position: relative;
 }
+
+/* Circles */
+
 .carousel-circles {
-    /* Circles */
+    cursor: pointer;
     position: absolute;
     bottom: 5px;
     left: calc(50% - 46.5px);
@@ -291,15 +291,50 @@ footer h4, footer li {
     margin: 0 .5em;
     box-shadow: 2px 2px 0 #000;
 }
+.circle1 {
+    background-color: #bdbdbd;
+}
+
+/* Arrows*/
+
+.arrows {
+    max-width: 20px;
+    max-height: 20px;
+}
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: calc(50% - 10px);
+    cursor: pointer;
+    /* Transitions */
+    transition: padding 800ms;
+}
+
+.arrow-left {
+    left: 5px;
+}
+
+.arrow-right {
+    right: 5px;
+}
+
+.arrow-left:hover{
+  padding-left: 4px;
+}
+
+.arrow-right:hover {
+  padding-right : 4px;
+}
 .carousel-info-wrapper {
     margin: 0 2.5%;
     align-items: center;
+}
+.slide {
+    display: none;
 }
 .slide-text {
     margin: 0 3% 1em;
     height: 80px;
     text-overflow: ellipsis;
-    /*white-space: nowrap;*/
     overflow: hidden;
 }
 .slide-stats {
@@ -315,13 +350,11 @@ footer h4, footer li {
 .slider h2, .stat, .slider-button, .contribute {
     text-align: center;
 }
-
 .slider h2 {
     /* Slide Title */
     margin: .75em auto 0;
     font-size: 1em;
 }
-
 .slide-stats span {
     /* Stat Numbers */
     font-weight: bold;
@@ -338,6 +371,7 @@ footer h4, footer li {
 .slide-picture {
     display: none;
     max-width: 100%;
+    max-height: 100% !important;
 }
 .active {
     display: block;
@@ -352,40 +386,40 @@ footer h4, footer li {
     margin: 1.8em auto;
 }
 
-.slider-button:visited{
-    color:white;
-}
+
 .slider-button {
-  border: 2px solid #0a749c;
-  border-radius: 5px;
-  padding: 9px 60px;
-  margin: .8em 0;
-  color: #fff;
-  font-size: .9em;
-  font-weight: bold;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-  /* Transition */
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 800ms;
-  transition-timing-function: linear;
-  transition-delay: 100ms;
-
-  /* For Safari */
-  -webkit-transition-property: color, background-color, box-shadow;
-  -webkit-transition-duration: 800ms;
-  -webkit-transition-timing-function: linear;
-  -webkit-transition-delay: 100ms;
-  /* font-family: 'Noticia Text'; */
+    border: 2px solid #0a749c;
+    border-radius: 5px;
+    padding: 9px 60px;
+    margin: .8em 0;
+    color: #fff;
+    font-size: .9em;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* Transition */
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 800ms;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+    /* For Safari */
+    -webkit-transition-property: color, background-color, box-shadow;
+    -webkit-transition-duration: 800ms;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 100ms;
+    /* font-family: 'Noticia Text'; */
 }
 .slider-button:hover {
-  color: #0a749c;
-  background-color: #fff;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #0a749c;
+    background-color: #fff;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+    box-shadow: none;
+}
+.slider-button:visited {
+    color: #fff;
 }
 
-.slider-button:visited {
-  color: #fff;
+.slider-button:visited:hover {
+  color: #0a749c;
 }
 
 /* /Button Contribute */
@@ -406,7 +440,6 @@ footer h4, footer li {
 
 
 /******************************* /SLIDER  **************************************/
-
 
 /******************************** CARDS  **************************************/
 
@@ -552,62 +585,59 @@ hr{
 
 
 /*Ensure the footer to be always at the bottom*/
+
 footer {
-    margin-top:50px;
+    margin-top: 50px;
     width: 100%;
 }
-
 footer aside {
-  margin-top: 1em;
-  padding-bottom: 3px;
-  width:100%;
+    margin-top: 1em;
+    padding-bottom: 3px;
+    width: 100%;
 }
-
 footer h4 {
-  font-size: .8em;
+    font-size: 1em;
 }
-
 footer h4, footer p {
-  text-align: center;
+    text-align: center;
 }
-
 footer ul, footer p {
-  font-size: 0.5em;
-  padding-top: 1em;
+    font-size: 0.6em;
+    padding-top: 1em;
 }
-
 footer ul {
-  max-width: 30%;
-  margin-right: 5em;
+    max-width: 40%;
+    margin-right: 2em;
 }
-
 footer li {
-  padding-left: 2px;
+    padding-left: 2px;
 }
 
 /*Special class for the menu title*/
-.title-list  {
-  font-weight: bold;
-  padding-bottom: 0.5em;
-  padding-left: 0;
+
+.title-list {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+    padding-left: 0;
 }
 
 /*Iniline display for the images(logos/social medias)*/
+
 footer figure {
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding-left: 2em;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 2em;
 }
 
 /*Reduce the links around the images for better display*/
-footer section a {
-  width: 80px;
-  margin: .5em 0;
-}
 
+footer section a {
+    width: 100px;
+    margin: .5em .5em;
+}
 footer aside a {
-  width: 50px;
-  margin: .5em 0;
+    width: 50px;
+    margin: .5em 0;
 }
 
 /*Controle the size of partnairs logos*/
@@ -618,22 +648,131 @@ footer section figure img {
 
 /*Controle the size of social media icons*/
 footer aside figure img {
-  width: 30%;
+    width: 40%;
 }
 
 /*No twitter on smartphones*/
-
-
-.twitter-container{
-    display:none;
+.twitter-container {
+    display: none;
 }
-
 
 /******************************* /FOOTER  **************************************/
 
 
+/******************************* HOMEPAGE **************************************/
 
 
+/****** CARDS ******/
+
+
+/* general */
+
+.wrapper-home-cards {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+
+.cards-home-navbar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-home-navbar a {
+    font-size: 15px;
+    margin: 0 10px;
+    width:fit-content;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.searchbar-cards-home {
+    width: 250px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 15px auto;
+}
+
+/* Cards */
+
+.home-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 390px;
+    border: solid 1px #bdbdbd;
+    margin: 10px 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    /* box-shadow: 5px 5px 0 #bdbdbd ; */
+}
+.home-cards:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.cards-home-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-home-title {
+    text-align: center;
+    color: #0a749c;
+    font-size: 18px;
+}
+.img-remplacement {
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+}
+.finish-banner {
+    color: #2da555;
+    font-size: 20px;
+    text-align: center;
+}
+.home-card-description {
+    width: 90%;
+    margin: 0 auto;
+}
+.home-card-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.card-home-loadbar {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.card-home-amount {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1px;
+}
+.amount, .contribut {
+    margin: 0px 3px;
+}
+.amount {
+    color: black;
+}
+
+/********** /CARDS  ********/
 
 /*                              END HOMEPAGE                                   */
 
@@ -647,13 +786,9 @@ footer aside figure img {
 /******************************* PROJECTS **************************************/
 
 
-/*******************************************************************************/
-
-
-/*******************************************************************************/
-
 
 /*                              END PROJECTS                                   */
+
 
 
 /*******************************************************************************/
@@ -668,10 +803,12 @@ footer aside figure img {
 /*******************************************************************************/
 
 
-/*******************************************************************************/
+
 
 
 /*                              END PAIEMENT                                   */
+
+/******************************************************************************/
 
 
 /*******************************************************************************/
@@ -699,13 +836,60 @@ footer aside figure img {
 /* ##################################################################### */
 
 
+/******************************************************************************/
+
+
+/*                               RESPONSIVE                                   */
+
+
+/******************************************************************************/
+
+
+/******************************************************************************/
+
+
+/* #####################   SMARTPHONE & SMALL TABLETS   ##################### */
+
+@media screen and (min-width: 360px) {
+    footer section a {
+        margin: .5em .7em;
+    }
+    /*Center the images on bigger smartphones*/
+    footer figure {
+        padding-left: 3em;
+        align-items: center;
+    }
+    /*Controle the size of partnairs logos*/
+    footer section figure img {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 380px) and (max-width: 550px) {
+    footer section a {
+        margin: .5em 1.5em;
+    }
+}
+@media screen and (min-width: 450px) {
+    footer aside figure {
+        justify-content: flex-end;
+    }
+}
+
+/* END SMARTPHONE & SMALL TABLETS */
+
+
+/* ###########################   TABLETS   ############################ */
+
 @media (min-width: 700px) {
     /******************************** HEADER  **************************************/
     /* Top header */
+
     .card-nav-form-m{
 	display:none;
     }
-    .card-nav-form-d{	
+    .card-nav-form-d{
+	width:fit-content;
+	width: -moz-fit-content;
 	margin-left:auto;
 	display: flex;
 	justify-content: center;
@@ -739,7 +923,6 @@ footer aside figure img {
 	justify-content:flex-start;
 	padding-left:50px;
     }
-    
     .visible-navbar {
         /*Hide bar with menu icon*/
         display: none;
@@ -753,11 +936,10 @@ footer aside figure img {
         display: flex;
         justify-content: left;
     }
-
-    .menu-list li{
-	font-size:16px;
-	width:fit-content;
-	width:-moz-fit-content;
+    .menu-list li {
+        font-size: 16px;
+        width: fit-content;
+        width: -moz-fit-content;
     }
     /* Under menu */
     .under-menu/*Make the mhh dropdown menu in column*/
@@ -768,7 +950,6 @@ footer aside figure img {
     .under-menu-link {
         display: none;
     }
-  
     .under-menu:hover .under-menu-link{
 	width:200px;
 	height:150px;
@@ -782,6 +963,7 @@ footer aside figure img {
 	border: 3px solid #0092c9;	
 	z-index:16;	
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
     }
     .under-menu-link a:last-child {
         border-bottom: 0;
@@ -875,80 +1057,85 @@ footer aside figure img {
 
 @media screen and (min-width: 768px) {
     /********************************* Slider ***********************************/
-
     /*Layout*/
-
     .slider {
-	background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
-	background-color: #ecf0f4;
+        background: linear-gradient(#ecf0f4, #ecf0f4 92%, #fff 92%);
+        background-color: #ecf0f4;
     }
-
     .slider-wrapper {
-	flex-direction: row;
+        flex-direction: row;
     }
-
     .carousel {
-	max-width: 60%;
-	margin: 1em 1.6%;
+        max-width: 60%;
+        margin: 1em 1.6%;
     }
-
     .carousel-circles {
-	bottom: 20%;
-	left: 40%;
+        bottom: 20%;
+        left: 40%;
     }
-
     .carousel-info {
-	max-width: 35%;
-	margin-top: 2em;
-	background-color: #fff;
+        max-width: 35%;
+        margin-top: 2em;
+        background-color: #fff;
     }
-
     /* Shadow */
     .slide-picture, .carousel-info {
-	/* box-shadow: 6px 5px 0 #bdbdbd; */
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        /* box-shadow: 6px 5px 0 #bdbdbd; */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
     /* Shadow */
-
     /******************************* /Slider ************************************/
     /********************************* Footer ***********************************/
-    /* reduce the links around the images for better display */
+    /* reduce the links around the partners for better display */
     footer section a {
-	width: 80px;
-	margin: .5em 0;
+        width: 80px;
+        margin: .5em 0;
     }
-
+    /* reduce the links around the social media icons for better display */
     footer aside a {
-	width: 50px;
-	margin: .5em 0;
+        width: 50px;
+        margin: .5em 0;
     }
-
+    /*display of both partners and social icons img*/
     footer figure {
-	justify-content: space-around;
-	padding-left: 0;
+        justify-content: space-around;
+        padding-left: 0;
     }
-
+    /*Display of the div containing the submenu and the twitter widget*/
+    footer aside div:nth-child(1) {
+        justify-content: space-between;
+    }
+    footer h4 {
+        font-size: 1.2em;
+    }
     footer ul, footer p {
-	font-size: .6em;
+        font-size: .7em;
     }
-
     /*Controle the size of partnairs logos*/
     footer section figure img {
-	width: 100%;
+        width: 100%;
     }
-
     /*Controle the size of social media icons*/
     footer aside figure img {
-	width: 50%;
+        width: 50%;
     }
-
-    .twitter-container{
-	display: block;
+    .twitter-container {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin: 1em 0;
+        overflow: scroll;
+    }
+    .twitter-timeline {
+        overflow: scroll;
     }
     /******************************* /Footer ************************************/
 }
 
 /*                      /Tablets and small Desktop : 768 px                   */
+
+/* Slider Responsive Design for higher Res */
+
 
 @media screen and (min-width: 861px) {
     .slider-wrapper {
@@ -967,11 +1154,15 @@ footer aside figure img {
     .carousel-info {
         max-width: 302px;
     }
+
 }
 
 @media screen and (min-width: 1100px) {
     .home-cards{
 	margin:35px;
+    }
+    .slide-text {
+        height: 105px;
     }
     .carousel-info-wrapper {
         margin: 0 5%;
@@ -994,6 +1185,21 @@ footer aside figure img {
     }
 }
 
+@media screen and (min-width: 980px) {
+    .wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    footer h4 {
+        font-size: 1.4em;
+    }
+    .twitter-container {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1100px) {
+
+}
 @media screen and (min-width: 1155px) {
     .slider-wrapper {
         margin: 0 5%;
@@ -1007,49 +1213,38 @@ footer aside figure img {
         margin: 0 auto;
 
     }
+    
     /* --------------------------Footer------------------------- */
     footer ul {
-	width: 15%;
-	font-size: 0.8em
+        width: 15%;
+        font-size: 0.8em
     }
-
     footer p {
-	font-size: 0.9em;
+        font-size: 0.9em;
     }
-
     /*Controle the size of partnairs logos*/
     footer section figure img {
-	width: 150%;
+        width: 150%;
     }
-
     /*Controle the size of social media icons*/
     footer aside figure img {
-	width: 60%;
+        width: 60%;
     }
 
-    .twitter-timeline {
-	display: block;
-    }
-    
     /* -------------------------/Footer------------------------- */
 }
-
-
-@media screen and (min-width: 980px) {
-
-    .wrapper {
-	width: 90%;
-	margin: auto;
-    }
-
-    footer h4 {
-	font-size: 1em;
-    }
-
-}
-
 @media screen and (min-width: 1500px) {
     .wrapper {
-	width: 80%;
+        width: 80%;
+    }
+    .twitter-container {
+        width: 500px;
+        height: 300px;
+    }
+    .carousel-info {
+        margin-top: 2.6em;
     }
 }
+
+/* /Slider Responsive Design for higher Res */
+
