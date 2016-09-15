@@ -66,7 +66,7 @@ var slideArray = [slide1, slide2, slide3];
 
 // Declare variables for Delay-loop Function
 index = 0;
-var max = 3;
+var slidesCount = 3;
 // Delay between each slides
 delay = 7000;
 
@@ -116,6 +116,8 @@ function changeImage(direction) {
     } else {
         activeSlide === 0 ? displaySlide(2) : displaySlide(activeSlide - 1);
     }
+    // Hide arrows for 1 sec to prevent animation glitches
+    $('.arrows').hide(1).delay(750).fadeIn(200);
     // Run autoSlide
     autoSlide();
 }
@@ -139,7 +141,7 @@ function pickASlide(number) {
 
 function autoSlide() {
     // As it is an infinite recursive function, we set index back to 0 each time index = 3
-    if (index >= max) {
+    if (index >= slidesCount) {
         index = 0;
     }
     // Auto play function
