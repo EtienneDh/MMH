@@ -317,27 +317,7 @@ p {
 .arrow-right:hover {
   padding-right : 4px;
 }
-.circle1 {
-    background-color: #bdbdbd;
-}
 
-/* Arrows*/
-
-.arrows {
-    max-width: 20px;
-    max-height: 20px;
-}
-.arrow-left, .arrow-right {
-    position: absolute;
-    top: calc(50% - 10px);
-    cursor: pointer;
-}
-.arrow-left {
-    left: 5px;
-}
-.arrow-right {
-    right: 5px;
-}
 .carousel-info-wrapper {
     margin: 0 2.5%;
     align-items: center;
@@ -548,11 +528,19 @@ footer aside figure img {
 
 /* Navbar */
 
+.wrapper-nav {
+    background-color: white;
+}
+
 .cards-home-navbar {
+    background-color: white;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px 0 10px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 .cards-home-navbar a {
     font-size: 15px;
@@ -572,9 +560,23 @@ form {
     margin: 15px auto;
 }
 
+hr {
+    display: block;
+    max-width: 1160px;
+    margin: 0 auto;
+    border-top: 3px solid #2da555;
+    background-color: white;
+    padding: 20px 0 50px;
+}
+
+.card-nav-form-d {
+    display: none;
+}
+
 /* Cards */
 
 .home-cards {
+  background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -714,11 +716,6 @@ text-align: center;
   /*margin-left: 30%;*/
 }
 
-.social-icons{
-  max-width: 10px;
-  max-height: 10px;
-  /*margin: .8em .5em;*/
-}
 /*=================/social network icons============*/
 
 /*  ==========================project button================*/
@@ -1088,7 +1085,8 @@ section .static-social-medias {
     .row img{
       display: none;
     }
-    figure{
+
+    .container figure{
       margin:0 8% 0;
     }
 
@@ -1120,10 +1118,10 @@ section .static-social-medias {
       justify-content:center;
       /*margin-left: 10%;*/
     }
-    .social-icons{
+    /*.social-icons{
       max-width: 25px;
       max-height: 25px;
-    }
+    }*/
     /*/==============social networks icon=========*/
 
     /*===========image with the text at the middle of the page==========*/
@@ -1468,6 +1466,7 @@ section .static-social-medias {
 
     .static-image {
       width: 80%;
+    }
 }
 
 /* /Slider Responsive Design for higher Res */
