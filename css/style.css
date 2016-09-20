@@ -1413,7 +1413,7 @@ section .static-social-medias {
 
   /*Project*/
 
-  figure{
+  .project-image-container{
     margin:0 8% 0;
   }
 
