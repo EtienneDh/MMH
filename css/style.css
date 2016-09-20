@@ -653,7 +653,13 @@ hr {
 
 /******************************* PROJECTS **************************************/
 
-/*===========product image and leftbar with social netwokr icons======*/
+/*product image and leftbar with social netwokr icons*/
+h1,h2,h3,h4,h5{
+  font-family:"Ubuntu Condensed";
+}
+p{
+  font-family: "Open Sans", sans-serif;
+}
 .container figure img{
   width: 100%;
 }
@@ -670,13 +676,13 @@ hr {
 
 /*====================headline inside the leftbar============*/
 .header-text h1{
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Ubuntu Condensed";
 }
-.header-text h2{
+.header-text p{
   font-size: 14px;
-  font-family: sans-serif;
+  font-family: "Open Sans",sans-serif;
   line-height: 22px;
   margin:5%;
 }
@@ -702,9 +708,11 @@ hr {
 }
 .left-bar p{
   font-size: 14px;
+  font-family:'Noticia Text', serif;
+  font-weight:bold;
   background-color: #0A749C;
   color: white;
-text-align: center;
+  text-align: center;
 }
 /*==============/leftbar at the center of the page===============*/
 
@@ -716,6 +724,11 @@ text-align: center;
   /*margin-left: 30%;*/
 }
 
+.social-icons{
+  max-width: 20px;
+  max-height: 20px;
+
+}
 /*=================/social network icons============*/
 
 /*  ==========================project button================*/
@@ -745,13 +758,13 @@ text-align: center;
 /*===========/image with the text at the middle of the page==========*/
 
 /*=========================proposer info and image============*/
+
 .proposer{
   background-color: #ECEFF4;
+  padding:2%;
 }
-.proposer-info{
-  margin-left: 10%;
-}
-.proposer img{
+
+.proposer figure img{
   float:left;
   margin:0 10px 10px 0;
   max-width:60%;
@@ -762,7 +775,6 @@ text-align: center;
 /*=================================contributors=========================*/
 .contributors{
   margin-top: 10%;
-  padding-left: 10%;
 }
 .contributors p{
   box-shadow: 5px 5px grey;
@@ -772,20 +784,20 @@ text-align: center;
   width: 50%;
   background-color: green;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 10px 10px;
 }
 .twenty{
   width: 60%;
   background-color: green;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 .thirty{
   width: 70%;
   background-color: green;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 /*================================/contributors========================*/
 
@@ -1070,115 +1082,7 @@ section .static-social-medias {
     }
     /******************************** /CARDS  **************************************/
 
-    /******************************** Project  **************************************/
 
-    /*===========product image and leftbar with social netwokr icons======*/
-    .container {
-      display: flex;
-    }
-    .container figure img {
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      margin: 1em ;
-      /*align-self: center;*/
-    }
-
-    .row img{
-      display: none;
-    }
-
-    .container figure{
-      margin:0 8% 0;
-    }
-
-    .header-text {
-      max-width: 25%;
-      height: 420px;
-      margin:3.7em 0 0 ;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      background-color: #fff;
-      border-bottom: 0;
-      border-top: 0;
-    }
-  .header-text h2{
-    font-size: 1.4vw;
-  }
-  /*===========product image and leftbar with social netwokr icons======*/
-
-  /*===================project button===============*/
-    .project-button{
-      width: 65%;
-      height: 60px;
-      margin:2% 15%;
-      border-radius: 10px;
-    }
-
-    /*=====================/project button==========*/
-  /*=============socdial networks icon=============*/
-    .social-networks{
-      justify-content:center;
-      /*margin-left: 10%;*/
-    }
-    /*.social-icons{
-      max-width: 25px;
-      max-height: 25px;
-    }*/
-    /*/==============social networks icon=========*/
-
-    /*===========image with the text at the middle of the page==========*/
-
-    .img-left img{
-      float:left;
-      margin-right: 2%;
-    }
-
-    .wrap{
-      position: relative;
-      display:flex;
-      flex-direction: column;
-      width: 100%;
-      /*margin:0 0;*/
-    }
-    .first-wrap,.second-wrap{
-      display: unset;
-      width: 55%;
-      height: 50%;
-      margin:0 5% 5%;
-
-    }
-
-    .first-wrap-p img{
-      float: right;
-    }
-
-    .first-wrap h3{
-      border-bottom: 2px solid #2DA555;
-      width:fit-content;
-      width: -moz-fit-content;
-    }
-    .second-wrap h3{
-      border-bottom: 2px solid #2DA555;
-      width:fit-content;
-      width: -moz-fit-content;
-    }
-    /*===========/image with the text at the middle of the page==========*/
-
-    /*=============project proposer================ */
-    .proposer{
-      width: 25%;
-      position: absolute;
-      top: 0;
-      right: 1%;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    }
-    /*=============/project proposer================ */
-
-    /*=================================contributors=========================*/
-
-    .contributors {
-      text-align: left;
-    }
-
-    /******************************** Project  **************************************/
 }
 
 /*                    Tablets and small Desktop : 768 px                       */
@@ -1312,6 +1216,121 @@ section .static-social-medias {
     }
 
     /********* /STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
+
+    /********* Projet************/
+
+    /*===========product image and leftbar with social netwokr icons======*/
+    .container {
+      display: flex;
+    }
+    .container figure img {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      margin: 1em ;
+      /*align-self: center;*/
+      width: 90%;
+    }
+
+    .header-text {
+      max-width: 35%;
+      height: auto;
+      margin:2em 2em 0 -1em ;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      background-color: #fff;
+      border-bottom: 0;
+      border-top: 0;
+    }
+
+    .header-text p{
+      font-size: .85em;
+
+    }
+    .left-bar{
+      margin-right: -12%;
+    }
+    /*===========product image and leftbar with social netwokr icons======*/
+
+    /*===================project button===============*/
+    .project-button{
+      width: 65%;
+      height: 60px;
+      margin:2% 15%;
+      border-radius: 10px;
+    }
+
+    /*=====================/project button==========*/
+    /*=============socdial networks icon=============*/
+    .social-networks{
+      justify-content:center;
+      align-items: center;
+    }
+    .social-icons{
+      max-width: 25px;
+      max-height: 25px;
+      margin:20%;
+    }
+    /*/==============social networks icon=========*/
+
+    /*===========image with the text at the middle of the page==========*/
+
+    .img-left img{
+      float:left;
+      margin-right: 2%;
+    }
+
+    .wrap{
+      position: relative;
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+      margin:5% 0;
+    }
+    .first-wrap,.second-wrap{
+      display: unset;
+      width: 55%;
+      height: 50%;
+      margin:0 3%;
+
+    }
+
+    .first-wrap-p img{
+      float: right;
+    }
+
+    .first-wrap h3{
+      border-bottom: 2px solid #2DA555;
+      width:fit-content;
+      width: -moz-fit-content;
+    }
+    .second-wrap h3{
+      border-bottom: 2px solid #2DA555;
+      width:fit-content;
+      width: -moz-fit-content;
+    }
+    /*===========/image with the text at the middle of the page==========*/
+
+    /*=============project proposer================ */
+    .proposer{
+      width: 30%;
+      position: absolute;
+      top: 0;
+      right: 4%;
+      padding:1%;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .proposer-info h1{
+      font-size: 1em;
+    }
+
+
+    /*=============/project proposer================ */
+
+    /*=================================contributors=========================*/
+
+    .contributors {
+      text-align: left;
+    }
+
+    /********* /Projet************/
 }
 
 /*                      /Tablets and small Desktop : 768 px                   */
@@ -1390,6 +1409,55 @@ section .static-social-medias {
     }
 }
 
+@media (min-width: 1200px) {
+
+  /*Project*/
+
+  figure{
+    margin:0 8% 0;
+  }
+
+  .header-text {
+    width: 25%;
+  }
+
+  .header-text h1{
+    margin-bottom:8%;
+  }
+  .row{
+    margin-bottom:8%;
+  }
+  .header-text p{
+    margin-bottom:8%;
+    font-size:1em;
+  }
+  .left-bar{
+    margin-right:-16%;
+  }
+  .left-bar p{
+
+  }
+  .row img{
+    display: unset;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+  }
+  .proposer{
+    width:25%;
+    right: 7%;
+  }
+  .container figure img {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 1em;
+    /*align-self: center;*/
+    width: 100%;
+  }
+
+  /*/Project*/
+
+}
+
 @media screen and (min-width: 1280px) {
     /* Set the final size */
     .slider-wrapper {
@@ -1449,13 +1517,30 @@ section .static-social-medias {
       right: 8%;
   }
 
+  .wrap{
+    width: 95%;
+    margin:5% auto;
+  }
+
   /* ------ /Project --------*/
 }
 
+@media (min-width: 1322px) {
+  .proposer{
+    right: 10%;
+  }
+
+}
+
 @media screen and (min-width: 1500px) {
-    .wrapper, .wrapper-static-content {
+    .wrapper, .wrapper-static-content, .wrap {
         width: 80%;
     }
+
+  .first-wrap, .second-wrap {
+    margin-left: 0;
+  }
+
     .twitter-container {
         width: 500px;
         height: 300px;
