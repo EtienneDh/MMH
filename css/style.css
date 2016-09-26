@@ -1,6 +1,4 @@
 
-/* MyMoneyHelp */
-
 
 /****************************GENERAL SETTINGS***********************************/
 
@@ -16,22 +14,28 @@ ul {
     margin: 0 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
 a:visited {
     color: #373737;
 }
+
 figure {
     margin: 0;
 }
+
 body {
     position: relative;
     min-height: 100vh;
 }
+
 a {
     text-decoration: none;
 }
+
 figure {
     margin: 0;
 }
@@ -41,25 +45,28 @@ ul {
     padding: 0;
 }
 
+
 /* Colors */
 
 
 /*Dark BLue*/
 
-.login-button, .logo-remplacement, .button {
+.login-button, .logo-remplacement, .button, .project-button {
     background-color: #0a749c;
 }
 
+.menu-list a:hover, .mmh:hover, .under-menu-link a:hover, .slider-button:hover, .slider-button:hover:visited, .backup-button:hover, .join-button:hover, .project-button:hover,
+.card-home-title
+{
+    color: #0a749c;
+}
+
+
 /*Blue*/
 
-
-/* { */
-
-
-/*   background-color: #0092c9; */
-
-
-/* } */
+/*{
+    background-color: #0092c9;
+}*/
 
 
 /* Blue Grey*/
@@ -68,10 +75,25 @@ ul {
     background-color: #ecf0f4;
 }
 
+
 /* Green */
 
 .language, hr, .card-home-loadbar {
     background-color: #2da555;
+}
+
+/* white */
+
+.logo-remplacement, .login-button, .slider-button:visited, .backup-button:visited, .join-button:visited, .project-button,
+.card-home-loadbar, .left-bar p,.ten, .twenty, .thirty
+{
+  color: #fff;
+}
+
+.menu-list, .under-menu-link, .main-navbar, .slider-button:hover, .backup-button:hover, .join-button:hover, .project-button:hover,
+.wrapper-nav, .cards-home-navbar, hr, .home-cards
+{
+  background-color: #fff;
 }
 
 /* /Colors */
@@ -82,9 +104,11 @@ ul {
 .flex {
     display: flex;
 }
+
 .wrapper {
     margin: 0 2%;
 }
+
 
 /* /Layout */
 
@@ -103,7 +127,32 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /*fonts*/
+
+
+/* Place holders*/
+
+::-webkit-input-placeholder {
+    font-size: .7em;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: .7em;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: .7em;
+}
+
+:-ms-input-placeholder {
+    font-size: .7em;
+}
+
+
+/* /Place holders*/
 
 
 /*************************** /GENERAL SETTINGS *********************************/
@@ -115,7 +164,6 @@ p {
 /* TEMPORAIRE */
 
 .logo-remplacement {
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +174,7 @@ p {
     margin-right: auto;
 }
 
+
 /* Header above the main-navbar */
 
 .top-header-flex {
@@ -133,6 +182,7 @@ p {
     height: 60px;
     align-items: center;
 }
+
 
 /* DIV SOCIAUX + LOGIN */
 
@@ -144,12 +194,14 @@ p {
     flex-direction: column;
 }
 
+
 /* Div all socials */
 
 .buttons-social {
     display: flex;
     justify-content: space-around;
 }
+
 
 /* Login */
 
@@ -158,8 +210,8 @@ p {
     border: 0;
     font-size: 10px;
     line-height: 20px;
-    color: white;
 }
+
 
 /* Buttons social alone */
 
@@ -168,6 +220,7 @@ p {
     height: 25px;
     margin: 0 3px;
 }
+
 
 /* Menu */
 
@@ -180,21 +233,24 @@ p {
     margin: 15px;
 }
 
+
 /* Menu List */
 
 .acceuil {
     display: none;
 }
+
 .menu-list {
-    background-color:white;
     display: none;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .visible-navbar {
     border-bottom: 2px solid #0092c9;
 }
+
 
 /* Menu list item */
 
@@ -204,12 +260,16 @@ p {
     line-height: 50px;
     padding: 0 20px;
 }
+
 .mmh, .under-menu-link {
     padding: 0 20px;
+    cursor: pointer;
 }
+
 .menu-list li {
     border-bottom: 2px solid #0092c9;
 }
+
 
 /* under menu link */
 
@@ -219,26 +279,28 @@ p {
 
 .under-menu-link {
     display: none;
-    background-color: white;
 }
+
 .under-menu a {
     padding-left: 25px;
     display: block;
     width: 100%;
 }
+
 .menu-list a {
     text-decoration: none;
 }
+
 .test {
-    whidth: 100%;
+    width: 100%;
     background: red;
     height: 300vh;
 }
 
-.main-navbar{
-    background-color:white;
+.main-navbar {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .fixed {
     position: fixed;
     width: 100%;
@@ -246,11 +308,11 @@ p {
     z-index: 15;
 }
 
+
 /******************************* /HEADER  **************************************/
 
 
 /******************************** SLIDER  **************************************/
-
 
 
 /* Layout */
@@ -258,9 +320,11 @@ p {
 .slider-wrapper, .carousel-info-wrapper, .stat {
     flex-direction: column;
 }
+
 .carousel {
     position: relative;
 }
+
 
 /* Circles */
 
@@ -270,6 +334,7 @@ p {
     bottom: 5px;
     left: calc(50% - 46.5px);
 }
+
 .carousel-circles div {
     width: 15px;
     height: 15px;
@@ -288,12 +353,14 @@ p {
     background-color: #bdbdbd;
 }
 
+
 /* Arrows*/
 
 .arrows {
     max-width: 20px;
     max-height: 20px;
 }
+
 .arrow-left, .arrow-right {
     position: absolute;
     top: calc(50% - 10px);
@@ -310,31 +377,35 @@ p {
     right: 5px;
 }
 
-.arrow-left:hover{
-  padding-left: 4px;
+.arrow-left:hover {
+    padding-left: 4px;
 }
 
 .arrow-right:hover {
-  padding-right : 4px;
+    padding-right: 4px;
 }
 
 .carousel-info-wrapper {
     margin: 0 2.5%;
     align-items: center;
 }
+
 .slide {
     display: none;
 }
+
 .slide-text {
     margin: 0 3% 1em;
     height: 80px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .slide-stats {
     justify-content: space-between;
     margin-top: 1em;
 }
+
 
 /* /Layout */
 
@@ -344,21 +415,25 @@ p {
 .slider h2, .stat, .slider-button, .contribute {
     text-align: center;
 }
+
 .slider h2 {
     /* Slide Title */
     margin: .75em auto 0;
     font-size: 1em;
 }
+
 .slide-stats span {
     /* Stat Numbers */
     font-weight: bold;
     font-size: .8em;
 }
+
 .slide-stats p {
     /* Stat text */
     font-size: .65em;
     margin-top: .18em;
 }
+
 
 /*Slider pictures*/
 
@@ -367,9 +442,11 @@ p {
     max-width: 100%;
     max-height: 100% !important;
 }
+
 .active {
     display: block;
 }
+
 
 /* /Slider pictures*/
 
@@ -380,10 +457,8 @@ p {
     margin: 1.8em auto;
 }
 
-.slider-button:visited, .backup-button:visited, .join-button:visited {
-    color: white;
-}
-.slider-button, .backup-button, .join-button {
+
+.slider-button, .backup-button, .join-button, .project-button {
     border: 2px solid #0a749c;
     border-radius: 5px;
     padding: 9px 60px;
@@ -391,7 +466,7 @@ p {
     color: #fff;
     font-size: .9em;
     font-weight: bold;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow:  0 5px 5px rgba(0, 0, 0, 0.30);
     /* Transition */
     transition-property: color, background-color, box-shadow;
     transition-duration: 800ms;
@@ -404,11 +479,11 @@ p {
     -webkit-transition-delay: 100ms;
     /* font-family: 'Noticia Text'; */
 }
-.slider-button:hover, .backup-button:hover, .join-button:hover {
-    color: #0a749c;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+.slider-button:hover, .backup-button:hover, .join-button:hover, .project-button:hover {
+    box-shadow: none;
 }
+
 
 /* /Button Contribute */
 
@@ -418,11 +493,13 @@ p {
 .social-network-icons {
     justify-content: space-between;
 }
+
 .social-icons {
     max-height: 20px;
     max-width: 20px;
     margin: .8em .5em;
 }
+
 
 /* /Social Icons */
 
@@ -436,33 +513,40 @@ p {
 /*Ensure the footer to be always at the bottom*/
 
 footer, footer aside {
-  width: 100%;
+    width: 100%;
 }
 
 footer {
     margin-top: 50px;
 }
+
 footer aside {
     margin-top: 1em;
     padding-bottom: 3px;
 }
+
 footer h4 {
     font-size: 1em;
 }
+
 footer h4, footer p {
     text-align: center;
 }
+
 footer ul, footer p {
     font-size: 0.6em;
     padding-top: 1em;
 }
+
 footer ul {
     max-width: 40%;
     margin-right: 2em;
 }
+
 footer li {
     padding-left: 2px;
 }
+
 
 /*Special class for the menu title*/
 
@@ -472,6 +556,7 @@ footer li {
     padding-left: 0;
 }
 
+
 /*Iniline display for the images(logos/social medias)*/
 
 footer figure {
@@ -480,7 +565,9 @@ footer figure {
     padding-left: 2em;
 }
 
+
 /*Reduce the links around the images and the partners logos for better display*/
+
 footer section a, footer section figure img {
     width: 100px;
 }
@@ -488,10 +575,12 @@ footer section a, footer section figure img {
 footer section a {
     margin: .5em .5em;
 }
+
 footer aside a {
     width: 50px;
     margin: .5em 0;
 }
+
 
 /*Controle the size of social media icons*/
 
@@ -499,18 +588,22 @@ footer aside figure img {
     width: 40%;
 }
 
+
 /*No twitter on smartphones*/
 
 .twitter-container {
     display: none;
 }
 
+
 /******************************* /FOOTER  **************************************/
 
 
 /******************************* HOMEPAGE **************************************/
 
+
 /******************************** CARDS  **************************************/
+
 
 /****** CARDS ******/
 
@@ -526,14 +619,11 @@ footer aside figure img {
     align-items: center;
 }
 
+
 /* Navbar */
 
-.wrapper-nav {
-    background-color: white;
-}
 
 .cards-home-navbar {
-    background-color: white;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -542,19 +632,22 @@ footer aside figure img {
     max-width: 1160px;
     margin: 0 auto;
 }
+
 .cards-home-navbar a {
     font-size: 15px;
     margin: 0 10px;
-    width:fit-content;
+    width: fit-content;
 }
+
 form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .searchbar-cards-home {
     width: 250px;
-    height: 25px;
+    height: 28px;
     line-height: 25px;
     font-size: 18px;
     margin: 15px auto;
@@ -565,7 +658,6 @@ hr {
     max-width: 1160px;
     margin: 0 auto;
     border-top: 3px solid #2da555;
-    background-color: white;
     padding: 20px 0 50px;
 }
 
@@ -573,10 +665,10 @@ hr {
     display: none;
 }
 
+
 /* Cards */
 
 .home-cards {
-  background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -588,9 +680,11 @@ hr {
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     /* box-shadow: 5px 5px 0 #bdbdbd ; */
 }
+
 .home-cards:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .cards-home-list {
     width: 100%;
     display: flex;
@@ -598,25 +692,29 @@ hr {
     justify-content: center;
     align-items: center;
 }
+
 .card-home-title {
     text-align: center;
-    color: #0a749c;
     font-size: 18px;
 }
+
 .img-remplacement {
     width: 100%;
     height: 150px;
     background-color: grey;
 }
+
 .finish-banner {
     color: #2da555;
     font-size: 20px;
     text-align: center;
 }
+
 .home-card-description {
     width: 90%;
     margin: 0 auto;
 }
+
 .home-card-stats {
     display: flex;
     flex-direction: row;
@@ -624,28 +722,31 @@ hr {
     width: 90%;
     margin: 0 auto;
 }
+
 .card-home-loadbar {
     width: 200px;
     text-align: center;
-    color: white;
     font-weight: bold;
     margin-right: 10px;
 }
+
 .card-home-amount {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 1px;
 }
+
 .amount, .contribut {
     margin: 0px 3px;
 }
+
 .amount {
     color: black;
 }
 
-/********** /CARDS  ********/
 
+/********** /CARDS  ********/
 
 
 /*                              END HOMEPAGE                                   */
@@ -653,153 +754,186 @@ hr {
 
 /******************************* PROJECTS **************************************/
 
+
 /*product image and leftbar with social netwokr icons*/
-h1,h2,h3,h4,h5{
-  font-family:"Ubuntu Condensed";
-}
-p{
-  font-family: "Open Sans", sans-serif;
-}
-.container figure img{
-  width: 100%;
-}
-.container{
-  background-color: #ECF0F4;
+
+p {
+    font-family: "Open Sans", sans-serif;
 }
 
-.header-text{
-  border-bottom: 10px solid #CDCDCD;
-  border-top: 10px solid #CDCDCD;
-  background-color: #ECEFF4;
+.container figure img {
+    width: 100%;
 }
+
+.container {
+    background-color: #ECF0F4;
+}
+
+.header-text {
+    border-bottom: 10px solid #CDCDCD;
+    border-top: 10px solid #CDCDCD;
+    background-color: #ECEFF4;
+}
+
+
 /*===========product image and leftbar with social netwokr icons======*/
 
+
 /*====================headline inside the leftbar============*/
-.header-text h1{
-  font-size: 16px;
-  text-align: center;
-  font-family: "Ubuntu Condensed";
+
+.header-text h1 {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Ubuntu Condensed";
 }
-.header-text p{
-  font-size: 14px;
-  font-family: "Open Sans",sans-serif;
-  line-height: 22px;
-  margin:5%;
+
+.header-text p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 22px;
+    margin: 5%;
 }
+
+
 /*===================headline inside the leftbar============*/
 
+
 /*===========three paragraphs inside the leftbar=============*/
-.row{
-  display: flex;
-  justify-content: space-around;
+
+.row {
+    display: flex;
+    justify-content: space-around;
 }
 
-.row h2{
-  font-size: 13px;
-  margin: 0 10%;
-  line-height: 1.7em;
+.row h2 {
+    font-size: 13px;
+    margin: 0 10%;
+    line-height: 1.7em;
 }
+
+
 /*===========/three paragraphs inside the leftbar=============*/
 
+
 /*==============leftbar at the center of the page===============*/
-.left-bar{
-  width: 50%;
-  margin-right: -12%;
+
+.left-bar {
+    width: 50%;
+    margin-right: -12%;
 }
-.left-bar p{
-  font-size: 14px;
-  font-family:'Noticia Text', serif;
-  font-weight:bold;
-  background-color: #0A749C;
-  color: white;
-  text-align: center;
+
+.left-bar p {
+    font-size: 14px;
+    font-family: 'Noticia Text', serif;
+    font-weight: bold;
+    background-color: #0A749C;
+    text-align: center;
 }
+
+
 /*==============/leftbar at the center of the page===============*/
 
+
 /*=================social network icons============*/
-.social-networks{
-  list-style: none;
-  display: flex;
-  justify-content:center;
-  /*margin-left: 30%;*/
+
+.social-networks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*margin-left: 30%;*/
 }
 
-.social-icons{
-  max-width: 20px;
-  max-height: 20px;
-
+.social-icons {
+    max-width: 20px;
+    max-height: 20px;
 }
+
+
 /*=================/social network icons============*/
 
+
 /*  ==========================project button================*/
-.project-button{
-  width: 70%;
-  height: 70px;
-  margin:2% 15%;
-  background-color: #0A749C;
-  color: white;
-  font-size: 20px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.project-button {
+    margin: 0 auto;
 }
+
+
 /*  ==========================/project button================*/
 
+
 /*===========image with the text at the middle of the page==========*/
-.first-wrap{
-  display: none;
+
+.first-wrap {
+    display: none;
 }
-.second-wrap{
-  margin: 5%;
+
+.second-wrap {
+    margin: 5%;
 }
-.box img{
-  float:right;
-  margin:0 10px 10px 0;
-  max-width:60%;
+
+.box img {
+    float: right;
+    margin: 0 10px 10px 0;
+    max-width: 60%;
 }
+
+
 /*===========/image with the text at the middle of the page==========*/
+
 
 /*=========================proposer info and image============*/
 
-.proposer{
-  background-color: #ECEFF4;
-  padding:2%;
+.proposer {
+    background-color: #ECEFF4;
+    padding: 2%;
 }
 
-.proposer figure img{
-  float:left;
-  margin:0 10px 10px 0;
-  max-width:60%;
-  border-radius: 50%;;
+.proposer figure img {
+    float: left;
+    margin: 0 10px 10px 0;
+    max-width: 60%;
+    border-radius: 50%;
+    ;
 }
+
+
 /*=========================/proposer info and image============*/
 
+
 /*=================================contributors=========================*/
-.contributors{
-  margin-top: 10%;
+
+.contributors {
+    margin-top: 10%;
 }
-.contributors p{
-  box-shadow: 5px 5px grey;
-  padding-left: 10%;
+
+.contributors p {
+    box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.25);
+    padding-left: 10%;
 }
-.ten{
-  width: 50%;
+
+.ten, .twenty, .thirty {
   background-color: green;
-  color: white;
-  font-size: 20px;
-  box-shadow: 10px 10px;
 }
-.twenty{
-  width: 60%;
-  background-color: green;
-  color: white;
-  font-size: 20px;
+
+.ten {
+    width: 50%;
+    font-size: 20px;
 }
-.thirty{
-  width: 70%;
-  background-color: green;
-  color: white;
-  font-size: 20px;
+
+.twenty {
+    width: 60%;
+    font-size: 20px;
 }
+
+.thirty {
+    width: 70%;
+    font-size: 20px;
+}
+
+
 /*================================/contributors========================*/
+
 
 /*                              END PROJECTS                                   */
 
@@ -809,100 +943,119 @@ p{
 
 /*                              END PAIEMENT                                   */
 
+
 /********* STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
 
 .static-page-title, .static-social-medias {
-  justify-content: center;
+    justify-content: center;
 }
 
 .static-page-title, .static-headline {
-  text-align: center;
+    text-align: center;
 }
+
 
 /*Display of the top band right below the header*/
+
 .static-page-title {
-  width: 100%;
-  padding: .5em 0;
+    width: 100%;
+    padding: .5em 0;
 }
+
 
 /*Main title*/
+
 .static-page-title h1 {
-  margin: 0;
+    margin: 0;
 }
+
 
 /*General wrapper for the static content and images size*/
+
 .wrapper-static-content, .static-image {
-  width: 95%;
-  margin: auto;
+    width: 95%;
+    margin: auto;
 }
+
 
 /*Titles of the left section with text*/
+
 .static-content-section h2 {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
+
 /*Paragraphe of the left section*/
+
 .static-content-section p {
-  font-size: .9em;
+    font-size: .9em;
 }
 
 .static-content-section ol {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .static-content-section figure {
-  margin: 2em 0;
+    margin: 2em 0;
 }
 
 .static-image {
-  display: block;
+    display: block;
 }
 
 .static-headline {
-  margin: 2em auto;
-  border: 2px solid black;
-  width: 40%;
-
+    margin: 2em auto;
+    border: 2px solid black;
+    width: 40%;
 }
 
 .static-don {
-  font-style: italic;
+    font-style: italic;
 }
 
+
 /*Display of the social media icons*/
+
 .static-social-medias {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .static-social-medias li img {
-  width: 20px;
-  margin: 0 0.5em;
+    width: 20px;
+    margin: 0 0.5em;
 }
+
 
 /*Special top margin for the social media icons in the section*/
+
 section .static-social-medias {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
+
 /*No aside with articles on smartphones*/
+
 .static-content-aside {
-  display: none;
+    display: none;
 }
+
 
 /*Blog content*/
 
 #blog-title {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 .blog-image {
-  max-width: 500px;
-  max-height: 400px;
+    max-width: 500px;
+    max-height: 400px;
 }
+
+
 /*                        END STATIC PAGE CONTENT                             */
 
-/******************************************************************************/
 
+/******************************************************************************/
 
 
 /*                               RESPONSIVE                                   */
@@ -927,16 +1080,19 @@ section .static-social-medias {
         width: 90%;
     }
 }
+
 @media screen and (min-width: 380px) and (max-width: 550px) {
     footer section a {
         margin: .5em 1.5em;
     }
 }
+
 @media screen and (min-width: 450px) {
     footer aside figure {
         justify-content: flex-end;
     }
 }
+
 
 /* END SMARTPHONE & SMALL TABLETS */
 
@@ -946,18 +1102,16 @@ section .static-social-medias {
 @media (min-width: 700px) {
     /******************************** HEADER  **************************************/
     /* Top header */
-
-    .card-nav-form-m{
-	display:none;
+    .card-nav-form-m {
+        display: none;
     }
-    .card-nav-form-d{
-	width:fit-content;
-	width: -moz-fit-content;
-	margin-left:auto;
-	display: flex;
-	justify-content: center;
-	margin-right:35px;
-
+    .card-nav-form-d {
+        width: fit-content;
+        width: -moz-fit-content;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        margin-right: 35px;
     }
     .top-header-flex {
         height: 100px;
@@ -982,9 +1136,9 @@ section .static-social-medias {
         margin: 0 8px;
     }
     /* Navbar */
-    .cards-home-navbar{
-	justify-content:flex-start;
-	padding-left:50px;
+    .cards-home-navbar {
+        justify-content: flex-start;
+        padding-left: 50px;
     }
     .visible-navbar {
         /*Hide bar with menu icon*/
@@ -1013,32 +1167,27 @@ section .static-social-medias {
     .under-menu-link {
         display: none;
     }
-
-    .under-menu:hover .under-menu-link{
-	width:200px;
-	height:150px;
-	display:flex;
-	flex-direction:column;
-	font-size:16px;
-	position:absolute;
-	top:50px;
-	left:15px;
-	padding:0;
-	border: 3px solid #0092c9;
-	z-index:16;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
+    .under-menu:hover .under-menu-link {
+        width: 200px;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        padding: 0;
+        border: 3px solid #0092c9;
+        z-index: 16;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
     .under-menu-link a:last-child {
         border-bottom: 0;
     }
-
-    .under-menu-link a{
-	display:block;
-	border-bottom: 3px solid #0092c9;
-	padding:0 10px;
-	box-sizing:border-box;
-
+    .under-menu-link a {
+        display: block;
+        border-bottom: 3px solid #0092c9;
+        padding: 0 10px;
     }
     .title {
         /*Set the background color back to white*/
@@ -1081,9 +1230,8 @@ section .static-social-medias {
         flex-wrap: wrap;
     }
     /******************************** /CARDS  **************************************/
-
-
 }
+
 
 /*                    Tablets and small Desktop : 768 px                       */
 
@@ -1118,11 +1266,9 @@ section .static-social-medias {
     /* Shadow */
     /******************************* /Slider ************************************/
     /********************************* Footer ***********************************/
-
     footer section a, footer aside a {
         margin: .5em 0;
     }
-
     /* reduce the links around the partners for better display */
     footer section a {
         width: 80px;
@@ -1165,173 +1311,135 @@ section .static-social-medias {
         overflow: scroll;
     }
     /******************************* /Footer ************************************/
-
     /********* STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
-
     .static-page-title {
-      padding: 1em 0;
-      margin-bottom: 2em;
+        padding: 1em 0;
+        margin-bottom: 2em;
     }
-
     .static-content-section {
-      width: 70%;
-      margin-right: 2em;
+        width: 70%;
+        margin-right: 2em;
     }
-
-/*Make sure that the first h2 is aligned with the aside div*/
-    .static-content-section h2:nth-child(1){
-      margin-top: 0;
+    /*Make sure that the first h2 is aligned with the aside div*/
+    .static-content-section h2:nth-child(1) {
+        margin-top: 0;
     }
-
-/*Allow the aside on tablets*/
+    /*Allow the aside on tablets*/
     .static-content-aside {
-      display: block;
-      height: 100%;
-      width: 30%;
-      padding: 1em;
+        display: block;
+        height: 100%;
+        width: 30%;
+        padding: 1em;
     }
-
-/*Display of the articles on the left*/
-
+    /*Display of the articles on the left*/
     .static-content-aside article, .static-content-aside article img {
-      width: 100%;
-}
-
+        width: 100%;
+    }
     .static-content-aside article {
-      text-align: center;
-      margin-bottom: 2em;
-      padding-top: 0.3em;
-      background-color: white;
+        text-align: center;
+        margin-bottom: 2em;
+        padding-top: 0.3em;
+        background-color: white;
     }
     .static-content-aside h3 {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
-
-
-/*Shadow on the aside div and the article div*/
+    /*Shadow on the aside div and the article div*/
     .static-content-aside, .static-content-aside article {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
-
     /********* /STATIC PAGE CONTENT (ASSOCIATION, LEGAL INFORMATIONS...)************/
-
     /********* Projet************/
-
     /*===========product image and leftbar with social netwokr icons======*/
     .container {
-      display: flex;
+        display: flex;
     }
     .container figure img {
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      margin: 1em ;
-      /*align-self: center;*/
-      width: 90%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin: 1em;
+        /*align-self: center;*/
+        width: 90%;
     }
-
     .header-text {
-      max-width: 35%;
-      height: auto;
-      margin:2em 2em 0 -1em ;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      background-color: #fff;
-      border-bottom: 0;
-      border-top: 0;
+        max-width: 35%;
+        height: auto;
+        margin: 2em 2em 0 -1em;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        background-color: #fff;
+        border-bottom: 0;
+        border-top: 0;
     }
-
-    .header-text p{
-      font-size: .85em;
-
+    .header-text p {
+        font-size: .85em;
     }
-    .left-bar{
-      margin-right: -12%;
+    .left-bar {
+        margin-right: -12%;
     }
     /*===========product image and leftbar with social netwokr icons======*/
-
-    /*===================project button===============*/
-    .project-button{
-      width: 65%;
-      height: 60px;
-      margin:2% 15%;
-      border-radius: 10px;
-    }
-
-    /*=====================/project button==========*/
     /*=============socdial networks icon=============*/
-    .social-networks{
-      justify-content:center;
-      align-items: center;
+    .social-networks {
+        justify-content: center;
+        align-items: center;
     }
-    .social-icons{
-      max-width: 25px;
-      max-height: 25px;
-      margin:20%;
+    .social-icons {
+        max-width: 25px;
+        max-height: 25px;
+        margin: 20%;
     }
     /*/==============social networks icon=========*/
-
     /*===========image with the text at the middle of the page==========*/
-
-    .img-left img{
-      float:left;
-      margin-right: 2%;
+    .img-left img {
+        float: left;
+        margin-right: 2%;
     }
-
-    .wrap{
-      position: relative;
-      display:flex;
-      flex-direction: column;
-      width: 100%;
-      margin:5% 0;
+    .wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 5% 0;
     }
-    .first-wrap,.second-wrap{
-      display: unset;
-      width: 55%;
-      height: 50%;
-      margin:0 3%;
-
+    .first-wrap, .second-wrap {
+        display: unset;
+        width: 55%;
+        height: 50%;
+        margin: 0 3%;
     }
-
-    .first-wrap-p img{
-      float: right;
+    .first-wrap-p img {
+        float: right;
     }
-
-    .first-wrap h3{
-      border-bottom: 2px solid #2DA555;
-      width:fit-content;
-      width: -moz-fit-content;
+    .first-wrap h3 {
+        border-bottom: 2px solid #2DA555;
+        width: fit-content;
+        width: -moz-fit-content;
     }
-    .second-wrap h3{
-      border-bottom: 2px solid #2DA555;
-      width:fit-content;
-      width: -moz-fit-content;
+    .second-wrap h3 {
+        border-bottom: 2px solid #2DA555;
+        width: fit-content;
+        width: -moz-fit-content;
     }
     /*===========/image with the text at the middle of the page==========*/
-
     /*=============project proposer================ */
-    .proposer{
-      width: 30%;
-      position: absolute;
-      top: 0;
-      right: 4%;
-      padding:1%;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    .proposer {
+        width: 30%;
+        position: absolute;
+        top: 0;
+        right: 4%;
+        padding: 1%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
-    .proposer-info h1{
-      font-size: 1em;
+    .proposer-info h1 {
+        font-size: 1em;
     }
-
-
     /*=============/project proposer================ */
-
     /*=================================contributors=========================*/
-
     .contributors {
-      text-align: left;
+        text-align: left;
     }
-
     /********* /Projet************/
 }
+
 
 /*                      /Tablets and small Desktop : 768 px                   */
 
@@ -1355,7 +1463,6 @@ section .static-social-medias {
     .carousel-info {
         max-width: 302px;
     }
-
     .slide-text {
         height: 105px;
     }
@@ -1372,12 +1479,11 @@ section .static-social-medias {
     .twitter-container {
         width: 400px;
     }
-
 }
 
 @media screen and (min-width: 1100px) {
-    .home-cards{
-	    margin: 35px;
+    .home-cards {
+        margin: 35px;
     }
     .slide-text {
         height: 105px;
@@ -1410,52 +1516,44 @@ section .static-social-medias {
 }
 
 @media (min-width: 1200px) {
-
-  /*Project*/
-
-  .project-image-container{
-    margin:0 8% 0;
-  }
-
-  .header-text {
-    width: 25%;
-  }
-
-  .header-text h1{
-    margin-bottom:8%;
-  }
-  .row{
-    margin-bottom:8%;
-  }
-  .header-text p{
-    margin-bottom:8%;
-    font-size:1em;
-  }
-  .left-bar{
-    margin-right:-16%;
-  }
-  .left-bar p{
-
-  }
-  .row img{
-    display: unset;
-    -webkit-border-radius:100%;
-    -moz-border-radius:100%;
-    border-radius:100%;
-  }
-  .proposer{
-    width:25%;
-    right: 7%;
-  }
-  .container figure img {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    margin: 1em;
-    /*align-self: center;*/
-    width: 100%;
-  }
-
-  /*/Project*/
-
+    /*Project*/
+    .project-image-container {
+        margin: 0 8% 0;
+    }
+    .header-text {
+        width: 25%;
+    }
+    .header-text h1 {
+        margin-bottom: 8%;
+    }
+    .row {
+        margin-bottom: 8%;
+    }
+    .header-text p {
+        margin-bottom: 8%;
+        font-size: 1em;
+    }
+    .left-bar {
+        margin-right: -16%;
+    }
+    .left-bar p {}
+    .row img {
+        display: unset;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+    .proposer {
+        width: 25%;
+        right: 7%;
+    }
+    .container figure img {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin: 1em;
+        /*align-self: center;*/
+        width: 100%;
+    }
+    /*/Project*/
 }
 
 @media screen and (min-width: 1280px) {
@@ -1464,7 +1562,6 @@ section .static-social-medias {
         width: 1152px;
         margin: 0 auto;
     }
-
     /* --------------------------Footer------------------------- */
     footer ul {
         width: 15%;
@@ -1481,66 +1578,50 @@ section .static-social-medias {
     footer aside figure img {
         width: 60%;
     }
-
     /* -------------------------/Footer------------------------- */
-
     /* -------Static page content (association, legal informations)--------- */
-
-/*Bigger social media icons on big tablets and desktop*/
-
+    /*Bigger social media icons on big tablets and desktop*/
     .static-content-aside {
-      padding: 1em 2em;
+        padding: 1em 2em;
     }
-
     .static-social-medias li img {
-      width: 25px;
-      margin: 0 1em;
+        width: 25px;
+        margin: 0 1em;
     }
-
     .static-image {
-      width: 90%;
+        width: 90%;
     }
-
     .static-headline span, .static-headline a {
-      font-size: 1.1em;
+        font-size: 1.1em;
     }
-
-
     /* ------/Static page content (association, legal informations)--------- */
-
     /* ------ Project --------*/
-    .row img{
-      display: unset;
+    .row img {
+        display: unset;
     }
-    .proposer{
-
-      right: 8%;
-  }
-
-  .wrap{
-    width: 95%;
-    margin:5% auto;
-  }
-
-  /* ------ /Project --------*/
+    .proposer {
+        right: 8%;
+    }
+    .wrap {
+        width: 95%;
+        margin: 5% auto;
+    }
+    /* ------ /Project --------*/
 }
 
 @media (min-width: 1322px) {
-  .proposer{
-    right: 10%;
-  }
-
+    .proposer {
+        right: 10%;
+    }
 }
 
 @media screen and (min-width: 1500px) {
     .wrapper, .wrapper-static-content, .wrap {
         width: 80%;
     }
-
-  .first-wrap, .second-wrap {
-    margin-left: 0;
-  }
-
+    .first-wrap, .second-wrap {
+        margin-left: 0;
+    }
     .twitter-container {
         width: 500px;
         height: 300px;
@@ -1548,10 +1629,10 @@ section .static-social-medias {
     .carousel-info {
         margin-top: 2.6em;
     }
-
     .static-image {
-      width: 80%;
+        width: 80%;
     }
 }
+
 
 /* /Slider Responsive Design for higher Res */
