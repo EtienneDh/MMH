@@ -169,3 +169,15 @@ function autoSlide() {
 /* /Main function: AutoSlide */
 
 autoSlide();
+
+
+/* Keyboard controls*/
+
+$(document).keydown( function(eventObject) {
+  //left arrow
+  if(eventObject.which==37) {
+    changeImage('previous');
+  } else if(eventObject.which==39) {
+    changeImage('next');
+  }
+});
