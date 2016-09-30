@@ -1385,7 +1385,7 @@ section .static-social-medias {
     .social-icons {
         max-width: 25px;
         max-height: 25px;
-        margin: 20%;
+        /*margin: 20%;*/
     }
     /*/==============social networks icon=========*/
     /*===========image with the text at the middle of the page==========*/
