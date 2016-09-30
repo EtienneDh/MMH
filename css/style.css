@@ -240,6 +240,10 @@ p {
     display: none;
 }
 
+.triangle {
+  display: none;
+}
+
 .menu-list {
     display: none;
     list-style: none;
@@ -1205,13 +1209,15 @@ section .static-social-medias {
     }
     .main-navbar {
         border-bottom: 3px solid #0092c9;
+        position: relative;
     }
     .triangle {
         /*triangle that point the page*/
+        display: block;
         width: 15px;
         position: absolute;
         top: 38px;
-        left: calc(50% - 7.5px);
+        z-index: 1000;
     }
     .language {
         color: white;
