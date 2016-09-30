@@ -24,9 +24,11 @@ if (window.matchMedia("(max-width: 700px)").matches) { //  when the size is unde
         if ($(window).scrollTop() > 100) {
             $('.main-navbar').addClass('fixed');
             $('.main-navbar').parent().next().css('margin-top', "50px");
+            $('.triangle').css('top', 38);
         } else {
             $('.main-navbar').removeClass('fixed');
             $('.main-navbar').parent().next().css('margin-top', "0px");
+            $('.triangle').css('top', 138);
         }
     });
 }
@@ -44,6 +46,7 @@ var parentWidth = ($('.active').width())/2;
 $('.triangle').css('left', ((elementLocation+parentWidth)-7.5));
 
 // When mouseover a menu title, the triangle follows
+if (window.matchMedia("(min-width: 700px)").matches) {
 $('.title').mouseenter(function(){
 
   titlePosition = $(this).offset();
@@ -57,6 +60,7 @@ $('.title').mouseenter(function(){
 $('.title').mouseleave(function(){
   $('.triangle').css('left', ((elementLocation+parentWidth)-7.5));
 });
+}
 
 
 /***************************** /Responsive Nav Bar *****************************/
